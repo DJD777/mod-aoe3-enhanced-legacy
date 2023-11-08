@@ -1,0 +1,133 @@
+Here's a compendium of frustrating roadblocks I ran into and how I resolved them, or techniques I used or learned to apply certain things, during my time modding AoE3. I'm including it in case you want to modify stuff yourself, and are running into weird problems. Maybe my experience can help you save time.
+
+-------Interesting stuff found in original game files & unimplemented ideas-------
+	Elizabet Ramsey has attack anim with a custom revolver. Could edit her anim and proto to make her ranged, rather than melee
+
+	In anims, <tag> to have a hit sound play is missing from many melee units
+	
+	Could add version of Cherokee War Hut to natives as a card for the fortress age.  A buildable structure for Age 3, build limit of two or so, for all natives (or maybe just Sioux?). Could investigate AI building, but maybe not necessary. Would have to edit AI files for the mto build it.
+
+	Could replace Saloon with Tavern for Russians, French, Germans, Ottomans, and Dutch. Spanish, Portuguese, and British keep Saloon. Would have to change AI files.
+
+	Could add buffalo and other native props to Americans (partially done). See explaner below.
+
+	ypSPCGunpowderStores, SPCWeaponsCache, SPCIncaTemple, SPCCherokeeWarHut, SPCOssuary, SPCAztecTemple, and SPCStockades (or magicalSPCStockades?) are cool structures with damage anims. 
+	Art1, under native_ruins, are cool native Aztec-like pyramids, but not damage or death model. 
+	Art\buildings\spc\havana_nugget\havana_nugget.xml.xmb also in art1 is a weird, cool little thing. 
+	Art\units\animals\gatling camel\gatling_camel.xml.xmb is a historical unit with no anims. 
+
+	Art2: 
+	uhlan_, crossbow_, musketeer_, skirmisher_, halberdier_, pikeman_,  ...buckets are well made icons for group techs. 
+	Interesting frigate icon. 
+	Art\units\surgeons\surgeon_icon_64x64.ddt is surgeon icon with red cross. 
+	Neamaltha has icon, portrait, and igc model, looks good for native unit. 
+	Blunderbuss attachment is no longer being used, except by Settler Wagons. 
+	Architect at units\villagers\architect.xml is really cool.
+ 
+	investigate if roads could be placed the way walls are (compare anims with walls; replacing walls didnt work). They're in buildings/roads. (Didn't work how I did it)
+
+	Could maybe add Train command for WallStraight5 or 4 to build a new building, WallStable and WallBarracks, which converts wall to those like gates do. (NO, not a train command, it's a tactic command; or is hardcoded).
+
+	Make research that allows walls to auto repair. (NO METHOD WORKS CONSISTENTLY)
+
+	Try ship capturing. Frigates, Galleys, Galleons, Caravels, Privateers can capture; Frigates and Monitors can't be captured (except by Privateers/Pirates?). I.e., convertguardian type power, which those ships have, but uncapturable ones dont have conversion flag?
+
+
+
+-------Explainers & Learned Lessons-------
+	Don't use any textures that are more than 1366KB, as those cause huge lag (.ddt files, not the uncompressed .tga; tga's can be bigger since ddt compresses them). Seems if too much is on-screen at once, even smaller files will eventually cause big lag.
+
+	Can export .gr2s to see bones in GrannyViewer by RightClick and holding, then dragging to Skeletons. Use boxes on left panel. Can view homecity prop attachpoints and other bones that way. 
+
+	In homecityprops.xml, to make props cancel each other when activated (so there's no overlapping), make a new group including the prop IDs within <exclusiveprops></exclusiveprops> tags.
+
+	Cool anims: look in art1, search "squad". flag_bearer and explorer sub-folders.
+
+	Can indeed make new resource gathering anim. In .tactics, have to assign the anim tag to GatherBush, then in the unit's anim have to set GatherBush as new anim and change it there to whatever. See representative.xml and art/units/villagers/baron.xml or senator.xml for example.
+
+	New Politicians (Age up selections) can't be selected unless a new entry, using the Politician's tech name in techtreef.xml , is created in politiciandata.xml. Also where portraits are set.
+
+	Unit Tactics (like Defend, Stealth, etc.) Buttons are defined in buttons.xml. Unit Abilities (like Sharpshooter, Crackshot, etc.) defined in abilities.xml and powers.xml. Commands like Delete, Patrol, etc. seem hardcoded (NO, they're tactics, but the scripts called in that file are hardcoded; see data -> [one of the ui...xml files]).
+
+	uipregamenew.xml in Data controls Main Menu arrangements.
+
+	resources.xml in Data seems to control which maps and sets are listed in the map selection drop-down in-game. Actual spelling is in displayName = "" section of the map's .xml file in the right RM folder.
+
+	Limit of 50 new lines in map set description drop-downs (on 1440p monitor).
+
+	To make KnockOut units have their own Revived, Disabled, etc. sounds, copy one of the OG game Explorer's soundset entries in soundsets.xml and DO NOT change anything except the name of the set and sound file. Claim action sounds do not play, but files exist from OG game for all explorers.
+
+	For all added units with upgrades, will have to add in aiDraugrMain everywhere with TYPEUpgradeMonitor. Just search Monitor or DJ until you find Stable, Barracks, etc. Also have to add for new techs in appropriate places.
+
+	For build animation to not have them standing doing nothing, must always include all build anims (including for horses), i.e. Build, BuildStaking, BuildSaw, etc. Can overwrite the actual anims, just need the names.
+
+	Can make sounds but have to be 16bit Wav, 44100Hz, Mono, at least 705600bps (705kbps; but maybe not a hard requirement after all), except for diaologue (then use mp3).
+
+	Changed Fame to Favor and added functionality under uimainnew.xml and uiplayerdata.xml. Not sure what uimainnew2.xml is but didn't seem to need to be changed.
+
+	Nuggets can be set per map in Nuggets.xml
+
+	Set new Map Set Names in MapSetNames.xml in Data3
+
+	See DummyObjects.xml in Data3 for list of anim bones
+
+	Civ Random Map avatar images are set in civs.xml, <smallportraittexture>
+
+	In aiDraugurMain.xml, to add new cards to AI deck, first need to add to list of total cards, then to best cards if it's good. Add a Handler if it needs special consideration. If the card has prereqs, have to add them to cResourceSkillPoints lists below the best cards list, but no need to add them to the total card list it seems. 
+
+	Can test NatJaguar and NatEagle warriors (perhaps for upgrade visuals) on UIx ESOC Guatemala
+
+	deleted these lines from buildings:
+    <CorpseDecalTime>0.0000</CorpseDecalTime>
+    <CorpseDecayDelay>2.0000</CorpseDecayDelay>
+    <Lifespan>15.0000</Lifespan>	
+
+	Building decay: <Decay delay="120.0000" duration="3.0000"></Decay>
+	Unit decay: <Decay delay="240.0000" duration="3.0000"></Decay> Lowered in final release (I think to 180 duration) to reduce lag.
+	
+	Found how to make new civs selectable! Have to create an ai personality file for that civ, which means custom edits to aiDragurMain for explorers and anything new, so AI isn't stupid with them.
+
+	The order of which units you see walking through HC after ordering a card that delivers units is determined by which comes first in the techtree.
+
+	To make HC prop units/props, add new entry to homecityprotounits[native] (data), use the name and set other details in homecityprops (data), can find prop art and use it (art), then add the prop to a civ HC through homecity[CIV] (data). 
+	Not all units seem to work, like cows from HC, but most do.	
+
+	Random map setup avatar is set in civs.xml <smallportraittexture>ui\singleplayer\cpai_avatar_CIV</smallportraittexture>. 
+
+	File for RM setup: uiskirmishsetup.xml 
+
+	Textures can be edited and updated in-game and will display in real-time. 
+
+	The cheat "speed always wins" affects more than just building time, including heal rate and XP/Fame generation.
+
+	To add player color to an icon or portrait (not sure if applies to unit textures, but probably), first select part of the image you want to be player colored. Cut it and paste as new layer. Desaturate it with the Desaturate tool (not just by setting Hue or Saturation to 0). Lower its opacity (the lower it is, the less of its texture will come through, but the richer the player color. A good value is usually < 3.). Make sure there is nothing but transparency under it. Then either right click on it and Add Layer Mask, then Transfer layer's alpha channel, OR use Black (Full Transparency) and then move the layer under the solid layer (works more consistently). Black is transparency. Export as whatever name you want but it MUST have ".(0,4,8,1).tga" immediately following the name, not including quotations. Export without RLE compression.
+
+	In techtree, DO NOT USE MalteseFortressize or whatever, stick to Colonialize or something as a prereq if any (maybe has to be when using UniqueTech flag, or prereq tech has to be same age?). OR Keep techs/cards above the last politician techs.
+
+	In proto, the unit itself is called by the base unit, regardless of the upgrade. Units with changed names from techtree do not have their own proto entry.
+	Therefore, in techtree make sure all TECHS are named appropriately, and in proto make sure TECHS are named the same.
+
+	When the upgraded name is used in techtree and proto, it means the upgrade TECH. When the base name is used, it means the unit as an entity, including its upgraded forms.
+
+	Stealth works on anything it seems, but at least for boats, OBSTRUCTION RADII must be less than 1!!! 
+
+	Attach this tag between <component>  </component> to get random Granny assets (also included is a list of good construction props):
+	<logic type="Variation">
+		<data><assetreference type="GrannyModel"><file>homecity\portuguese\portuguese_cranes</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\barrel_single</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\bucket</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\handcart</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\railspikes_2bags</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\rope</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\shovel</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\sledgehammer</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\sledgehammer_side</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\tie_singl</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\ties_large</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\ties_mid</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\ties_small</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\two_barrels</file></assetreference></data>
+		<data><assetreference type="GrannyModel"><file>objects\spc\spc_railway\shovel_side</file></assetreference></data>
+	</logic>
+
+-------------------------------
