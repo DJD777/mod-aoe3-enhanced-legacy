@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>90457</nameID>
+   <tooltipID>90466</tooltipID>
+   <forcedciv>Maltese</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_maltese</icon>
+   <chatset>Jean</chatset>
+   <playerNames>
+      <nameID>90457<civ>Maltese</civ></nameID> 
+	</playerNames>
+</AI>

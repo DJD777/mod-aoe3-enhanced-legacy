@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="HCConfirmDlg" type="gadget" backgroundcolor="0 0 0" backgroundalpha="0.5" size1024="0 0 1024 768" z="99">
+    <gadget type="gadget" name="HCConfirmDlgFrame" size1024="318 172 738 440" background="ui\home_city\hc_card_accept02" z="90" texturecoords="0 0 0.822265625 1">
+      <gadget name="HCConfirmDlg_Title-Background" type="gadget" z="91" background="ui\core_ui\text_block_256_de" size1024="438 221 665 248">
+      </gadget>
+      <gadget name="HCConfirmDlg_Title" type="formatText" textcolor="255 255 255" textfont="InGameLabels" textfontsize="18" textcenterhoriz="" size1024="354 336 696 371" z="92">$$35398$$</gadget>
+      <gadget name="HCConfirmDlg_TechBtn" type="gadget" size1024="382 207 438 259" z="92">
+      </gadget>
+      <gadget name="HCConfirmDlg_TechName" type="formatText" textcolor="255 255 255" textfont="StatUnitNameSmall" textfontsize="14" textcenterhoriz="" size1024="425 224 671 251" z="92">
+      </gadget>
+      <gadget name="HCConfirmDlg_TechDetails" type="formatText" textcolor="255 255 255" textfont="StatUnitNameSmall" textfontsize="14" textcenterhoriz="" textmarkup="" size1024="371 268 685 345" z="92">
+      </gadget>
+      <gadget name="HCConfirmDlg_OkBtn" type="stateButton" size1024="390 369 518 401" bevelbutton="" z="92" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1" sound="UI_DefaultPregameClickSet">$$18451$$Yes<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_high"></stateentry><stateentry background="ui\core_ui\button_med_disable"></stateentry></gadget>
+      <gadget name="HCConfirmDlg_CancelBtn" type="stateButton" size1024="538 369 666 401" bevelbutton="" z="92" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1" sound="UI_DefaultPregameClickSet">$$18452$$No<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_high"></stateentry><stateentry background="ui\core_ui\button_med_disable"></stateentry></gadget>
+    </gadget>
+  </gadget>
+</layout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<placementrules>
+    <distanceatmostfromtype distance="0" errorstringid="90357" successstringid="90358">NewFixedGunBase</distanceatmostfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="8" errorstringid="90361">NewFixedGun</obstructionatleastfromtype>
+</placementrules>

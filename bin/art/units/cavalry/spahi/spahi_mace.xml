@@ -1,0 +1,4 @@
+<animfile>
+  <component>mace<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\cavalry\spahi\spahi_mace_2</file></assetreference></none><industrializeottoman><assetreference type="GrannyModel"><file>units\cavalry\spahi\spahi_mace_3</file></assetreference></industrializeottoman><imperializeottoman><assetreference type="GrannyModel"><file>units\cavalry\spahi\spahi_mace_4</file></assetreference></imperializeottoman></logic></component>
+  <anim>Idle<component>mace</component></anim>
+</animfile>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>shotgun<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\attachments\blunderbuss_villager</file></assetreference></none><Industrialize><assetreference type="GrannyModel"><file>units\attachments\shotgun</file></assetreference></Industrialize></logic></component><anim>Idle<component>shotgun</component></anim>
+</animfile>

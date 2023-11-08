@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <definebone>bone_academy</definebone>
+  <definebone>bone_plant</definebone>
+  <definebone>bone_cathedral</definebone>
+  <definebone>bone_dock</definebone>
+  <definebone>bone_market</definebone>
+  <definebone>bone_main</definebone>
+  <definebone>bone_pathnode_01</definebone>
+  <definebone>bone_pathnode_02</definebone>
+  <definebone>bone_pathnode_03</definebone>
+  <definebone>bone_pathnode_04</definebone>
+  <definebone>bone_pathnode_05</definebone>
+  <definebone>bone_pathnode_06</definebone>
+  <definebone>bone_pathnode_07</definebone>
+  <definebone>bone_pathnode_08</definebone>
+  <definebone>bone_pathnode_09</definebone>
+  <definebone>bone_pathnode_10</definebone>
+  <definebone>bone_pathnode_11</definebone>
+  <definebone>bone_pathnode_12</definebone>
+  <definebone>bone_pathnode_13</definebone>
+  <definebone>bone_pathnode_14</definebone>
+  <definebone>bone_pathnode_15</definebone>
+  <definebone>bone_pathnode_16</definebone>
+  <definebone>bone_pathnode_17</definebone>
+  <definebone>bone_pathnode_18</definebone>
+  <definebone>bone_pathnode_19</definebone>
+  <definebone>bone_pathnode_20</definebone>
+  <definebone>bone_pathnode_21</definebone>
+  <definebone>bone_pathnode_22</definebone>
+  <definebone>bone_pathnode_23</definebone>
+  <definebone>bone_pathnode_24</definebone>
+  <definebone>bone_pathnode_25</definebone>
+  <definebone>bone_pathnode_26</definebone>
+  <definebone>bone_pathnode_27</definebone>
+  <definebone>bone_shadowclip</definebone>
+  <definebone>bone_academy_doorway</definebone>
+  <definebone>bone_cathedral_doorway</definebone>
+  <definebone>bone_estate_doorway</definebone>
+  <definebone>bone_market_doorway</definebone>
+  <definebone>bone_dock_doorway</definebone>
+  <definebone>bone_generic_07</definebone>
+  <definebone>bone_generic_01</definebone>
+  <definebone>bone_generic_02</definebone>
+  <definebone>bone_generic_03</definebone>
+  <definebone>bone_generic_04</definebone>
+  <definebone>bone_generic_05</definebone>
+  <definebone>bone_generic_06</definebone>
+  <definebone>bone_cathedral_side_doorway</definebone>
+  <definebone>bone_small_church_doorway</definebone>
+  <definebone>bone_pathnode_28</definebone>
+  <definebone>bone_pathnode_29</definebone>
+  <definebone>bone_FX01</definebone>
+  <definebone>bone_FX02</definebone>
+  <definebone>bone_FX03</definebone>
+  <definebone>bone_FX04</definebone>
+  <definebone>bone_FX05</definebone>
+  <definebone>bone_FX06</definebone>
+  <definebone>bone_fishing01</definebone>
+  <definebone>bone_shipment_start</definebone>
+  <definebone>bone_shipment_end</definebone>
+  <definebone>bone_stagecoach</definebone>
+  <definebone>bone_pathnode_30</definebone>
+  <definebone>bone_fishing02</definebone>
+  <definebone>bone_fishing03</definebone>
+  <definebone>bone_fishing04</definebone>
+  <definebone>bone_dregs01</definebone>
+  <definebone>bone_dregs02</definebone>
+  <definebone>bone_dregs03</definebone>
+  <definebone>bone_dregs04</definebone>
+  <definebone>bone_firework01</definebone>
+  <definebone>bone_firework02</definebone>
+  <definebone>bone_firework03</definebone>
+  <definebone>bone_firework04</definebone>
+  <definebone>bone_firework05</definebone>
+  <definebone>bone_firework06</definebone>
+  <definebone>bone_vendor01</definebone>
+  <definebone>bone_vendor02</definebone>
+  <definebone>bone_vendor03</definebone>
+  <definebone>bone_vendor04</definebone>
+  <definebone>bone_vendor05</definebone>
+  <definebone>bone_vendor06</definebone>
+  <definebone>bone_vendor07</definebone>
+  <definebone>bone_vendor08</definebone>
+  <attachment>boats<component>boats<assetreference type="GrannyModel"><file>homecity\spanish\spanish_hc_fishing_boats</file></assetreference></component><anim>Idle<component>boats</component></anim></attachment>
+  <attachment>fountains_and_parks<component>fountains_and_parks<assetreference type="GrannyModel"><file>homecity\spanish\fountains_and_parks</file></assetreference></component><anim>Idle<component>fountains_and_parks</component></anim></attachment>
+  <attachment>spanish_churches<component>spanish_churches<assetreference type="GrannyModel"><file>homecity\spanish\spanish_churches</file></assetreference></component><anim>Idle<component>spanish_churches</component></anim></attachment>
+  <attachment>spanish_docks_and_pier<component>spanish_docks_and_pier<assetreference type="GrannyModel"><file>homecity\spanish\spanish_docks_and_pier</file></assetreference></component><anim>Idle<component>spanish_docks_and_pier</component></anim></attachment>
+  <attachment>generic_med_house<component>generic_med_house<assetreference type="GrannyModel"><file>homecity\buildings_med\med_generic_02</file></assetreference></component><anim>Idle<component>generic_med_house</component></anim></attachment>
+  <attachment>filler_building_01<component>filler_building_01<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_01</file></assetreference></component><anim>Idle<component>filler_building_01</component></anim></attachment>
+  <attachment>filler_building_02<component>filler_building_02<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_02</file></assetreference></component><anim>Idle<component>filler_building_02</component></anim></attachment>
+  <attachment>filler_building_03<component>filler_building_03<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_03</file></assetreference></component><anim>Idle<component>filler_building_03</component></anim></attachment>
+  <attachment>filler_building_04<component>filler_building_04<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_04</file></assetreference></component><anim>Idle<component>filler_building_04</component></anim></attachment>
+  <attachment>filler_building_05<component>filler_building_05<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_05</file></assetreference></component><anim>Idle<component>filler_building_05</component></anim></attachment>
+  <attachment>filler_building_06<component>filler_building_06<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_06</file></assetreference></component><anim>Idle<component>filler_building_06</component></anim></attachment>
+  <attachment>generic_building_cluster_01<component>generic_building_cluster_01<assetreference type="GrannyModel"><file>homecity\spanish\generic_bldg_cluster_01</file></assetreference></component><anim>Idle<component>generic_building_cluster_01</component></anim></attachment>
+  <attachment>generic_building_cluster_02<component>generic_building_cluster_02<assetreference type="GrannyModel"><file>homecity\malta\generic_bldg_cluster_02</file></assetreference></component><anim>Idle<component>generic_building_cluster_02</component></anim></attachment>
+  <attachment>generic_building_cluster_03<component>generic_building_cluster_03<assetreference type="GrannyModel"><file>homecity\spanish\generic_bldg_cluster_03</file></assetreference></component><anim>Idle<component>generic_building_cluster_03</component></anim></attachment>
+  <attachment>generic_building_cluster_04<component>generic_building_cluster_04<assetreference type="GrannyModel"><file>homecity\spanish\generic_bldg_cluster_04</file></assetreference></component><anim>Idle<component>generic_building_cluster_04</component></anim></attachment>
+  <attachment>spanish_colony_house_01<component>spanish_colony_house_01<assetreference type="GrannyModel"><file>homecity\spanish\spanish_colony_house_01</file></assetreference></component><anim>Idle<component>spanish_colony_house_01</component></anim></attachment>
+  <attachment>spanish_colony_house_02<component>spanish_colony_house_02<assetreference type="GrannyModel"><file>homecity\spanish\spanish_colony_house_02</file></assetreference></component><anim>Idle<component>spanish_colony_house_02</component></anim></attachment>
+  <attachment>spanish_hc_debris_border<component>spanish_hc_debris_border<assetreference type="GrannyModel"><file>homecity\spanish\spanish_hc_debris_border</file></assetreference></component><anim>Idle<component>spanish_hc_debris_border</component></anim></attachment>
+  <attachment>malta_hc_dock_rocks<component>malta_hc_dock_rocks<assetreference type="GrannyModel"><file>homecity\malta\malta_hc_dock_rocks</file></assetreference></component><anim>Idle<component>malta_hc_dock_rocks</component></anim></attachment>
+  <attachment>maltese_hc_galleon<component>maltese_hc_galleon<assetreference type="GrannyModel"><file>homecity\malta\malta_hc_galleon</file></assetreference></component><anim>Idle<component>maltese_hc_galleon</component></anim></attachment>
+  <attachment>spanish_hc_sea_rocks<component>spanish_hc_sea_rocks<assetreference type="GrannyModel"><file>homecity\spanish\spanish_hc_sea_rocks</file></assetreference></component><anim>Idle<component>spanish_hc_sea_rocks</component></anim></attachment>
+  <attachment>filler_building_08<component>filler_building_08<assetreference type="GrannyModel"><file>homecity\spanish\filler_bldg_08</file></assetreference></component><anim>Idle<component>filler_building_08</component></anim></attachment>
+  <attachment>cliff_rocks<component>cliff_rocks<assetreference type="GrannyModel"><file>homecity\spanish\cliff_rocks</file></assetreference></component><anim>Idle<component>cliff_rocks</component></anim></attachment>
+  <attachment>trees_01<component>trees_01<assetreference type="GrannyModel"><file>homecity\malta\malta_trees_01</file></assetreference></component><anim>Idle<component>trees_01</component></anim></attachment>
+  <attachment>props_01<component>props_01<assetreference type="GrannyModel"><file>homecity\spanish\props_01</file></assetreference></component><anim>Idle<component>props_01</component></anim></attachment>
+  <attachment>trees_02<component>trees_02<assetreference type="GrannyModel"><file>homecity\malta\malta_trees_02</file></assetreference></component><anim>Idle<component>trees_02</component></anim></attachment>
+  <attachment>grass_and_shrubs<component>grass_and_shrubs<assetreference type="GrannyModel"><file>homecity\malta\malta_grass_and_shrubs</file></assetreference></component><anim>Idle<component>grass_and_shrubs</component></anim></attachment>
+  <attachment>academy_rails<component>academy_rails<assetreference type="GrannyModel"><file>homecity\malta\rail_academy</file></assetreference></component><anim>Idle<component>academy_rails</component></anim></attachment>
+  <attachment>chimney_02<component>chimneySmoke<assetreference type="ParticleSystem"><file>effects\smoke\white_smoke_a.particle</file></assetreference></component><anim>None<component>chimneySmoke</component></anim></attachment>
+  <attachment>chimney_03<component>chimneySmoke<assetreference type="ParticleSystem"><file>effects\smoke\white_smoke_a.particle</file></assetreference></component><anim>None<component>chimneySmoke</component></anim></attachment>
+  <attachment>chimney_04<component>chimneySmoke<assetreference type="ParticleSystem"><file>effects\smoke\white_smoke_a.particle</file></assetreference></component><anim>None<component>chimneySmoke</component></anim></attachment>
+  <attachment>chimney_05<component>chimneySmoke<assetreference type="ParticleSystem"><file>effects\smoke\white_smoke_a.particle</file></assetreference></component><anim>None<component>chimneySmoke</component></anim></attachment>
+  <attachment>fountain_01a<component>fountainEmitter<assetreference type="ParticleSystem"><file>homecity\spanish\fountain_ringBase_01.particle</file></assetreference></component><anim>None<component>fountainEmitter</component></anim></attachment>
+  <attachment>fountain_01b<component>fountainEmitter<assetreference type="ParticleSystem"><file>homecity\spanish\fountain_ringBase_02.particle</file></assetreference></component><anim>None<component>fountainEmitter</component></anim></attachment>
+  <attachment>fountain_01c<component>fountainEmitter<assetreference type="ParticleSystem"><file>homecity\spanish\fountain_spray_01.particle</file></assetreference></component><anim>None<component>fountainEmitter</component></anim></attachment>
+  <attachment>fountain_01d<component>fountainEmitter<assetreference type="ParticleSystem"><file>homecity\spanish\fountain_spray_02.particle</file></assetreference></component><anim>None<component>fountainEmitter</component></anim></attachment>
+  <attachment>blackbirds<component>blackbirds<assetreference type="ParticleSystem"><file>effects\animal particles\SpanishBlackbird.particle</file></assetreference></component><anim>None<component>blackbirds</component></anim></attachment>
+  <attachment>generic_building_cluster_02a<component>generic_building_cluster_02a<assetreference type="GrannyModel"><file>homecity\spanish\generic_bldg_cluster_02a</file></assetreference></component><anim>Idle<component>generic_building_cluster_02a</component></anim></attachment>
+  <attachment>generic_building_cluster_04b<component>generic_building_cluster_04b<assetreference type="GrannyModel"><file>homecity\spanish\generic_bldg_cluster_04b</file></assetreference></component><anim>Idle<component>generic_building_cluster_04b</component></anim></attachment>
+  <attachment>malta_harbor<component>malta_harbor<assetreference type="GrannyModel"><file>homecity\buildings_med\med_harbor</file><replacetexture><from>homecity\buildings_med\med_harbor_a_colormap</from><to>homecity\buildings_med\med_harbor_a_greengold</to></replacetexture><replacetexture><from>homecity\buildings_med\med_harbor_b_colormap</from><to>homecity\buildings_med\med_harbor_b_greengold</to></replacetexture></assetreference></component><anim>Idle<component>malta_harbor</component></anim></attachment>
+  <attachment>back_walls<component>back_walls<assetreference type="GrannyModel"><file>homecity\malta\back_walls</file></assetreference></component><anim>Idle<component>back_walls</component></anim></attachment>
+  <attachment>front_walls<component>front_walls<assetreference type="GrannyModel"><file>homecity\malta\front_towers</file></assetreference></component><anim>Idle<component>front_walls</component></anim></attachment>
+  <attachment>post_lamps<component>post_lamps<assetreference type="GrannyModel"><file>homecity\malta\academy_lamp_posts</file></assetreference></component><anim>Idle<component>post_lamps</component></anim></attachment>
+  <attachment>fountainStreams<component>emitter<assetreference type="ParticleSystem"><file>effects\home_city\hc_fountainStream01.particle</file></assetreference></component><anim>None<component>emitter</component></anim></attachment>
+  <component>ground<assetreference type="GrannyModel"><file>homecity\malta\malta_ground</file></assetreference><attach a="fountains_and_parks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_churches" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_docks_and_pier" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_01" tobone="bone_generic_01" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_02" tobone="bone_generic_02" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_03" tobone="bone_generic_03" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_04" tobone="bone_generic_04" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_05" tobone="bone_generic_05" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_generic_06" tobone="bone_generic_06" syncanims="0"></attach><attach a="filler_building_01" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_02" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_03" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_04" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_05" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_06" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_building_cluster_01" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_building_cluster_02" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_building_cluster_03" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_building_cluster_04" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_colony_house_01" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_colony_house_02" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_hc_debris_border" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="malta_hc_dock_rocks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="maltese_hc_galleon" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="spanish_hc_sea_rocks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="filler_building_08" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="trees_01" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="props_01" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="trees_02" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="grass_and_shrubs" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="academy_rails" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="chimney_02" frombone="ATTACHPOINT" tobone="bone_FX02" syncanims="0"></attach><attach a="chimney_03" frombone="ATTACHPOINT" tobone="bone_FX03" syncanims="0"></attach><attach a="chimney_04" frombone="ATTACHPOINT" tobone="bone_FX04" syncanims="0"></attach><attach a="chimney_05" frombone="ATTACHPOINT" tobone="bone_FX05" syncanims="0"></attach><attach a="fountain_01a" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"></attach><attach a="fountain_01b" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"></attach><attach a="fountain_01c" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"></attach><attach a="fountain_01d" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"></attach><attach a="blackbirds" frombone="ATTACHPOINT" tobone="bone_FX06" syncanims="0"></attach><attach a="generic_building_cluster_04b" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_building_cluster_02a" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="generic_med_house" frombone="bone_plant" tobone="bone_plant" syncanims="0"></attach><attach a="malta_harbor" frombone="bone_dock" tobone="bone_dock" syncanims="0"></attach><attach a="back_walls" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="front_walls" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="post_lamps" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX01" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX02" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX03" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX04" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX05" syncanims="0"></attach><attach a="fountainStreams" frombone="ATTACHPOINT" tobone="bone_fountain_FX06" syncanims="0"></attach></component>
+  <anim>Idle<component>ground</component></anim>
+</animfile>

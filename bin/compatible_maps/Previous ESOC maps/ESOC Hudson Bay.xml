@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText=" Players are on equal footing on this region full of every resource.\n
+During the cold season the map is covered with snow and the water partially freezes.\n
+Different trade routes move from different spots but they all head toward the sea.\n
+ \n Native Civs: Cree / Huron
+ \n Mercenaries: Comanchero / Pirate
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath  = "ui\esoc_map\hudson_bay"
+displayName = "ESOC Hudson Bay"
+cannotReplace = ""
+loadDetailsText = "Players are on equal footing on this region full of every resource.\n
+During the cold season the map is covered with snow and the water partially freezes.\n
+Different trade routes move from different spots but they all head toward the sea.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Cree / Huron   \n
+-Mercenaries:  Comanchero / Pirate  \n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\hudsonbay_map"
+>
+
+<loadss>ui\random_map\saguenay\saguenay_ss_03</loadss>
+<loadss>ui\random_map\great_lakes\great_lakes_ss_02</loadss>  
+  
+</mapinfo>

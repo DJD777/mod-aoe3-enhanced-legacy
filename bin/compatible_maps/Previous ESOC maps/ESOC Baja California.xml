@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText=" Baja California is an arid peninsular region divided in two by a mountain range.\n
+Hunts and trees are scarce and scattered, but precious metals are rather common.\n
+Expand toward the center or on the sea to ensure extra resources for your colony.\n
+ \n Native Civs: Apache / Navajo
+ \n Mercenaries: Comanchero / Renegado
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath  = "ui\esoc_map\baja_california"
+displayName = "ESOC Baja California"
+cannotReplace = ""
+loadDetailsText = "Baja California is an arid peninsular region divided in two by a mountain range.\n
+Hunts and trees are scarce and scattered, but precious metals are rather common.\n
+Expand toward the center or on the sea to ensure extra resources for your colony.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Apache / Navajo   \n
+-Mercenaries:  Comanchero / Renegado   \n
+\n
+---------------------------------\n
+"
+loadBackground="ui\esoc_map\bajacalifornia_map"
+>
+
+  <loadss>ui\random_map\california\california_ss_02</loadss>
+  <loadss>ui\random_map\california\california_ss_03</loadss>
+  
+</mapinfo>

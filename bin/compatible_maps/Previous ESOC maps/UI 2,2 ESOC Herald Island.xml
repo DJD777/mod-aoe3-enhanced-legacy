@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo detailstext = "1v1 or 2v2 and 3v3 Obs. Check FFA box for 1v1 or set TvB teams for 2v2 or 3v3. \n
+Herald Island is a small, isolated Russian island in the Chukchi Sea, to the east of Wrangel Island. It rises in sheer cliffs, making it quite inaccessible by ship. Nonetheless, this island is well know for providing a lot of Tin Mine, Caribous and Moose.
+\n
+---------------------------------\n
+\n
+-Outlaws:  Pistolero / Comanchero  \n
+\n
+--------------------------------- \n
+\n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n" imagepath = "ui\esoc_map\herald_island" displayName = "UI 2.2 ESOC Herald Island" cannotReplace = ""
+		loadDetailsText="1v1 or 2v2 and 3v3 Obs. Check FFA box for 1v1 or set TvB teams for 2v2 or 3v3. \n
+Herald Island is a small, isolated Russian island in the Chukchi Sea, to the east of Wrangel Island. It rises in sheer cliffs, making it quite inaccessible by ship. Nonetheless, this island is well know for providing a lot of Tin Mine, Caribous and Moose.
+\n
+---------------------------------\n
+\n
+-Outlaws:  Pistolero / Comanchero  \n
+\n
+--------------------------------- \n
+\n
+\n UI done by Aizamk
+" loadBackground="ui\esoc_map\heraldisland_map">
+   <loadss>ui\random_map\yukon\yukon_ss_01</loadss>
+   <loadss>ui\random_map\yukon\yukon_ss_02</loadss>
+   <loadss>ui\random_map\yukon\yukon_ss_03</loadss>
+</mapinfo>

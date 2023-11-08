@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="PilgrimUS">
+    <soundtype name="Select">
+      <variationlogic>
+        <choice name="0">
+			<soundset name="AmericanPioneerMSelect"></soundset>
+        </choice>
+        <choice name="1">
+            <soundset name="AmericanPioneerFSelect"></soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Grunt">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemaleGrunt">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Death">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemaleDeath">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="SettlerBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <variationlogic>
+        <choice name="0">
+		  <targetlogic>
+			<choice name="default">
+			  <soundset name="AmericanPioneerMAcknowledge">
+			  </soundset>
+			</choice>
+			<choice name="enemy">
+			  <soundset name="AmericanPioneerMAttack">
+			  </soundset>
+			</choice>
+			<choice name="build">
+			  <soundset name="AmericanPioneerMBuild">
+			  </soundset>
+			</choice>
+			<choice name="Huntable">
+			  <soundset name="AmericanPioneerMHuntable">
+			  </soundset>
+			</choice>
+			<choice name="Tree">
+			  <soundset name="AmericanPioneerMTree">
+			  </soundset>
+			</choice>
+			<choice name="AbstractMine">
+			  <soundset name="AmericanPioneerMMine">
+			  </soundset>
+			</choice>
+			<choice name="AbstractFarm">
+			  <soundset name="AmericanPioneerMFarm">
+			  </soundset>
+			</choice>
+			<choice name="AbstractResourceCrate">
+			  <soundset name="AmericanPioneerMAcknowledge">
+			  </soundset>
+			</choice>
+			<choice name="AbstractFruit">
+			  <soundset name="AmericanPioneerMGather">
+			  </soundset>
+			</choice>
+		  </targetlogic>
+        </choice>
+        <choice name="1">
+		  <targetlogic>
+			<choice name="default">
+			  <soundset name="AmericanPioneerFAcknowledge">
+			  </soundset>
+			</choice>
+			<choice name="enemy">
+			  <soundset name="AmericanPioneerFAttack">
+			  </soundset>
+			</choice>
+			<choice name="build">
+			  <soundset name="AmericanPioneerFBuild">
+			  </soundset>
+			</choice>
+			<choice name="Huntable">
+			  <soundset name="AmericanPioneerFHuntable">
+			  </soundset>
+			</choice>
+			<choice name="Tree">
+			  <soundset name="AmericanPioneerFTree">
+			  </soundset>
+			</choice>
+			<choice name="AbstractMine">
+			  <soundset name="AmericanPioneerFMine">
+			  </soundset>
+			</choice>
+			<choice name="AbstractFarm">
+			  <soundset name="AmericanPioneerFFarm">
+			  </soundset>
+			</choice>
+			<choice name="AbstractResourceCrate">
+			  <soundset name="AmericanPioneerFAcknowledge">
+			  </soundset>
+			</choice>
+			<choice name="AbstractFruit">
+			  <soundset name="AmericanPioneerFGather">
+			  </soundset>
+			</choice>
+		  </targetlogic>
+        </choice>
+      </variationlogic>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

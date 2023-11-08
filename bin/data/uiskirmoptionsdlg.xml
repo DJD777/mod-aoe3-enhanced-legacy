@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="SkirmHCOptions" type="gadget" z="10" size1024="0 0 1024 768" background="">
+    <gadget name="SkirmManageHCSubMenu" type="gadget" size1024="360 512 616 640" hidden="" z="20">
+      <gadget name="SkirmManageHCSubMenu-Top" type="gadget" size1024="289 508 562 696" background="ui\pregame\skirmhcbuttons" clampbackground="" z="12">
+      </gadget>
+    </gadget>
+    <gadget name="SkirmHCOptions_Background" type="gadget" background="ui\pregame\skirmhcoptions" z="22" size1024="11 404 306 836">
+      <gadget name="SkirmManageHCSubMenu-SelectHCButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="27 498 291 530" z="22" mouseovertext="$$42343$$" texturecoords="0 0 1 1">$$42340$$Select a Home City<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="SkirmManageHCSubMenu-CreateHCButton" type="stateButton" bevelbutton="" z="22" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" texturecoords="0 0 1 1" textcentervert="" size1024="27 538 291 570" mouseovertext="$$42344$$">$$42341$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry><stateentry background=""></stateentry></gadget>
+      <gadget name="SkirmManageHCSubMenu-DeleteHCButton" type="stateButton" bevelbutton="" z="22" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" texturecoords="0 0 1 1" textcentervert="" size1024="27 578 291 610" mouseovertext="$$42345$$">$$42342$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry><stateentry background=""></stateentry></gadget>
+      <gadget name="SkirmHCOptions_UpgradeButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="27 618 291 650" z="22" mouseovertext="$$42140$$" texturecoords="0 0 1 1">$$37427$$Upgrade Home City<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="SkirmHCOptions_DeckButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="27 658 291 690" z="22" mouseovertext="$$42141$$" texturecoords="0 0 1 1">$$37428$$View your Deck Builder<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="SkirmHCOptions_PlayButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="27 708 155 740" z="22" mouseovertext="$$42143$$" texturecoords="0 0 0.627450980392157 1">$$18593$$Play<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+      <gadget name="SkirmHCOptions_CancelButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="166 708 291 740" z="22" mouseovertext="$$18583$$" texturecoords="0 0 0.627450980392157 1">$$18582$$Main Menu<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+      <gadget name="SkirmHCOptions_CustomizeButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="960 640 1024 768" z="22" mouseovertext="$$42142$$">
+        <stateentry background="ui\home_city\hc_customize_normal">
+        </stateentry>
+        <stateentry background="ui\home_city\hc_customize_clicked">
+        </stateentry>
+        <stateentry background="ui\home_city\hc_customize_active">
+        </stateentry>
+        <stateentry background="ui\home_city\hc_customize_disabled">
+        </stateentry>
+      </gadget>
+    </gadget>
+  </gadget>
+</layout>

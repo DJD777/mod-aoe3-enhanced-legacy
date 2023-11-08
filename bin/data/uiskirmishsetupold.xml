@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="SinglePlayerSetup" type="gadget" size1024="0 0 1024 768" background="ui\core_ui\wood_thick_board" z="0">
+    <gadget name="SinglePlayerSetup-Background" type="gadget" background="ui\core_ui\wood_thick_board_wide" size1024="0 0 1024 1370" z="1">
+    </gadget>
+    <gadget name="SinglePlayerSetup-LabelCenter" type="formatText" size1024="360 10 510 90" z="2" transparent="" textcentervert="" textcenterhoriz="" textcolor="255 208 0" textfontsize="30" textfont="Pregamelarge">$$35898$$Skirmish</gadget>
+    <gadget name="SinglePlayerSetup-TitleGameType" type="formatText" size1024="510 10 660 90" z="2" transparent="" textcentervert="" textcenterhoriz="" textcolor="255 208 0" textfontsize="30" textfont="Pregamelarge">$$35898$$Single Player Skirmish</gadget>
+    <gadget name="SinglePlayerSetup-HCPickerBackground" type="gadget" hidden="" backgroundalpha="0.5" backgroundcolor="0 0 0" size1024="0 0 1024 768" z="25">
+      <gadget name="SinglePlayerSetup-HCPickerHolder" type="gadget" size1024="335 235 689 550">
+      </gadget>
+    </gadget>
+    <gadget name="SinglePlayerSetup-GameSettingsBackground" type="gadget" size1024="701 96 977 690" tilebackground="" background="ui\core_ui\metal_tile" z="2">
+      <gadget name="SPS-GSB-BorderTop" transparent="" type="gadget" tilebackgroundhoriz="" size1024="733 96 945 104" background="ui\core_ui\metal_trim_top" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderBottom" transparent="" type="gadget" tilebackgroundhoriz="" size1024="733 683 945 691" background="ui\core_ui\metal_trim_bottom" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderLeft" transparent="" type="gadget" tilebackgroundvert="" size1024="701 119 709 659" background="ui\core_ui\metal_trim_left" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderRight" transparent="" type="gadget" tilebackgroundvert="" size1024="969 119 977 659" background="ui\core_ui\metal_trim_right" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderTopLeft" transparent="" type="gadget" size1024="701 96 733 128" background="ui\core_ui\metal_trim_corner_topleft" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderTopRight" transparent="" type="gadget" size1024="945 96 977 128" background="ui\core_ui\metal_trim_corner_topright" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderBottomLeft" transparent="" type="gadget" size1024="701 659 733 691" background="ui\core_ui\metal_trim_corner_bottomleft" z="3">
+      </gadget>
+      <gadget name="SPS-GSB-BorderBottomRight" transparent="" type="gadget" size1024="945 659 977 691" background="ui\core_ui\metal_trim_corner_bottomright" z="3">
+      </gadget>
+      <gadget name="SinglePlayerSetup-NumPlayersSelection" type="textField" fieldreadonly="" size1024="760 107 914 131" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+        <dropdown>$$36122$$2 Players</dropdown>
+        <dropdown>$$36123$$3 Players</dropdown>
+        <dropdown>$$36124$$4 Players</dropdown>
+        <dropdown>$$36125$$5 Players</dropdown>
+        <dropdown>$$36126$$6 Players</dropdown>
+        <dropdown>$$36127$$7 Players</dropdown>
+        <dropdown>$$36128$$8 Players</dropdown>
+      </gadget>
+      <gadget name="SinglePlayerSetup-MapDisplay" type="gadget" size1024="760 142 914 296" donthighlight="" z="3" mouseovertext="$$19943$$">
+        <gadget name="SPS-MD-BorderTop" type="gadget" transparent="" tilebackgroundhoriz="" size1024="760 142 914 147" background="ui\core_ui\metal_trim_top2" z="4">
+        </gadget>
+        <gadget name="SPS-MD-BorderBottom" type="gadget" transparent="" tilebackgroundhoriz="" size1024="760 291 914 296" background="ui\core_ui\metal_trim_bottom2" z="4">
+        </gadget>
+        <gadget name="SPS-MD-BorderLeft" type="gadget" transparent="" tilebackgroundvert="" size1024="760 142 765 296" background="ui\core_ui\metal_trim_left2" z="4">
+        </gadget>
+        <gadget name="SPS-MD-BorderRight" type="gadget" transparent="" tilebackgroundvert="" size1024="909 142 914 296" background="ui\core_ui\metal_trim_right2" z="4">
+        </gadget>
+        <gadget name="SPS-MD-BorderTopLeft" type="gadget" transparent="" size1024="760 142 765 147" background="ui\core_ui\metal_trim_corner_topleft2" z="5">
+        </gadget>
+        <gadget name="SPS-MD-BorderTopRight" type="gadget" transparent="" size1024="909 142 914 147" background="ui\core_ui\metal_trim_corner_topright2" z="5">
+        </gadget>
+        <gadget name="SPS-MD-BorderBottomLeft" type="gadget" transparent="" size1024="760 291 765 296" background="ui\core_ui\metal_trim_corner_bottomleft2" z="5">
+        </gadget>
+        <gadget name="SPS-MD-BorderBottomRight" type="gadget" transparent="" size1024="909 291 914 296" background="ui\core_ui\metal_trim_corner_bottomright2" z="5">
+        </gadget>
+      </gadget>
+      <gadget name="SPS-CheckCustomMaps" type="checkButton" size1024="762 304 930 328" textfontsize="16" textfont="ScrollFont" mouseovertext="$$42360$$" textcolor="231 201 40" z="3">$$42359$$Custom Maps</gadget>
+      <gadget name="SinglePlayerSetup-MapSelection" type="textField" fieldreadonly="" size1024="741 332 937 356" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+        <dropdown>
+        </dropdown>
+      </gadget>
+      <gadget name="SPS-MD-BorderBottom" type="gadget" tilebackgroundhoriz="" transparent="" size1024="701 355 977 363" background="ui\core_ui\metal_trim_bottom" z="3">
+      </gadget>
+      <gadget name="SPS-LabelGameRules" type="gadget" size1024="760 365 914 397" textfontsize="16" textfont="ScrollFont" textcolor="231 201 40" background="ui\core_ui\text_block_154" mouseovertext="$$42297$$" texturecoords="0.0 0.0 0.6 1.0" z="3">$$36146$$Game Rules</gadget>
+      <gadget name="SPS-LabelStartingAge" type="gadget" size1024="760 429 914 461" textfontsize="16" textfont="ScrollFont" textcolor="231 201 40" background="ui\core_ui\text_block_154" mouseovertext="$$41643$$" texturecoords="0.0 0.0 0.6 1.0" z="3">$$36148$$Starting Age</gadget>
+      <gadget name="SinglePlayerSetup-StartingAgeSelection" type="textField" fieldreadonly="" size1024="741 464 937 488" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+        <dropdown>
+        </dropdown>
+      </gadget>
+      <gadget name="SPS-LabelDifficulty" type="gadget" size1024="773 492 901 524" textfontsize="16" textfont="ScrollFont" textcolor="231 201 40" background="ui\core_ui\text_block_128" mouseovertext="$$41644$$" z="3">$$36147$$Difficulty</gadget>
+      <gadget name="SinglePlayerSetup-DifficultySelection" type="textField" fieldreadonly="" size1024="741 528 937 552" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+        <dropdown>$$32605$$Sandbox</dropdown>
+        <dropdown>$$18297$$Easy</dropdown>
+        <dropdown>$$18298$$Moderate</dropdown>
+        <dropdown>$$18299$$Hard</dropdown>
+        <dropdown>$$18300$$Expert</dropdown>
+      </gadget>
+      <gadget name="SPS-CheckHandicap" type="checkButton" size1024="762 557 930 581" textfontsize="16" textfont="ScrollFont" mouseovertext="$$42186$$" textcolor="231 201 40" z="3">$$42176$$Player Handicap</gadget>
+      <gadget name="SinglePlayerSetup-XtraRulesSelection" type="textField" fieldreadonly="" size1024="741 400 937 424" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+        <dropdown>
+        </dropdown>
+      </gadget>
+      <gadget name="SinglePlayerSetup-XtraRulesNoSelection" type="formatText" fieldreadonly="" size1024="741 370 937 394" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="3" mouseovertext="$$46656$$" background="ui\core_ui\dropdown_background2">$$46661$$Classic</gadget>
+      <gadget name="SPS-Difficulty-BorderBottom" type="gadget" tilebackgroundhoriz="" transparent="" size1024="701 579 977 587" background="ui\core_ui\metal_trim_bottom" z="3">
+      </gadget>
+      <gadget name="SPS-LabelGameSpeed" type="gadget" size1024="762 589 916 621" textfontsize="16" mouseovertext="$$37456$$" textfont="ScrollFont" textcolor="231 201 40" background="ui\core_ui\text_block_154" texturecoords="0.0 0.0 0.6 1.0" z="3">$$36149$$Game Speed</gadget>
+      <gadget name="SPS-GameSpeedSelection" type="radioset" size1024="709 624 969 648" textcolor="231 201 40" textfont="PostgameLabel" textfontsize="14" radiosetbuttonsize1024="86 32" radiosetdefaultbuttonindex="0" z="12" radiocheckedart="ui\core_ui\round_clicked" radiouncheckedart="ui\core_ui\round" radiobtnborder1024="2 2" radiosethorizlayout="" sound="UI_DefaultIngameClickSet">
+        <button>$$36136$$Slow</button>
+        <button>$$36137$$Med</button>
+        <button>$$36138$$Fast</button>
+      </gadget>
+      <gadget name="SPS-GameSpeed-BorderBottom" type="gadget" tilebackgroundhoriz="" transparent="" size1024="701 650 977 658" background="ui\core_ui\metal_trim_bottom" z="3">
+      </gadget>
+      <gadget name="SPS-CheckRecordGame" type="checkButton" size1024="722 660 836 684" textfontsize="16" mouseovertext="$$37457$$" textfont="ScrollFont" textcolor="231 201 40" z="3">$$36150$$Record Game</gadget>
+      <gadget name="SPS-CheckFFA" type="checkButton" size1024="846 660 960 684" textfontsize="16" mouseovertext="$$37458$$" textfont="ScrollFont" textcolor="231 201 40" z="3">$$36520$$Free For All</gadget>
+    </gadget>
+    <gadget name="SinglePlayerSetup-PlayerSettingsBackground" type="gadget" size1024="60 70 688 672" z="2">
+      <gadget name="SPS-Player1Row" type="gadget" size1024="68 101 680 165" z="5">
+        <gadget name="SPS-P1RowCenter" type="gadget" size1024="100 101 648 165" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P1RowLeft" type="gadget" size1024="68 101 100 165" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P1RowRight" type="gadget" size1024="648 101 680 165" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player1RowControls" type="gadget" size1024="68 101 680 165" z="7">
+          <gadget name="SPS-P1RowNum" type="formatText" size1024="84 117 100 149" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36151$$1.</gadget>
+          <gadget name="SPS-P1Portrait" type="gadget" size1024="105 106 159 160" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P1NameArtLeft" type="gadget" size1024="167 117 199 149" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P1NameArtCenter" type="gadget" size1024="199 117 324 149" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P1Name" type="formatText" size1024="167 117 356 149" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P1NameArtRight" type="gadget" size1024="324 117 356 149" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P1HomeCityFlag" type="stateButton" size1024="364 109 439 157" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P1HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 137 439 157" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P1Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 111 576 131" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P1HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 135 468 155" z="8">
+          </gadget>
+          <gadget name="SPS-P1Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 135 576 155" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P1Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 117 648 149" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player2Row" type="gadget" size1024="68 174 680 238" z="5">
+        <gadget name="SPS-P2RowCenter" type="gadget" size1024="100 174 648 238" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P2RowLeft" type="gadget" size1024="68 174 100 238" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P2RowRight" type="gadget" size1024="648 174 680 238" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player2RowControls" type="gadget" size1024="68 174 680 238" z="7">
+          <gadget name="SPS-P2RowNum" type="formatText" size1024="84 190 100 222" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36152$$2.</gadget>
+          <gadget name="SPS-P2Portrait" type="gadget" size1024="105 179 159 233" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P2NameArtLeft" type="gadget" size1024="167 190 199 222" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P2NameArtCenter" type="gadget" size1024="199 190 324 222" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P2Name" type="formatText" size1024="167 190 356 222" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P2NameArtRight" type="gadget" size1024="324 190 356 222" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P2HomeCityFlag" type="stateButton" size1024="364 182 439 230" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P2HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 210 439 230" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P2Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 184 576 204" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P2HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 208 468 228" z="8">
+          </gadget>
+          <gadget name="SPS-P2Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 208 576 228" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P2Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 190 648 222" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player3Row" type="gadget" size1024="68 247 680 311" z="5">
+        <gadget name="SPS-P3RowCenter" type="gadget" size1024="100 247 648 311" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P3RowLeft" type="gadget" size1024="68 247 100 311" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P3RowRight" type="gadget" size1024="648 247 680 311" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player3RowControls" type="gadget" size1024="68 247 680 311" z="7">
+          <gadget name="SPS-P3RowNum" type="formatText" size1024="84 263 100 295" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36153$$3.</gadget>
+          <gadget name="SPS-P3Portrait" type="gadget" size1024="105 252 159 306" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P3NameArtLeft" type="gadget" size1024="167 263 199 295" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P3NameArtCenter" type="gadget" size1024="199 263 324 295" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P3Name" type="formatText" size1024="167 263 356 295" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P3NameArtRight" type="gadget" size1024="324 263 356 295" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P3HomeCityFlag" type="stateButton" size1024="364 255 439 303" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P3HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 283 439 303" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P3Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 257 576 277" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P3HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 281 468 301" z="8">
+          </gadget>
+          <gadget name="SPS-P3Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 281 576 301" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P3Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 263 648 295" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player4Row" type="gadget" size1024="68 320 680 384" z="5">
+        <gadget name="SPS-P4RowCenter" type="gadget" size1024="100 320 648 384" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P4RowLeft" type="gadget" size1024="68 320 100 384" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P4RowRight" type="gadget" size1024="648 320 680 384" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player4RowControls" type="gadget" size1024="68 320 680 384" z="7">
+          <gadget name="SPS-P4RowNum" type="formatText" size1024="84 336 100 368" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36154$$4.</gadget>
+          <gadget name="SPS-P4Portrait" type="gadget" size1024="105 325 159 379" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P4NameArtLeft" type="gadget" size1024="167 336 199 368" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P4NameArtCenter" type="gadget" size1024="199 336 324 368" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P4Name" type="formatText" size1024="167 336 356 368" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P4NameArtRight" type="gadget" size1024="324 336 356 368" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P4HomeCityFlag" type="stateButton" size1024="364 328 439 376" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P4HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 356 439 376" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P4Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 330 576 350" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P4HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 354 468 374" z="8">
+          </gadget>
+          <gadget name="SPS-P4Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 354 576 374" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P4Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 336 648 368" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player5Row" type="gadget" size1024="68 393 680 457" z="5">
+        <gadget name="SPS-P5RowCenter" type="gadget" size1024="100 393 648 457" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P5RowLeft" type="gadget" size1024="68 393 100 457" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P5RowRight" type="gadget" size1024="648 393 680 457" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player5RowControls" type="gadget" size1024="68 393 680 457" z="7">
+          <gadget name="SPS-P5RowNum" type="formatText" size1024="84 409 100 441" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36155$$5.</gadget>
+          <gadget name="SPS-P5Portrait" type="gadget" size1024="105 398 159 452" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P5NameArtLeft" type="gadget" size1024="167 409 199 441" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P5NameArtCenter" type="gadget" size1024="199 409 324 441" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P5Name" type="formatText" size1024="167 409 356 441" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P5NameArtRight" type="gadget" size1024="324 409 356 441" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P5HomeCityFlag" type="stateButton" size1024="364 401 439 449" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P5HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 429 439 449" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P5Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 403 576 423" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P5HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 427 468 447" z="8">
+          </gadget>
+          <gadget name="SPS-P5Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 427 576 447" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P5Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 409 648 441" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player6Row" type="gadget" size1024="68 466 680 530" z="5">
+        <gadget name="SPS-P6RowCenter" type="gadget" size1024="100 466 648 530" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P6RowLeft" type="gadget" size1024="68 466 100 530" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P6RowRight" type="gadget" size1024="648 466 680 530" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player6RowControls" type="gadget" size1024="68 466 680 530" z="7">
+          <gadget name="SPS-P6RowNum" type="formatText" size1024="84 482 100 514" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36156$$6.</gadget>
+          <gadget name="SPS-P6Portrait" type="gadget" size1024="105 471 159 525" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P6NameArtLeft" type="gadget" size1024="167 482 199 514" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P6NameArtCenter" type="gadget" size1024="199 482 324 514" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P6Name" type="formatText" size1024="167 482 356 514" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P6NameArtRight" type="gadget" size1024="324 482 356 514" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P6HomeCityFlag" type="stateButton" size1024="364 474 439 522" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P6HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 502 439 522" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P6Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 476 576 496" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P6HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 499 468 519" z="8">
+          </gadget>
+          <gadget name="SPS-P6Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 499 576 519" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P6Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41640$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 482 648 514" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player7Row" type="gadget" size1024="68 539 680 603" z="5">
+        <gadget name="SPS-P7RowCenter" type="gadget" size1024="100 539 648 603" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P7RowLeft" type="gadget" size1024="68 539 100 603" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P7RowRight" type="gadget" size1024="648 539 680 603" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player7RowControls" type="gadget" size1024="68 539 680 603" z="7">
+          <gadget name="SPS-P7RowNum" type="formatText" size1024="84 555 100 587" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36157$$7.</gadget>
+          <gadget name="SPS-P7Portrait" type="gadget" size1024="105 544 159 598" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P7NameArtLeft" type="gadget" size1024="167 555 199 587" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P7NameArtCenter" type="gadget" size1024="199 555 324 587" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P7Name" type="formatText" size1024="167 555 356 587" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P7NameArtRight" type="gadget" size1024="324 555 356 587" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P7HomeCityFlag" type="stateButton" size1024="364 547 439 595" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P7HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="399 575 439 595" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P7Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 549 576 569" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P7HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="448 573 468 593" z="8">
+          </gadget>
+          <gadget name="SPS-P7Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="472 573 576 593" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P7Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 555 648 587" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+      <gadget name="SPS-Player8Row" type="gadget" size1024="68 612 680 676" z="5">
+        <gadget name="SPS-P8RowCenter" type="gadget" size1024="100 612 648 676" tilebackgroundhoriz="" background="ui\ingame\ingame_ui_postgame_topbar" z="6">
+        </gadget>
+        <gadget name="SPS-P8RowLeft" type="gadget" size1024="68 612 100 676" background="ui\ingame\ingame_ui_postgame_topbar_left" z="6">
+        </gadget>
+        <gadget name="SPS-P8RowRight" type="gadget" size1024="648 612 680 676" background="ui\ingame\ingame_ui_postgame_topbar_right" z="6">
+        </gadget>
+        <gadget name="SPS-Player8RowControls" type="gadget" size1024="68 612 680 676" z="7">
+          <gadget name="SPS-P8RowNum" type="formatText" size1024="84 628 100 660" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" textcenterhoriz="" textcentervert="" z="8">$$36158$$8.</gadget>
+          <gadget name="SPS-P8Portrait" type="gadget" size1024="105 617 159 671" background="ui\singleplayer\cpai_avatar_french" z="8">
+          </gadget>
+          <gadget name="SPS-P8NameArtLeft" type="gadget" size1024="167 628 199 660" background="ui\core_ui\text_bar_32_left" z="8">
+          </gadget>
+          <gadget name="SPS-P8NameArtCenter" type="gadget" size1024="199 628 324 660" background="ui\core_ui\text_bar_32_middle" z="8">
+          </gadget>
+          <gadget name="SPS-P8Name" type="formatText" size1024="167 628 356 660" textcolor="0 0 0" textfontsize="16" textcentervert="" textcenterhoriz="" textfont="ScrollFont" z="9">
+          </gadget>
+          <gadget name="SPS-P8NameArtRight" type="gadget" size1024="324 628 356 660" background="ui\core_ui\text_bar_32_right" z="8">
+          </gadget>
+          <gadget name="SPS-P8HomeCityFlag" type="stateButton" size1024="364 620 439 668" bevelbutton="" z="8">
+          </gadget>
+          <gadget name="SPS-P8HCLevel" type="formatText" textfont="PregameEntry" textfontsize="15" size1024="398 648 438 668" textcolor="255 255 255" backgroundcolor="0 0 0" backgroundalpha="0.5" textcenterhoriz="" textcentervert="" z="9" transparent="">
+          </gadget>
+          <gadget name="SPS-P8Team" type="textField" fieldreadonly="" mouseovertext="$$41640$$" size1024="448 622 576 642" textfontsize="16" textfont="ScrollFont" textcolor="0 0 0" z="8" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P8HandicapLabel" type="gadget" mouseovertext="$$20033$$" background="ui\eso\handicap" size1024="447 646 467 666" z="8">
+          </gadget>
+          <gadget name="SPS-P8Handicap" type="textField" fieldreadonly="" mouseovertext="$$20033$$" size1024="471 646 575 666" textcolor="0 0 0" textfont="PostgameTableEntrySmall" textfontsize="12" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+            <dropdown>
+            </dropdown>
+          </gadget>
+          <gadget name="SPS-P8Color" type="colorDropdown" dropdowndistance="95" mouseovertext="$$41641$$" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" fieldreadonly="" size1024="584 628 648 660" listitemheight="32" background="ui\core_ui\dropdown_background2" dropdownbuttonart="ui\core_ui\minimize_down" z="8">
+          </gadget>
+        </gadget>
+      </gadget>
+    </gadget>
+    <gadget name="SinglePlayerSetup-PlayButton" type="stateButton" size1024="314 722 476 754" bevelbutton="" z="6" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.628 1" mouseovertext="$$19939$$" sound="UI_DefaultPregameClickSet">$$18593$$Play<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background=""></stateentry></gadget>
+    <gadget name="SinglePlayerSetup-CancelButton" type="stateButton" size1024="548 722 710 754" bevelbutton="" z="6" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.628 1" mouseovertext="$$19940$$">$$42451$$Back<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background=""></stateentry></gadget>
+  </gadget>
+</layout>

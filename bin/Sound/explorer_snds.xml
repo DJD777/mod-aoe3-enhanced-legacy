@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="Explorer">
+    <soundtype name="Select">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="FrenchExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="BritishExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="RussianExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="SpanishExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackSelect">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="OttomanExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="PortugueseExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GermanExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="DutchExplorerSelect">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Grunt">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackGrunt">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="GenericMaleGrunt">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Death">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackDeath">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="GenericMaleDeath">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+      <soundset name="GenericMaleDeath">
+      </soundset>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="MilitaryBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <civlogic>
+        <choice name="Nature">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="French">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="FrenchExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="FrenchExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="British">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="BritishExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="BritishExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Russians">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="RussianExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="RussianExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Spanish">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="SpanishExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="SpanishExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Maltese">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="MorganBlackAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="MorganBlackAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Ottomans">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="OttomanExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="OttomanExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Portuguese">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="PortugueseExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="PortugueseExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Germans">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="GermanExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="GermanExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Dutch">
+          <targetlogic>
+            <choice name="default">
+              <soundset name="DutchExplorerAcknowledge">
+              </soundset>
+            </choice>
+            <choice name="enemy">
+              <soundset name="DutchExplorerAttack">
+              </soundset>
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Aztecs">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Caribs">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Cherokee">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Comanche">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Cree">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Incas">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Iroquois">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Lakota">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Maya">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Nootka">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Seminoles">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+        <choice name="Tupi">
+          <targetlogic>
+            <choice name="default">
+            </choice>
+            <choice name="enemy">
+            </choice>
+          </targetlogic>
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Claim">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="FrenchExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="BritishExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="RussianExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="OttomanExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="DutchExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="SpanishExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="PortugueseExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GermanExplorerClaim">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="KnockOut">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="FrenchExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="BritishExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="RussianExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="OttomanExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="DutchExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="SpanishExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackDeath">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="PortugueseExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GermanExplorerDisabled">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="KnockOutRevived">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="FrenchExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="BritishExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="RussianExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="OttomanExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="DutchExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="SpanishExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackRevive">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="PortugueseExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GermanExplorerRevived">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Ransomed">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="French">
+          <soundset name="FrenchExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="BritishExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="RussianExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="OttomanExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="DutchExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Spanish">
+          <soundset name="SpanishExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="MorganBlackRevive">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="PortugueseExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="GermanExplorerRansomed">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+      </civlogic>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

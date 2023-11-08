@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>crossbows<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\infantry_ranged\crossbow\crossbow_1age_crossbow</file></assetreference></none><veterancrossbowmen><assetreference type="GrannyModel"><file>units\infantry_ranged\crossbow\crossbow_2age_crossbow</file></assetreference></veterancrossbowmen><MaltaArbalests><assetreference type="GrannyModel"><file>units\infantry_ranged\crossbow\crossbow_3age_crossbow</file></assetreference></MaltaArbalests><ChurchBestieros><assetreference type="GrannyModel"><file>units\infantry_ranged\crossbow\crossbow_3age_crossbow</file></assetreference></ChurchBestieros><MaltaImperialArbalests><assetreference type="GrannyModel"><file>units\infantry_ranged\crossbow\crossbow_4age_crossbow</file></assetreference></MaltaImperialArbalests></logic></component>
+  <anim>Idle<component>crossbows</component></anim>
+</animfile>

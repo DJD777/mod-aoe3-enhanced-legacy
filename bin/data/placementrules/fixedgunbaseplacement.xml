@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<placementrules>
+    <distanceatleastfromtype player="enemy" foundation="any" distance="65" errorstringid="25521">FirstTC</distanceatleastfromtype>
+    <distanceatmostfromtype player="team" foundation="any" distance="75" errorstringid="46622" norushonly="true">FirstTC</distanceatmostfromtype>
+	<distanceatleastfromtraderoute distance="6" errorstringid="90361">
+	</distanceatleastfromtraderoute>
+	<distanceatleastfromtype player="any" foundation="any" distance="11" errorstringid="90361">Building</distanceatleastfromtype>
+	<distanceatleastfromtype player="any" foundation="tree" distance="11" errorstringid="90361">Nature</distanceatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">Building</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="24" errorstringid="90361">Mill</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="24" errorstringid="90361">Plantation</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">Nature</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">Resources</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">Gold</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">NativeSocket</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">NativeBuilding</obstructionatleastfromtype>
+	<obstructionatleastfromtype player="any" foundation="any" distance="12" errorstringid="90361">TradePostSocket</obstructionatleastfromtype>
+</placementrules>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<attachment>
+		trail
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\lazerbeamWhite.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		mesh
+		<assetreference type="GrannyModel">
+			<file>effects\impacts\directional_arrow</file>
+		</assetreference>
+		<attach a="trail" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<component>mesh</component>
+	</anim>
+</animfile>

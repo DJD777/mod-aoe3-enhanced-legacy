@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText=" You are about to settle a colony in the sundarbans of the Bay of Bengal.\n
+Make your way through the mangrove forest to get access to further resources.\n
+There are no trade routes in this region but Bhatki devotees may join your cause.\n
+ \n Native Civs: Bhakti
+ \n Mercenaries: Marathan Dacoit / Marathan Thuggee
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath="ui\esoc_map\bengal"
+displayName = "ESOC Bengal"
+cannotReplace = ""
+loadDetailsText = "You are about to settle a colony in the sundarbans of the Bay of Bengal.\n
+Make your way through the mangrove forest to get access to further resources.\n
+There are no trade routes in this region but Bhatki devotees may join your cause.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv: Bhakti    \n
+-Mercenaries: Marathan Dacoit / Marathan Thuggee\n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\bengal_map"
+>
+
+ <loadss>ui\random_map\deccan\deccan_ss_03</loadss>
+ 
+  
+</mapinfo>

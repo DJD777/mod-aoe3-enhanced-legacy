@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<impacteffect metercount="5" meterlength="1.0">
+	<rooftile>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>CannonImpactWood</soundset>
+		<soundset>Explosion</soundset>
+	</rooftile>
+	<wood fireexisttime="4500">
+		<particleset>effects\\impacts\\cannonball_impact_wood.xml</particleset>
+		<secondaryparticleset>cannonball_impact_grass_light</secondaryparticleset>
+		<soundset>CannonImpactWood</soundset>
+		<soundset>Explosion</soundset>
+	</wood>
+	<stone exiteffectspawnchance="0.0">
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>CannonImpactStone</soundset>
+		<soundset>Explosion</soundset>
+	</stone>
+	<flesh>
+		<particleset>cannonball_impact_flesh</particleset>
+		<soundset>CannonImpactFlesh</soundset>
+		<soundset>Explosion</soundset>
+	</flesh>
+	<dirt>
+		<particleset>cannonball_impact_dirt</particleset>
+		<secondaryparticleset>cannonball_impact_flesh</secondaryparticleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</dirt>
+	<snow>
+		<particleset>cannonball_impact_snow</particleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</snow>
+	<animal>
+		<particleset>cannonball_impact_flesh</particleset>
+		<soundset>CannonImpactFlesh</soundset>
+		<soundset>Explosion</soundset>
+	</animal>
+	<terraingrass weight="1">
+		<particleset>cannonball_impact_grass</particleset>
+		<secondaryparticleset>cannonball_impact_grass_light</secondaryparticleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terraingrass>
+	<terraingrass weight="10">
+		<particleset>cannonball_impact_grass2</particleset>
+		<secondaryparticleset>cannonball_impact_grass_light</secondaryparticleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terraingrass>
+	<terrainwater>
+		<particleset>cannonball_impact_water</particleset>
+		<soundset>CannonImpactWater</soundset>
+	</terrainwater>
+	<terraindirt weight="1">
+		<particleset>cannonball_impact_grass</particleset>
+		<secondaryparticleset>cannonball_impact_grass_light</secondaryparticleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terraindirt>
+	<terraindirt weight="1">
+		<particleset>cannonball_impact_grass2</particleset>
+		<secondaryparticleset>cannonball_impact_grass_light</secondaryparticleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terraindirt>
+	<terrainstone>
+		<particleset>cannonball_impact_stone</particleset>
+		<soundset>CannonImpactStone</soundset>
+		<soundset>Explosion</soundset>
+	</terrainstone>
+	<terrainsnow>
+		<particleset>cannonball_impact_snow</particleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terrainsnow>
+	<terrainsand>
+		<particleset>cannonball_impact_sand</particleset>
+		<soundset>CannonImpactDirt</soundset>
+		<soundset>Explosion</soundset>
+	</terrainsand>
+	<exitbuilding>
+		<particleset>cannonball_impact_gen</particleset>
+		<soundset>BuildingPartImpact</soundset>
+		<soundset>Explosion</soundset>
+	</exitbuilding>
+</impacteffect>

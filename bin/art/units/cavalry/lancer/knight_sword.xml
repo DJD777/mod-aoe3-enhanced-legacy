@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>sword<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\mercenaries\balkan_stradiot\balkan_stradiot_spear</file></assetreference></none><RGCavaliers><assetreference type="GrannyModel"><file>units\mercenaries\swiss_pikeman\swiss_pikeman_spear</file></assetreference></RGCavaliers><ImperialPaladins><assetreference type="GrannyModel"><file>units\mercenaries\elmeti\lance</file></assetreference></ImperialPaladins></logic></component>
+  <anim>Idle<component>sword</component></anim>
+</animfile>

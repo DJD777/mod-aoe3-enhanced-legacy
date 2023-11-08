@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo detailsText="Andes is a mountainous region with the warring factions starting dangerously close. A Trade Route with three Trading Post sites separates the teams. Four Inca settlements are on the far side of the map. Allying with all the Natives is potentially powerful.\n
+\n Balanced by Rikikipu for Treaty Patch: River removed, player positions improved, resource balance improved, trade route position altered slightly.\n
+ \n Native Civs: Incas
+ \n
+--------------------------------- \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n"
+ imagepath = "ui\random_map\andes" displayName = "TR Andes" cannotReplace = ""
+		loadDetailsText="Andes is a mountainous region with the warring factions starting dangerously close. A Trade Route with three Trading Post sites separates the teams. Four Inca settlements are on the far side of the map. Allying with all the Natives is potentially powerful.\n
+		\n Balanced by Rikikipu for Treaty Patch: River removed, player positions improved, resource balance improved, trade route position altered slightly." loadBackground="ui\random_map\andes\andes_map">
+   <loadss>ui\random_map\andes\andes_ss_01</loadss>
+   <loadss>ui\random_map\andes\andes_ss_02</loadss>
+   <loadss>ui\random_map\andes\andes_ss_03</loadss>
+</mapinfo>

@@ -1,0 +1,4 @@
+<animfile>
+  <component>bow<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\natives\lakota\bow_rider\bow_rider_1_bow</file></assetreference></none><ypDisciplinedYabusameShadow><assetreference type="GrannyModel"><file>units\natives\lakota\bow_rider\bow_rider_2_bow</file></assetreference></ypDisciplinedYabusameShadow><yphonoredYabusame><assetreference type="GrannyModel"><file>units\natives\lakota\bow_rider\bow_rider_3_bow</file></assetreference></yphonoredYabusame><ypexaltedYabusame><assetreference type="GrannyModel"><file>units\asians\japanese\yabusame\yabusameRider_bow</file></assetreference></ypexaltedYabusame></logic></component>
+  <anim>Idle<component>bow</component></anim>
+</animfile>

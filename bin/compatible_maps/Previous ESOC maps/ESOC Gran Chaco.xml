@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "The Gran Chaco, also called hunting land, is a sparsely populated, hot and semi-arid lowland natural region of the Rio de la Plata basin.
+In this open area without commercial routes, you will have to fight for the middle of the map to get the control of resources. \n
+\n
+---------------------------------\n
+\n
+-Natives: Tupi \n
+-Mercenaries:  Pistolero  /   Pirate     \n
+\n
+--------------------------------- \n
+\n 
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath  = "ui\esoc_map\gran_chaco"
+ displayName = "ESOC Gran Chaco"
+cannotReplace = ""
+loadDetailsText = "The Gran Chaco, also called hunting land, is a sparsely populated, hot and semi-arid lowland natural region of the Rio de la Plata basin.
+In this open area without commercial routes, you will have to fight for the middle of the map to get the control of resources. \n
+\n
+---------------------------------\n
+\n
+-Natives: Tupi \n
+-Mercenaries:  Pistolero  /   Pirate     \n
+\n
+--------------------------------- \n
+\n 
+Designed by Garja
+"
+loadBackground="ui\esoc_map\granchaco_map"
+>
+   <loadss>ui\random_map\andes\andes_ss_01</loadss>
+   <loadss>ui\random_map\andes\andes_ss_02</loadss>
+   <loadss>ui\random_map\andes\andes_ss_03</loadss>
+  
+  
+</mapinfo>

@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo 
+detailsText=" Players meet each others at Bonnie Springs along their journey through the Spanish trail. \n
+You decided to settle your colony here in the wild west to claim the abundant natural resources. \n
+Take advantage of the trade routes to get an edge over your opponent. \n
+ \n Native Civs: None
+ \n Mercenaries: Renegado / Comanchero
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath = "ui\esoc_map\bonnie_springs" displayName = "ESOC Bonnie Springs" cannotReplace = ""
+         loadDetailsText="Players meet each others at Bonnie Springs along their journey through the Spanish trail. \n
+You decided to settle your colony here in the wild west to claim the abundant natural resources. \n
+Take advantage of the trade routes to get an edge over your opponent. \n
+\n---------------------------------\n
+\n
+-Mercenaries:  Renegado / Comanchero  \n
+\n
+--------------------------------- \n" 
+loadBackground="ui\esoc_map\bonniesprings_map">
+   <loadss>ui\random_map\texas\texas_ss_01</loadss>
+   <loadss>ui\random_map\texas\texas_ss_02</loadss>
+   <loadss>ui\random_map\texas\texas_ss_03</loadss>
+</mapinfo>

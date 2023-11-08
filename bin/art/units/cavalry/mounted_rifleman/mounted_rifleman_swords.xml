@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>sword<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\natives\ally\apache_cavalry\apache_cavalry_axe</file></assetreference></none><GuardMountedRiflemen><assetreference type="GrannyModel"><file>units\mercenaries\hackapell\hackapell_sword</file></assetreference></GuardMountedRiflemen><imperialmountedriflemen><assetreference type="GrannyModel"><file>units\asians\spc\edwardson\edwardson_sword</file></assetreference></imperialmountedriflemen></logic></component>
+  <anim>Idle<component>sword</component></anim>
+</animfile>

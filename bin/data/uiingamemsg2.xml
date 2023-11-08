@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget type="gadget" name="ingame-messagedialog2" size1024="347 195 677 420" background="ui\ingame\resign_window" texturecoords="0 0 0.7109375 0.90234375" windowzstyle="" hidden="" dialogdefaultbuttonindex="1">
+    <gadget name="ingame-messagedialog2-prompt" type="formatText" textcolor="3 0 88" textfont="InGameDialogs" textfontsize="16" textcentervert="" textcenterhoriz="" size1024="367 235 657 350">Message Text Goes Here</gadget>
+    <gadget name="ingame-messagedialog2-OKButton" type="stateButton" size1024="380 372 508 404" z="51" statebuttonuseinternalstates="" textfont="IngameButtons" textfontsize="18" textcolor="3 0 88" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1">$$18465$$OK<stateentry background="ui\core_ui\button_128x32_normal"></stateentry><stateentry background="ui\core_ui\button_128x32_clicked"></stateentry><stateentry background="ui\core_ui\button_128x32_rollover"></stateentry><stateentry background=""></stateentry></gadget>
+    <gadget name="ingame-messagedialog2-CancelButton" type="stateButton" size1024="516 372 644 404" z="51" statebuttonuseinternalstates="" textfont="IngameButtons" textfontsize="18" textcolor="3 0 88" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1">$$18466$$Cancel<stateentry background="ui\core_ui\button_128x32_normal"></stateentry><stateentry background="ui\core_ui\button_128x32_clicked"></stateentry><stateentry background="ui\core_ui\button_128x32_rollover"></stateentry><stateentry background=""></stateentry><command>gadgetUnreal("ingame-messagedialog2")</command></gadget>
+  </gadget>
+</layout>

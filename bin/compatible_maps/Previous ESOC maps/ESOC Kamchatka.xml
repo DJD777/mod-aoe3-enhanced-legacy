@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText=" Players face each other on the opposite sides of a water course.\n
+Take control of the river shallows to deny the passage to the opponent and ensure additional resources for your own.\n
+The river freezes in winter leaving your base less protected.\n
+ \n Native Civs: None
+ \n Mercenaries: Wokou Horseman / Wokou Ronin
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath  = "ui\esoc_map\kamchatka"
+displayName = "ESOC Kamchatka"
+cannotReplace = ""
+loadDetailsText = "Players face each other on opposite sides of a water course.\n
+Take control of the river shallows to deny the passage to the opponent and ensure additional resources for your own.\n
+The river freezes in winter leaving your base less protected.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:   \n
+-Mercenaries: Wokou Horseman / Wokou Ronin \n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\kamchatka_map"
+>
+
+<loadss>ui\random_map\northwest_territory\northwest_territory_ss_01</loadss>
+<loadss>ui\random_map\northwest_territory\northwest_territory_ss_02</loadss>
+<loadss>ui\random_map\northwest_territory\northwest_territory_ss_03</loadss>
+
+  
+</mapinfo>

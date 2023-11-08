@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="CampaignScreen" type="gadget" size1024="0 0 1024 768" background="ui\core_ui\wood_thick_board">
+    <gadget name="Campaign-Background" type="gadget" background="ui\core_ui\wood_thick_board_camp" size1024="0 0 1024 768" z="0">
+    </gadget>
+    <gadget name="Campaign-MenuBackground" type="gadget" background="ui\core_ui\wood_thick_board_short" size1024="114 0 480 720" z="1">
+    </gadget>
+    <gadget name="CampaignBackPanel" type="gadget" z="2" size1024="0 450 400 578" backgroundcolor="0 0 0" background="">
+      <gadget name="CampaignName" type="formattext" textcentervert="" textcenterhoriz="" textcolor="224 185 2" textfontsize="26" textfont="ScenarioTitleLarge" size1024="120 20 460 53" z="5">Campaign Name Here</gadget>
+      <gadget name="CampaignTabAct1" type="button" size1024="148 76 239 103" z="11" textfontsize="18" textfont="Pregamelabels">$$35589$$Act1</gadget>
+      <gadget name="CampaignTabActy1" type="button" size1024="148 76 239 103" z="11" textfontsize="18" textfont="Pregamelabels">$$65920$$Japan</gadget>
+      <gadget name="CampaignSingleActText" type="gadget" hidden="" size1024="140 95 447 122" z="11" textcolor="255 255 255" textcenterhoriz="" textfontsize="18" textfont="GoalText">$$42264$$Age of Empires III: The WarChiefs</gadget>
+      <gadget name="CampaignPanelAct1" type="gadget" tilebackground="" z="9" size1024="132 140 460 521" background="ui\singleplayer\campaign_menu_02" texturecoords="0 0.129158512720157 0.585127201565558 0.968688845401174">
+        <gadget name="CampaignHeader1Act1" type="gadget" size1024="132 65 460 140" backgroundcolor="0 0 0" hidden="">
+          <gadget name="CampaignHeader1Act1a" type="gadget" size1024="132 65 460 521" backgroundcolor="0 0 0" background="ui\singleplayer\campaign_menu_02_E3" texturecoords="0 0 0.585127201565558 0.968688845401174">
+          </gadget>
+        </gadget>
+        <gadget name="CampaignHeader2Acts1" type="gadget" size1024="132 67 460 140" hidden="">
+          <gadget name="CampaignHeader2Acts1a" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_04" texturecoords="0 0 0.585127201565558 0.12133072407045" hidden="">
+          </gadget>
+          <gadget name="CampaignHeader2Acts1b" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_05" texturecoords="0 0 0.585127201565558 0.12133072407045" hidden="">
+          </gadget>
+        </gadget>
+        <gadget name="CampaignHeader3Acts1" type="gadget" size1024="132 65 460 140" hidden="">
+          <gadget name="CampaignHeader3Acts1a" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_02" texturecoords="0 0 0.585127201565558 0.12133072407045" hidden="">
+          </gadget>
+          <gadget name="CampaignHeader3Acts1b" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_03" texturecoords="0 0 0.585127201565558 0.12133072407045" hidden="">
+          </gadget>
+          <gadget name="CampaignHeader3Acts1c" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_03" texturecoords="0 0.131115459882583 0.585127201565558 0.252446183953033">
+          </gadget>
+        </gadget>
+        <gadget name="CampaignScenarioList1" type="list" textcolor="60 60 60" textfontsize="16" textfont="TeamText" size1024="144 148 445 505" scrollvert="" z="15" selectedcolor="255 255 0" buttonsize1024="300 25" allowdoubleclick="" activateondown="">
+        </gadget>
+      </gadget>
+      <gadget name="CampaignTabAct2" type="button" size1024="249 76 342 103" z="11" textfontsize="18" textfont="Pregamelabels">$$35590$$Act2</gadget>
+      <gadget name="CampaignTabActy2" type="button" size1024="249 76 342 103" z="11" textfontsize="18" textfont="Pregamelabels">$$65922$$China</gadget>
+      <gadget name="CampaignPanelAct2" type="gadget" tilebackground="" z="9" size1024="132 140 460 521" background="ui\singleplayer\campaign_menu_04" texturecoords="0 0.129158512720157 0.585127201565558 0.968688845401174">
+        <gadget name="CampaignHeader2Acts2" type="gadget" size1024="132 67 460 140" hidden="">
+          <gadget name="CampaignHeader2Acts2a" type="gadget" size1024="132 66 460 140" background="ui\singleplayer\campaign_menu_05" texturecoords="0 0.130138897382583 0.585127201565558 0.249516496453033">
+          </gadget>
+        </gadget>
+        <gadget name="CampaignHeader3Acts2" type="gadget" size1024="132 66 460 140" hidden="">
+          <gadget name="CampaignHeader3Acts2a" type="gadget" size1024="132 66 460 140" background="ui\singleplayer\campaign_menu_03" texturecoords="0 0.26027397260274 0.585127201565558 0.38160469667319" hidden="">
+          </gadget>
+          <gadget name="CampaignHeader3Acts2b" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_03" texturecoords="0 0.389432485322896 0.585127201565558 0.510763209393346">
+          </gadget>
+        </gadget>
+        <gadget name="CampaignScenarioList2" type="list" textcolor="60 60 60" textfontsize="16" textfont="TeamText" size1024="144 148 445 505" scrollvert="" z="15" selectedcolor="255 255 0" buttonsize1024="300 25" allowdoubleclick="" activateondown="">
+        </gadget>
+      </gadget>
+      <gadget name="CampaignTabAct3" type="button" size1024="353 76 445 103" z="11" textfontsize="18" textfont="Pregamelabels">$$35591$$Act3</gadget>
+      <gadget name="CampaignTabActy3" type="button" size1024="353 76 445 103" z="11" textfontsize="18" textfont="Pregamelabels">$$65921$$India</gadget>
+      <gadget name="CampaignPanelAct3" type="gadget" tilebackground="" z="9" size1024="132 140 460 521" background="ui\singleplayer\campaign_menu_02" texturecoords="0 0.129158512720157 0.585127201565558 0.968688845401174">
+        <gadget name="CampaignHeader3Acts3" type="gadget" size1024="132 65 460 140" background="ui\singleplayer\campaign_menu_03" texturecoords="0 0.518590998043053 0.585127201565558 0.639921722113503">
+        </gadget>
+        <gadget name="CampaignScenarioList3" type="list" textcolor="60 60 60" textfontsize="16" textfont="TeamText" size1024="144 148 445 505" scrollvert="" z="15" selectedcolor="255 255 0" buttonsize1024="300 25" allowdoubleclick="" activateondown="">
+        </gadget>
+      </gadget>
+      <gadget name="Campaign-DifficultyBackground" type="gadget" size1024="140 538 453 633" z="2" background="ui\core_ui\metal_tile_de" tilebackground="">
+        <gadget name="Campaign-Difficulty-BorderTop" type="gadget" transparent="" tilebackgroundhoriz="" size1024="170 536 423 568" background="ui\core_ui\metal_trim_top_de" z="3">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderBottom" type="gadget" transparent="" tilebackgroundhoriz="" size1024="170 603 423 635" background="ui\core_ui\metal_trim_bottom_de" z="3">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderLeft" type="gadget" transparent="" tilebackgroundvert="" size1024="138 568 170 603" background="ui\core_ui\metal_trim_left_de" z="3">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderRight" type="gadget" transparent="" tilebackgroundvert="" size1024="423 568 455 603" background="ui\core_ui\metal_trim_right_de" z="3">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderTopLeft" type="gadget" transparent="" size1024="138 536 170 568" background="ui\core_ui\metal_trim_corner_topleft_de" z="4">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderTopRight" type="gadget" transparent="" size1024="423 536 455 568" background="ui\core_ui\metal_trim_corner_topright_de" z="4">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderBottomLeft" type="gadget" transparent="" size1024="138 603 170 635" background="ui\core_ui\metal_trim_corner_bottomleft_de" z="4">
+        </gadget>
+        <gadget name="Campaign-Difficulty-BorderBottomRight" type="gadget" transparent="" size1024="423 603 455 635" background="ui\core_ui\metal_trim_corner_bottomright_de" z="4">
+        </gadget>
+      </gadget>
+      <gadget name="CampaignFooter" type="gadget" size1024="95 530 495 783" background="" texturecoords="0 0.535 0.782778864970646 0.998043052837573">
+        <gadget name="CampaignDifficultyLabel" textcentervert="" textcenterhoriz="" textcolor="255 255 255" textfontsize="16" textfont="ScrollFont" type="formatText" size1024="163 546 428 575">$$22343$$Difficulty Level</gadget>
+        <gadget name="CampaignDifficultySettings" type="radioset" size1024="163 570 441 635" textcolor="255 255 255" textfontsize="16" textfont="TeamText" radiosetbuttonsize1024="86 32" radiosetdefaultbuttonindex="0" z="12" sound="UI_DefaultPregameClickSet" radiocheckedart="ui\core_ui\round_clicked" radiouncheckedart="ui\core_ui\round" radiobtnborder1024="2 2" radiosethorizlayout="" mouseovertext="$$19947$$">
+          <button>$$18297$$Easy</button>
+          <button>$$18298$$Moderate</button>
+          <button>$$18299$$Hard</button>
+        </gadget>
+      </gadget>
+      <gadget name="CampaignPlayBtn" type="stateButton" size1024="142 674 270 705" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="TeamText" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1">$$18593$$Play<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_active"></stateentry><stateentry background="ui\core_ui\button_med_disabled"></stateentry></gadget>
+      <gadget name="CampaignPlayBtnDemo" type="stateButton" size1024="232 674 360 705" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="TeamText" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1" hidden="" mouseovertext="$$18427$$">$$18593$$Play<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_active"></stateentry><stateentry background="ui\core_ui\button_med_disabled"></stateentry></gadget>
+      <gadget name="CampaignClose" type="stateButton" size1024="323 674 451 705" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="TeamText" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 1 1">$$18582$$Back<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_active"></stateentry><stateentry background="ui\core_ui\button_med_disabled"></stateentry></gadget>
+      <gadget name="CampaignLoadBtn" type="stateButton" size1024="200 705 392 737" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="TeamText" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.752941176470588 1">$$19837$$Saved Game<command>uiOpenSavedGameBrowser()</command><stateentry background="ui\core_ui\button_x-large_normal"></stateentry><stateentry background="ui\core_ui\button_x-large_clicked"></stateentry><stateentry background="ui\core_ui\button_x-large_active"></stateentry><stateentry background="ui\core_ui\button_x-large_disabled"></stateentry></gadget>
+      <gadget name="CampaignHCOptionsBtn" type="stateButton" size1024="200 737 392 769" bevelbutton="" z="11" statebuttonuseinternalstates="" textfont="TeamText" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.752941176470588 1">$$37425$$Home City Options<stateentry background="ui\core_ui\button_x-large_normal"></stateentry><stateentry background="ui\core_ui\button_x-large_clicked"></stateentry><stateentry background="ui\core_ui\button_x-large_active"></stateentry><stateentry background="ui\core_ui\button_x-large_disabled"></stateentry></gadget>
+    </gadget>
+  </gadget>
+</layout>

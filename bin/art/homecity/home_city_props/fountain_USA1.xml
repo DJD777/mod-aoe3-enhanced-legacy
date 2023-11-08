@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <definebone>bone_FX01</definebone>
+  <definebone>bone_FX02</definebone>
+  <definebone>bone_FX03</definebone>
+  <definebone>bone_FX04</definebone>
+  <definebone>bone_FX05</definebone>
+  <definebone>bone_FX06</definebone>
+  <definebone>bone_FX07</definebone>
+  <definebone>bone_FX08</definebone>
+  <definebone>bone_FX09</definebone>
+  <definebone>bone_FX10</definebone>
+  <definebone>bone_FX11</definebone>
+  <definebone>bone_FX12</definebone>
+  <attachment>Emitter1<component>emitter1<assetreference type="ParticleSystem"><file>effects\home_city\hc_fountainStream03.particle</file></assetreference></component><anim>None<component>emitter1</component></anim></attachment>
+  <attachment>Emitter2<component>emitter2<assetreference type="ParticleSystem"><file>effects\home_city\hc_fountainStream04.particle</file></assetreference></component><anim>None<component>emitter2</component></anim></attachment>
+  <attachment>Emitter3<component>emitter2<assetreference type="ParticleSystem"><file>effects\home_city\hc_french_fountainRing.particle</file></assetreference></component><anim>None<component>emitter2</component></anim></attachment>
+  <component>mesh<assetreference type="GrannyModel"><file>homecity\home_city_props\hc_fountain</file><replacetexture><from>homecity\home_city_props\hc_fountain</from><to>homecity\home_city_props\hc_fountainUSA</to></replacetexture></assetreference></component>
+  <anim>Idle<component>mesh</component><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX01" syncanims="0"></attach><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX02" syncanims="0"></attach><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX03" syncanims="0"></attach><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX04" syncanims="0"></attach><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX05" syncanims="0"></attach><attach a="Emitter1" frombone="ATTACHPOINT" tobone="bone_FX06" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX07" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX08" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX09" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX10" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX11" syncanims="0"></attach><attach a="Emitter2" frombone="ATTACHPOINT" tobone="bone_FX12" syncanims="0"></attach><attach a="Emitter3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach></anim>
+</animfile>

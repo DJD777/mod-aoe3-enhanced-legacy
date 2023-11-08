@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = "You've settled in Northern Ontario. You are separated from your enemies by a small lake and low cliffs. Protect your town from naval attacks and fight to control the trade route in the south. There are also some 'treasures' on the small island in the lake awaiting discovery.
+
+\n
+---------------------------------\n
+\n
+Natives: Huron and Iroquois \n
+Outlaws: Pistolero and Pirate \n
+\n
+---------------------------------\n
+\n
+\n &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+&lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+\n
+\n Designed by vividlyplain.
+\n Observer ui by Aizamk.
+"
+ 
+imagepath = "ui\esoc_map\wabakimi"
+displayName = "ESOC Wabakimi"
+cannotReplace = ""
+loadDetailsText="You've settled in Northern Ontario. You are separated from your enemies by a small lake and low cliffs. Protect your town from naval attacks and fight to control the trade route in the south. There are also some 'treasures' on the small island in the lake awaiting discovery.
+\n
+---------------------------------\n
+\n
+Natives: Huron and Iroquois \n
+Outlaws: Pistolero and Pirate \n
+\n
+---------------------------------\n
+\n
+"
+ 
+loadBackground="ui\random_map\great_lakes\great_lakes_map">
+   <loadss>ui\random_map\great_lakes\great_lakes_ss_01</loadss>
+   <loadss>ui\random_map\great_lakes\great_lakes_ss_02</loadss>
+   <loadss>ui\random_map\great_lakes\great_lakes_ss_03</loadss>
+ 
+</mapinfo>

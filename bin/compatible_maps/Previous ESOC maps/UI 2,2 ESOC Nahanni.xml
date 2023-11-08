@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = " In this region of the Northwest Territories, you will find yourself surrounded by shallow marshes and winding cliffs. Each team begins on a high plateau with limited resources, surrounding a lush lowland filled with resources. Control the trade routes and the central portion of the map to ensure victory.
+\n
+\n
+ \n Outlaws: Comanchero / Renegado
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+\n
+
+\n Map by dansil92 "
+ 
+imagepath = "ui\random_map\unknown"
+displayName = "UI 2.2 ESOC Nahanni"
+cannotReplace = ""
+loadDetailsText=" In this region of the Northwest Territories, you will find yourself surrounded by shallow marshes and winding cliffs. Each team begins on a high plateau with limited resources, surrounding a lush lowland filled with resources. Control the trade routes and the central portion of the map to ensure victory.
+\n
+ \n Outlaws: Comanchero / Renegado
+\n
+\n Map by dansil92"
+ 
+loadBackground="ui\random_map\northwest_territory\northwest_territory_map">
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_01</loadss>
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_02</loadss>
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_03</loadss>
+</mapinfo>

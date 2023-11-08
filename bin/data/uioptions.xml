@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="Options" type="gadget" size1024="0 0 1024 768" background="" windowzstyle="">
+    <gadget name="Options-Background" type="gadget" size1024="0 0 1024 768" background="ui\core_ui\wood_thick_board">
+    </gadget>
+    <gadget name="Options-RightPanelLabel" textcentervert="" textcenterhoriz="" textcolor="255 198 2" textfontsize="30" textfont="Pregamelarge" type="formatText" size1024="471 33 743 78" z="17">
+    </gadget>
+    <gadget name="Options-RightPanelBackground" type="gadget" size1024="85 0 1130 770" z="11" background="ui\core_ui\wood_thick_board_gold">
+    </gadget>
+    <gadget name="Options-RightPanelBackgroundPaper" type="gadget" size1024="120 72 1095 749" z="12" background="ui\core_ui\wide_paper">
+    </gadget>
+    <gadget name="Options-RightPanel" type="gadget" textcolor="255 255 255" tilebackground="" size1024="258 144 941 671" z="14">
+    </gadget>
+    <gadget name="Options-Slider" type="slider" backgroundcolor="0 0 0" size1024="933 124 951 700" z="17" sliderbuttons="" slidervertical="" sliderupbtnset="sliderUpBtn" sliderdownbtnset="sliderDownBtn">
+    </gadget>
+    <gadget name="Options-TabActive0" type="button" size1024="34 142 226 174" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive1" type="button" size1024="34 182 226 214" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive2" type="button" size1024="34 222 226 254" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive3" type="button" size1024="34 262 226 294" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive4" type="button" size1024="34 302 226 334" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive5" type="button" size1024="34 342 226 374" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive6" type="button" size1024="34 382 226 414" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabActive7" type="button" size1024="34 422 226 454" z="15" textcolor="255 255 255" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_active_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive0" type="button" size1024="44 142 217 174" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive1" type="button" size1024="44 182 217 214" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive2" type="button" size1024="44 222 217 254" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive3" type="button" size1024="44 262 217 294" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive4" type="button" size1024="44 302 217 334" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive5" type="button" size1024="44 342 217 374" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive6" type="button" size1024="44 382 217 414" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-TabInactive7" type="button" size1024="44 422 217 454" z="15" textcolor="255 198 2" textfont="AgeText" textfontsize="12" activateondown="" foreground="ui\ingame\ui_options_inactive_tab" texturecoords="0 0 0.75 1">
+    </gadget>
+    <gadget name="Options-ModifyHotkeys" type="stateButton" size1024="53 537 214 569" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtonsSmall" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.63 1" mouseovertext="$$20095$$Customize Hotkeys" sound="UI_DefaultPregameClickSet">$$19178$$Hotkeys<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+    <gadget name="Options-RestoreDefaultsButton" type="stateButton" size1024="53 578 214 610" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtonsSmall" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.63 1" mouseovertext="$$41540$$" sound="UI_DefaultPregameClickSet">$$20351$$Restore Defaults<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+    <gadget name="Options-OKButton" type="stateButton" size1024="53 619 214 651" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtonsSmall" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.63 1" mouseovertext="$$41541$$" sound="UI_DefaultPregameClickSet">$$18465$$OK<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+    <gadget name="Options-CancelButton" type="stateButton" size1024="53 660 214 692" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtonsSmall" textfontsize="16" textcolor="255 255 255" textcenterhoriz="" textcentervert="" texturecoords="0 0 0.63 1" mouseovertext="$$41542$$" sound="UI_DefaultPregameClickSet">$$18466$$Cancel<stateentry background="ui\core_ui\button_large_normal"></stateentry><stateentry background="ui\core_ui\button_large_clicked"></stateentry><stateentry background="ui\core_ui\button_large_high"></stateentry><stateentry background="ui\core_ui\button_large_disable"></stateentry></gadget>
+  </gadget>
+</layout>

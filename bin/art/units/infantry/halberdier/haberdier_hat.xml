@@ -1,0 +1,4 @@
+<animfile>
+  <component>hats<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\infantry\halberdier\halberdier_1age_hat</file></assetreference></none><guardhalberdiers><assetreference type="GrannyModel"><file>units\infantry\halberdier\halberdier_2age_hat</file></assetreference></guardhalberdiers><ChurchQuatrefage><assetreference type="GrannyModel"><file>units\infantry\halberdier\halberdier_2age_hat</file></assetreference></ChurchQuatrefage><imperialhalberdiers><assetreference type="GrannyModel"><file>units\infantry\halberdier\halberdier_3age_hat</file></assetreference></imperialhalberdiers><ImperialNassauers><assetreference type="GrannyModel"><file>units\infantry\halberdier\halberdier_4age_hat</file></assetreference></ImperialNassauers></logic></component>
+  <anim>Idle<component>hats</component></anim>
+</animfile>

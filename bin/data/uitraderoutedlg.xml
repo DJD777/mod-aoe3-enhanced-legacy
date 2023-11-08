@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="TradeRoute" type="gadget" size1024="809 76 1024 260" background="ui\file_system\file_system_background" bevel="" titlebar="$$33254$$Trade Route Tool" closebutton="" windowzstyle="" moveable="">
+    <gadget name="TradeRoute_CreateBtn" type="button" bevel="" background="ui\file_system\file_system_background" textfont="Arial nobold nodrop" textfontsize="12" size1024="824 117 1009 137">$$33255$$Create Trade Route</gadget>
+    <gadget name="TradeRoute_RemoveBtn" type="button" bevel="" background="ui\file_system\file_system_background" textfont="Arial nobold nodrop" textfontsize="12" size1024="824 152 1009 172">$$33256$$Remove Trade Route</gadget>
+    <gadget name="TradeRoute_WaypointBtn" type="button" bevel="" background="ui\file_system\file_system_background" textfont="Arial nobold nodrop" textfontsize="12" size1024="824 187 1009 207">$$33257$$Add/Remove Waypoints</gadget>
+    <gadget name="TradeRoute_SelectBtn" type="button" bevel="" background="ui\file_system\file_system_background" textfont="Arial nobold nodrop" textfontsize="12" size1024="824 222 1009 242">$$33258$$Select Next Trade Route</gadget>
+  </gadget>
+</layout>

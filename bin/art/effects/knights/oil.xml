@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_geyser</definebone>
+	<attachment>
+		Oil_drops
+		<include>effects\knights\oil_drops.xml</include>
+	</attachment>
+	<attachment>
+		smallMist1
+		<component>
+			smallMist1Emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\knights\oil_column\oil_smallmist.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>smallMist1Emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smallMist2
+		<component>
+			smallMist2Emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\knights\oil_column\oil_smallmist2.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>smallMist2Emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smallMist3
+		<component>
+			smallMist3Emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\knights\oil_column\oil_smallmist3.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>smallMist3Emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>terrain\great_plains\geyser</file>
+				<replacetexture>
+					<from>terrain\great_plains\geyser</from>
+					<to>effects\knights\oil_well</to>
+				</replacetexture>
+		</assetreference>
+		<attach a="Oil_drops" frombone="ATTACHPOINT" tobone="bone_geyser" syncanims="0"/>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>effects\knights\oil_well_ground</texture>
+			<bumptexture>effects\knights\oil_well_ground_b</bumptexture>
+			<width>13.00</width>
+			<height>13.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>terrain\great_plains\geyser_idle30s</file>
+			<tag type="Particles" particlename="oil">0.00</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AmbienceGeyserSpray">0.30</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="smallMist1" frombone="ATTACHPOINT" tobone="bone_geyser" syncanims="0"/>
+		<attach a="smallMist2" frombone="ATTACHPOINT" tobone="bone_geyser" syncanims="0"/>
+		<attach a="smallMist3" frombone="ATTACHPOINT" tobone="bone_geyser" syncanims="0"/>
+	</anim>
+</animfile>

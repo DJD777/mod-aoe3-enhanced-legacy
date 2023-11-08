@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "
+Players start along the coasts of this sunny region.\n
+Thanks to the sea there are always several sources of food and gold while the access to wood in the later stages may be more problematic.\n
+Shaolin and Zen have built their temples in the middle of the region, while commercial traffic takes place in the north.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Shaolin / Zen   \n
+-Mercenaries:  Wokou Horseman / Wokou Ronin   \n
+\n
+--------------------------------- \n
+\n
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Map designed by Garja \n
+ Observer UI by Aizamk \n
+"
+
+imagepath="ui\esoc_map\manchuria"
+displayName = "UI 2.2 ESOC Manchuria"
+cannotReplace = ""
+loadDetailsText = "
+Players start along the coasts of this sunny region.\n
+Thanks to the sea there are always several sources of food and gold while the access to wood in the later stages may be more problematic.\n
+Shaolin and Zen have built their temples in the middle of the region, while commercial traffic takes place in the north.\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Shaolin / Zen   \n
+-Mercenaries:  Wokou Horseman / Wokou Ronin   \n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\manchuria_map"
+>
+
+ <loadss>ui\random_map\mongolia\mongolia_ss_1</loadss>
+ <loadss>ui\random_map\mongolia\mongolia_ss_2</loadss>
+ 
+  
+</mapinfo>

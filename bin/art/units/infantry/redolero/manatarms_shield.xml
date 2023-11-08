@@ -1,0 +1,4 @@
+<animfile>
+  <component>shield<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sheild</file></assetreference></none><veteranmanatarms><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sheild2</file></assetreference></veteranmanatarms><guardmanatarms><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sheild3</file></assetreference></guardmanatarms><imperialmanatarms><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sheild3</file><replacetexture><from>units\infantry\redolero\redolero_4age</from><to>units\infantry\redolero\redolero_imperial</to></replacetexture></assetreference></imperialmanatarms></logic></component>
+  <anim>Idle<component>shield</component></anim>
+</animfile>

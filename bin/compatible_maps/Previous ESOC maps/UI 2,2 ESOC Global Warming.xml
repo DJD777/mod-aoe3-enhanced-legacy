@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText=" Players will not battle to control the sea in the Indonesian archipelago, because it's dried up.
+ \n Native Civs: Jesuit / Sufi
+ \n Mercenaries: Wokou Pirate / Marathan Dacoit
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+  Based on ESOC Indonesia by Garja \n
+  Edited version by EAGLEMUT \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath="ui\esoc_map\indonesia"
+displayName = "UI 2.2 ESOC Global Warming"
+cannotReplace = ""
+loadDetailsText = "Players will not battle to control the sea in the Indonesian archipelago, because it's dried up. \n
+\n
+---------------------------------\n
+\n
+-NativeCivs:  Jesuit / Sufi\n
+-Mercenaries: Wokou Pirate / Marathan Dacoit\n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\indonesia_map"
+>
+<loadss>ui\random_map\borneo\borneo_ss_1</loadss>
+<loadss>ui\random_map\borneo\borneo_ss_2</loadss>
+<loadss>ui\random_map\indochina\indochina_ss_02</loadss>
+<loadss>ui\random_map\indochina\indochina_ss_03</loadss>
+ 
+  
+</mapinfo>

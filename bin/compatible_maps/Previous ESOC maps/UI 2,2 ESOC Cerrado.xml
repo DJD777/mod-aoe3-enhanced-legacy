@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = " This open area of South America has an incredible abundance of resources. While hunts are a bit scarce, there is a variety of edible plants to be found everywhere. The rolling hills give way to a local trade route and  you will find coin primarily scattered toward the edges of the map. \n
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+\n
+
+\n Map by dansil92 "
+ 
+imagepath = "ui\random_map\unknown"
+displayName = "UI 2.2 ESOC Cerrado"
+cannotReplace = ""
+loadDetailsText=" This open area of South America has an incredible abundance of resources. While hunts are a bit scarce, there is a variety of edible plants to be found everywhere. The rolling hills give way to a local trade route and  you will find coin primarily scattered toward the edges of the map
+\n
+\n Map by dansil92"
+ 
+loadBackground="ui\random_map\pampas\pampas_map">
+   <loadss>ui\random_map\pampas\pampas_ss_01</loadss>
+   <loadss>ui\random_map\pampas\pampas_ss_02</loadss>
+   <loadss>ui\random_map\pampas\pampas_ss_03</loadss>
+ 
+</mapinfo>

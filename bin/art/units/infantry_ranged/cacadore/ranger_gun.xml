@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>gun<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\infantry_ranged\cacadore\cacadore_1age_gun</file></assetreference></none><VeteranRangers><assetreference type="GrannyModel"><file>units\mercenaries\fusilier\fusilier_gun</file></assetreference></VeteranRangers><GuardRangers><assetreference type="GrannyModel"><file>units\infantry_ranged\musketeer\musketeer_2age_gun</file></assetreference></GuardRangers><UnionRangers><assetreference type="GrannyModel"><file>units\spc\Sahin\sahin_gun_spc</file></assetreference></UnionRangers></logic></component>
+  <anim>Idle<component>gun</component></anim>
+</animfile>

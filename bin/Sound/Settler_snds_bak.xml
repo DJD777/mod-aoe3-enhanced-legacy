@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="Settler">
+    <soundtype name="Select">
+      <variationlogic>
+        <choice name="0">
+          <civlogic>
+            <choice name="Nature">
+            </choice>
+            <choice name="French">
+              <soundset name="FrenchSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="British">
+              <soundset name="BritishSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Russians">
+              <soundset name="RussianSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Ottomans">
+              <soundset name="OttomanSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Dutch">
+              <soundset name="DutchSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Spanish">
+              <soundset name="SpanishSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Maltese">
+              <soundset name="SpanishSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Portuguese">
+              <soundset name="PortugueseSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Germans">
+              <soundset name="GermanSettlerMaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Aztecs">
+            </choice>
+            <choice name="Incas">
+            </choice>
+            <choice name="Maya">
+            </choice>
+            <choice name="Seminoles">
+            </choice>
+            <choice name="Caribs">
+            </choice>
+            <choice name="Cherokee">
+            </choice>
+            <choice name="Iroquois">
+            </choice>
+            <choice name="Cree">
+            </choice>
+            <choice name="Lakota">
+            </choice>
+            <choice name="Comanche">
+            </choice>
+            <choice name="Nootka">
+            </choice>
+            <choice name="Tupi">
+            </choice>
+          </civlogic>
+        </choice>
+        <choice name="1">
+          <civlogic>
+            <choice name="Nature">
+            </choice>
+            <choice name="French">
+              <soundset name="FrenchSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="British">
+              <soundset name="BritishSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Russians">
+              <soundset name="RussianSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Ottomans">
+              <soundset name="OttomanSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Dutch">
+              <soundset name="DutchSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Spanish">
+              <soundset name="SpanishSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Maltese">
+              <soundset name="SpanishSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Portuguese">
+              <soundset name="PortugueseSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Germans">
+              <soundset name="GermanSettlerFemaleSelect">
+              </soundset>
+            </choice>
+            <choice name="Aztecs">
+            </choice>
+            <choice name="Incas">
+            </choice>
+            <choice name="Maya">
+            </choice>
+            <choice name="Seminoles">
+            </choice>
+            <choice name="Caribs">
+            </choice>
+            <choice name="Cherokee">
+            </choice>
+            <choice name="Iroquois">
+            </choice>
+            <choice name="Cree">
+            </choice>
+            <choice name="Lakota">
+            </choice>
+            <choice name="Comanche">
+            </choice>
+            <choice name="Nootka">
+            </choice>
+            <choice name="Tupi">
+            </choice>
+          </civlogic>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Grunt">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMale1Grunt">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemale1Grunt">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Death">
+      <variationlogic>
+        <choice name="0">
+          <soundset name="GenericMale1Death">
+          </soundset>
+        </choice>
+        <choice name="1">
+          <soundset name="GenericFemale1Death">
+          </soundset>
+        </choice>
+      </variationlogic>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="SettlerBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <variationlogic>
+        <choice name="0">
+          <civlogic>
+            <choice name="Nature">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="French">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="FrenchSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="FrenchSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="FrenchSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="FrenchSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="FrenchSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="FrenchSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="FrenchSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="FrenchSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="British">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="BritishSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="BritishSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="BritishSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="BritishSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="BritishSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="BritishSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="BritishSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="BritishSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Russians">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="RussianSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="RussianSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="RussianSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="RussianSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="RussianSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="RussianSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="RussianSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="RussianSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Ottomans">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="OttomanSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="OttomanSettlerMaleAttack">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Dutch">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="DutchSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="DutchSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="DutchSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="DutchSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="DutchSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="DutchSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="DutchSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="DutchSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Spanish">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="SpanishSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="SpanishSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="SpanishSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="SpanishSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="SpanishSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="SpanishSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="SpanishSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="SpanishSettlerMaleFarm">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Maltese">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="SpanishSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="SpanishSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="SpanishSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="SpanishSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="SpanishSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="SpanishSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="SpanishSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="SpanishSettlerMaleFarm">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Portuguese">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="PortugueseSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="PortugueseSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="PortugueseSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="PortugueseSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="PortugueseSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="PortugueseSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="PortugueseSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="PortugueseSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Germans">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="GermanSettlerMaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="GermanSettlerMaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="GermanSettlerMaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="GermanSettlerMaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="GermanSettlerMaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="GermanSettlerMaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="GermanSettlerMaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="GermanSettlerMaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Aztecs">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Incas">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Maya">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Seminoles">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Caribs">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Cherokee">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Iroquois">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Cree">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Lakota">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Comanche">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Nootka">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Tupi">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+          </civlogic>
+        </choice>
+        <choice name="1">
+          <civlogic>
+            <choice name="Nature">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="French">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="FrenchSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="FrenchSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="FrenchSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="FrenchSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="FrenchSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="FrenchSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="FrenchSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="FrenchSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="British">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="BritishSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="BritishSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="BritishSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="BritishSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="BritishSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="BritishSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="BritishSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="BritishSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Russians">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="RussianSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="RussianSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="RussianSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="RussianSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="RussianSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="RussianSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="RussianSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="RussianSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Ottomans">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="OttomanSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="OttomanSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="OttomanSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="OttomanSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="OttomanSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="OttomanSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="OttomanSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="OttomanSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Dutch">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="DutchSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="DutchSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="DutchSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="DutchSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="DutchSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="DutchSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="DutchSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="DutchSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Spanish">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="SpanishSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="SpanishSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="SpanishSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="SpanishSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="SpanishSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="SpanishSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="SpanishSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="SpanishSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Maltese">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="SpanishSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="SpanishSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="SpanishSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="SpanishSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="SpanishSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="SpanishSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="SpanishSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="SpanishSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Portuguese">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="PortugueseSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="PortugueseSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="PortugueseSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="PortugueseSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="PortugueseSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="PortugueseSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="PortugueseSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="PortugueseSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Germans">
+              <targetlogic>
+                <choice name="default">
+                  <soundset name="GermanSettlerFemaleAcknowledge">
+                  </soundset>
+                </choice>
+                <choice name="enemy">
+                  <soundset name="GermanSettlerFemaleAttack">
+                  </soundset>
+                </choice>
+                <choice name="build">
+                  <soundset name="GermanSettlerFemaleBuild">
+                  </soundset>
+                </choice>
+                <choice name="Huntable">
+                  <soundset name="GermanSettlerFemaleGatherMeat">
+                  </soundset>
+                </choice>
+                <choice name="Tree">
+                  <soundset name="GermanSettlerFemaleGatherWood">
+                  </soundset>
+                </choice>
+                <choice name="Mine">
+                  <soundset name="GermanSettlerFemaleGatherCoin">
+                  </soundset>
+                </choice>
+                <choice name="AbstractFarm">
+                  <soundset name="GermanSettlerFemaleFarm">
+                  </soundset>
+                </choice>
+                <choice name="Food">
+                  <soundset name="GermanSettlerFemaleGatherFruit">
+                  </soundset>
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Aztecs">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Incas">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Maya">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Seminoles">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Caribs">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Cherokee">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Iroquois">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Cree">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Lakota">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Comanche">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Nootka">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+            <choice name="Tupi">
+              <targetlogic>
+                <choice name="default">
+                </choice>
+                <choice name="enemy">
+                </choice>
+              </targetlogic>
+            </choice>
+          </civlogic>
+        </choice>
+      </variationlogic>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

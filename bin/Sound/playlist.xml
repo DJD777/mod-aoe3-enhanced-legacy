@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlists>
+	<playlist name="Primary">
+		<musicset name="dummy">
+			<file volume="1.0" mood="normal">Music\Standard\dummy.mp3</file> <!-- dummy files necessary for culture-specific music -->
+		</musicset>
+		<musicset name="dummy2">
+			<file volume="1.0" mood="normal">Music\Standard\dummy2.mp3</file>
+		</musicset>
+		<musicset name="Muptop">
+			<file volume="1.0" mood="normal">Music\Standard\Muptop.mp3</file>
+		</musicset>
+		<musicset name="HappyToYou">
+			<file volume="1.0" mood="normal">Music\Standard\HappyToYou.mp3</file>
+		</musicset>
+		<musicset name="GetOffMyBand">
+			<file volume="1.0" mood="normal">Music\Standard\GetOffMyBand.mp3</file>
+		</musicset>
+		<musicset name="GetYeSum">
+			<file volume="1.0" mood="normal">Music\Standard\GetYeSum.mp3</file>
+		</musicset>
+		<musicset name="MajorRewriteGeneralChunks">
+			<file volume="1.0" mood="normal">Music\Standard\MajorRewriteGeneralChunks.mp3</file>
+		</musicset>
+		<musicset name="FeloniousJunk">
+			<file volume="1.0" mood="normal">Music\Standard\FeloniousJunk.mp3</file>
+		</musicset>
+		<musicset name="IMenevero">
+			<file volume="1.0" mood="normal">Music\Standard\IMenevero.mp3</file>
+		</musicset>
+		<musicset name="LeisurelyBrows">
+			<file volume="1.0" mood="normal">Music\Standard\LeisurelyBrows.mp3</file>
+		</musicset>
+		<musicset name="OfLicious">
+			<file volume="1.0" mood="normal">Music\Standard\OfLicious.mp3</file>
+		</musicset>
+		<musicset name="LastNameCraneIchabod">
+			<file volume="1.0" mood="normal">Music\Standard\LastNameCraneIchabod.mp3</file>
+		</musicset>
+		
+		<musicset name="loyalists">
+			<file volume="1.0" mood="normal">Music\loyalists.mp3</file>
+		</musicset>
+		<musicset name="MariaIPeacePortugal">
+			<file volume="1.0" mood="normal">Music\MariaIPeacePortugal.mp3</file>
+		</musicset>
+		<musicset name="PedroIIWarBrazil">
+			<file volume="1.0" mood="normal">Music\PedroIIWarBrazil.mp3</file>
+		</musicset>
+		<musicset name="NETheme">
+			<file volume="1.0" mood="normal">Music\NETheme.mp3</file>
+		</musicset>
+		<musicset name="MissingInAction">
+			<file volume="1.0" mood="normal">Music\MissingInAction.mp3</file>
+		</musicset>
+		<musicset name="Elipse">
+			<file volume="1.0" mood="normal">Music\Elipse.mp3</file>
+		</musicset>
+		<musicset name="DvorakAmerican1">
+			<file volume="1.0" mood="normal">Music\DvorakAmerican1.mp3</file>
+		</musicset>
+		<musicset name="CasimirWarPoland">
+			<file volume="1.0" mood="normal">Music\CasimirWarPoland.mp3</file>
+		</musicset>
+		<musicset name="Civil_War_Scenario_Music">
+			<file volume="1.0" mood="normal">Music\Civil_War_Scenario_Music.mp3</file>
+		</musicset>
+		<musicset name="Dark_Voyage">
+			<file volume="1.0" mood="normal">Music\Dark_Voyage.mp3</file>
+		</musicset>
+		<musicset name="Conquest_of_the_New_World_Scenario_Music">
+			<file volume="1.0" mood="normal">Music\Conquest_of_the_New_World_Scenario_Music.mp3</file>
+		</musicset>
+		<musicset name="the_king_is_dead">
+			<file volume="1.0" mood="normal">Music\the_king_is_dead.mp3</file>
+		</musicset>
+		<musicset name="CasimirPeacePoland">
+			<file volume="1.0" mood="normal">Music\CasimirPeacePoland.mp3</file>
+		</musicset>
+		
+		<musicset name="Geddovmagushpa">
+			<file volume="1.0" mood="normal">Music\Geddovmagushpa.mp3</file>
+		</musicset>
+		<musicset name="DreamoftheNavajo">
+			<file volume="1.0" mood="normal">Music\DreamoftheNavajo.mp3</file>
+		</musicset>
+		<musicset name="SoloFlute2">
+			<file volume="1.0" mood="normal">Music\SoloFlute2.mp3</file>
+		</musicset>
+		<musicset name="WindSong4">
+			<file volume="1.0" mood="normal">Music\WindSong4.mp3</file>
+		</musicset>
+		<musicset name="OldWoman'sLament">
+			<file volume="1.0" mood="normal">Music\OldWomansLament.mp3</file>
+		</musicset>
+		
+		<musicset name="MainTitle">
+			<file volume="1.0" mood="normal">Music\MainTitle.mp3</file>
+		</musicset>
+		<musicset name="EndCredits_606b">
+			<file volume="1.0" mood="normal">Music\EndCredits_606b.mp3</file>
+		</musicset>
+		<musicset name="Attack_of_the_West">
+			<file volume="1.0" mood="normal">Music\Attack_of_the_West.mp3</file>
+		</musicset>
+		<musicset name="Rock_and_a_Hard_Place">
+			<file volume="1.0" mood="normal">Music\Rock_and_a_Hard_Place.mp3</file>
+		</musicset>
+		<musicset name="BrightColours">
+			<file volume="1.0" mood="normal">Music\BrightColours.mp3</file>
+		</musicset>
+		<musicset name="TheDynastyBegins">
+			<file volume="1.0" mood="normal">Music\TheDynastyBegins.mp3</file>
+		</musicset>
+		<musicset name="TheEnlightenedOne">
+			<file volume="1.0" mood="normal">Music\TheEnlightenedOne.mp3</file>
+		</musicset>
+		<musicset name="Stalemate">
+			<file volume="1.0" mood="normal">Music\Stalemate.mp3</file>
+		</musicset>
+		<musicset name="musContemplative1">
+			<file volume="1.0" mood="normal">Music\musContemplative1.mp3</file>
+		</musicset>
+		<musicset name="GajahMadaPeaceIndonesia">
+			<file volume="1.0" mood="normal">Music\GajahMadaPeaceIndonesia.mp3</file>
+		</musicset>
+		<musicset name="Saharan_Vistas">
+			<file volume="1.0" mood="normal">Music\Saharan_Vistas.mp3</file>
+		</musicset>
+		<musicset name="TAJMAHALAgraIndiaA">
+			<file volume="1.0" mood="normal">Music\TAJMAHALAgraIndiaA.mp3</file>
+		</musicset>
+		<musicset name="GajahMadaWarIndonesia">
+			<file volume="1.0" mood="normal">Music\GajahMadaWarIndonesia.mp3</file>
+		</musicset>
+		<musicset name="AriaOfSnow">
+			<file volume="1.0" mood="normal">Music\AriaOfSnow.mp3</file>
+		</musicset>
+		<musicset name="YamanKalyan">
+			<file volume="1.0" mood="normal">Music\YamanKalyan.mp3</file>
+		</musicset>
+		
+		<musicset name="eat your potatoes">
+			<file volume="1.0" mood="normal">Music\AoM\standard\eat your potatoes.mp3</file>
+		</musicset>
+		<musicset name="chocolate outline">
+			<file volume="1.0" mood="normal">Music\AoM\standard\chocolate outline.mp3</file>
+		</musicset>
+		<musicset name="AoMIntro">
+			<file volume="1.0" mood="normal">Music\AoMIntro.mp3</file>
+		</musicset>
+		<musicset name="wanderer">
+			<file volume="1.0" mood="normal">Music\wanderer.mp3</file>
+		</musicset>
+		<musicset name="Credits">
+			<file volume="1.0" mood="normal">Music\Interface\Credits.mp3</file>
+		</musicset>
+	</playlist>
+	<playlist name="battle">
+		<file volume="1.0">Music\Battle\BubbleChum.mp3</file>
+		<file volume="1.0">Music\Battle\Ruinion.mp3</file>
+		<file volume="1.0">Music\Battle\CamelsStrawsAndBacks.mp3</file>
+		<file volume="1.0">Music\Battle\Duty Calls.mp3</file>
+		<file volume="1.0">Music\Battle\DragonDanceSeoto.mp3</file>
+		<file volume="1.0">Music\TribalBreath.mp3</file>
+		<file volume="1.0">Music\A New Enemy.mp3</file>
+	</playlist>
+	<playlist name="WonGame">
+			<file volume="1.0" mood="normal">Music\Interface\Niceterium.mp3</file>
+			<file volume="1.0" mood="normal">Music\Matsuri.mp3</file>
+	</playlist>
+	<playlist name="LostGame">
+			<file volume="1.0" mood="normal">Music\Interface\LudusPerditus.mp3</file>
+			<file volume="1.0" mood="normal">Music\DidntSeeItComing.mp3</file>
+			<file volume="1.0" mood="normal">Music\lost.mp3</file>
+	</playlist>
+</playlists>

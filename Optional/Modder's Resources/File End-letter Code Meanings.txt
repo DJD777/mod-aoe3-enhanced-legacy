@@ -1,0 +1,21 @@
+For any file/folder, the corresponding executable is designated by the letter at the end of the name. E.g., Improvement Mod is launched via Age3m.exe.
+
+Vanilla AoE
+	- No expansions
+		- End in nothing
+	- Warchiefs
+		- End in 'x'
+	- Asian Dynasties
+		- End in 'y'
+
+Improvement Mod
+	- End in 'm'
+
+ESOC Patch Versions
+	- ESOC Patch (main mod in use):
+		- End in 'f'
+	- Treaty Patch
+		- End in 't'
+
+Age of Dynasties Mod
+	- End in 'z' and/or 's' (executable)

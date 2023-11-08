@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="ExplorerMorgan">
+    <soundtype name="Select">
+      <soundset name="ItalianExplorerSelect">
+      </soundset>
+    </soundtype>
+    <soundtype name="Grunt">
+	  <soundset name="GenericMaleGrunt">
+	  </soundset>
+    </soundtype>
+    <soundtype name="Death">
+	  <soundset name="GenericMaleDeath">
+	  </soundset>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="MilitaryBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <targetlogic>
+        <choice name="default">
+          <soundset name="ItalianExplorerAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="enemy">
+          <soundset name="ItalianExplorerAttack">
+          </soundset>
+        </choice>
+        <choice name="build">
+          <soundset name="ItalianExplorerAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Huntable">
+        </choice>
+        <choice name="Tree">
+        </choice>
+        <choice name="AbstractMine">
+        </choice>
+        <choice name="AbstractFarm">
+        </choice>
+        <choice name="AbstractResourceCrate">
+        </choice>
+        <choice name="AbstractFruit">
+        </choice>
+      </targetlogic>
+    </soundtype>
+    <soundtype name="Claim">
+	  <soundset name="ItalianExplorerClaim">
+	  </soundset>
+    </soundtype>
+    <soundtype name="KnockOut">
+      <soundset name="ItalianExplorerDisabled">
+      </soundset>
+    </soundtype>
+    <soundtype name="KnockOutRevived">
+      <soundset name="ItalianExplorerRevived">
+      </soundset>
+    </soundtype>
+    <soundtype name="Ransomed">
+      <soundset name="ItalianExplorerRansomed">
+      </soundset>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

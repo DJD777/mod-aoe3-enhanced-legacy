@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = "This region borders between the Andes and the Amazon rainfores. Resources are exceptionally plentiful but scattered in the dense marshes. Coin is more plentiful in the plateau region, and important trade routes cross the region. This map is home to both the Inca and the Carib, which offer useful technologies. \n
+\n Map by dansil92.
+\n Observer ui by Aizamk.
+\n Natives: Inca and Caribs
+\n Outlaws: Pistolero and Pirate
+\n 
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+&lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n"
+ 
+imagepath = "ui\esoc_map\tuparro"
+displayName = "UI 2.2 ESOC Tuparro"
+cannotReplace = ""
+loadDetailsText=" This region borders between the Andes and the Amazon rainfores. Resources are exceptionally plentiful but scattered in the dense marshes. Coin is more plentiful in the plateau region, and important trade routes cross the region. This map is home to both the Inca and the Carib, which offer useful technologies. \n
+\n
+---------------------------------\n
+\n
+\n Natives: Inca and Caribs
+\n Outlaws: Pistolero and Pirate
+\n
+---------------------------------\n
+\n"
+ 
+loadBackground="ui\random_map\amazon\amazon_map">
+	<loadss>ui\random_map\amazon\amazon_ss_01</loadss>
+    <loadss>ui\random_map\amazon\amazon_ss_02</loadss>
+    <loadss>ui\random_map\amazon\amazon_ss_03</loadss>
+ 
+</mapinfo>

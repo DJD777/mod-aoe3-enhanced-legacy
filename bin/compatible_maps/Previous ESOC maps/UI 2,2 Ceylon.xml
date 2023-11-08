@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapinfo
+detailsText=" Ceylon: Migrate by sea to a large, resource-rich continent. \n
+Players begin on a humble patch of rock rising up from the middle of the sea. Fortunes will be sought on the central island, as players must migrate north to establish bases on this resource rich coast. Wild beasts roam the island's northern region, while Gold mines and ancient Treasures can be found nestled amongst the cliffs to the south. Your Home City has prepared well for this expedition, so your first Shipment will be available quickly.\n
+\n
+ \n Native Civs: Bhakti / Zen
+ \n Mercenaries: Dacoit / Thuggee
+ \n
+--------------------------------- \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+ "
+imagepath="ui\random_map\ceylon"
+displayName="UI 2.2 Ceylon"
+cannotReplace=""
+loadDetails="70045"
+loadBackground="ui\random_map\ceylon\ceylon_map">
+  <loadss>ui\random_map\ceylon\ceylon_ss_01</loadss>
+  <loadss>ui\random_map\ceylon\ceylon_ss_02</loadss>
+  <loadss>ui\random_map\ceylon\ceylon_ss_03</loadss>
+</mapinfo>

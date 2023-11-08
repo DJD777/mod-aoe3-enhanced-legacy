@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>hats<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\infantry_ranged\musketeer\musketeer_3age_hat</file></assetreference></none><RGPartisans><assetreference type="GrannyModel"><file>units\infantry_ranged\musketeer\musketeer_4age_hat</file></assetreference></RGPartisans><UnionPartisans><assetreference type="GrannyModel"><file>units\spc\miner\miner_hat</file><replacetexture><from>units\spc\miner\miner</from><to>units\cavalry\saber\hat</to></replacetexture></assetreference></UnionPartisans></logic></component>
+  <anim>Idle<component>hats</component></anim>
+</animfile>

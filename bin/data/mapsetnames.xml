@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mapsetnames>
+  <set name="allmaps">
+  </set>
+  <set name="asianrandom">
+  </set>
+  <set name="fastrandom">
+  </set>
+  <set name="featured">
+  </set>
+  <set name="Largerandommaps">
+  </set>
+  <set name="randommaps">
+  </set>
+  <set name="tournamentrandom">
+  </set>
+  <mpscenarioimagepath name="ui\random_map\scenario">
+  </mpscenarioimagepath>
+</mapsetnames>

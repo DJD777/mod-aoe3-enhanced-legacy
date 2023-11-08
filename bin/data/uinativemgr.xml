@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="NativeMgr" type="gadget" size1024="48 0 190 66" background="ui\editor\editor_background" bevel="" titlebar="$$28589$$Native American Manager" closebutton="" windowzstyle="" moveable="">
+    <gadget name="NativeMgr_CivFld1" type="formatText" size1024="64 21 130 36" z="11">
+    </gadget>
+    <gadget name="NativeMgr_PresentBtn1" type="checkButton" size1024="143 21 158 36" z="11">
+    </gadget>
+    <gadget name="NativeMgr_OkBtn" type="button" bevel="" size1024="60 42 115 58" z="11">$$18465$$Ok</gadget>
+    <gadget name="NativeMgr_CancelBtn" type="button" bevel="" size1024="125 42 175 58" z="11">$$18466$$Cancel</gadget>
+  </gadget>
+</layout>

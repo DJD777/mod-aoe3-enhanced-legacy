@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="NuggetEditor" type="gadget" size1024="50 70 400 350" background="ui\editor\editor_background" bevel="" titlebar="$$33710$$Nugget Editor" closebutton="" windowzstyle="" moveable="">
+    <gadget name="NuggetEditor-ProtoNuggetList" type="list" background="ui\editor\editor_background" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort="" titlebar="$$33711$$Available Nugget Types" locktitlebarmove="" size1024="60 102 200 322">
+    </gadget>
+    <gadget name="NuggetEditor-SetNuggetType" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" size1024="210 102 395 122">$$33712$$Set Nugget Type</gadget>
+    <gadget name="NuggetEditor-RandomizeNuggetType" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" size1024="210 132 395 152">$$33742$$Randomize Nugget Type</gadget>
+    <gadget type="button" name="NuggetEditor-place" size1024="210 227 395 247" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$24915$$Treasure" textfontsize="12">$$20282$$Place Object...<command>editMode("PlaceUnit") uiSetProtoCursor("nugget", true)</command></gadget>
+    <gadget type="button" name="NuggetEditor-load" size1024="210 252 395 272" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$25560$$Load built-in grouping" textfontsize="12">$$25560$$Load built-in grouping<command>loadGrouping</command></gadget>
+    <gadget type="button" name="NuggetEditor-user" size1024="210 277 395 297" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$43018$$Load user-made grouping" textfontsize="12">$$43018$$Load user-made grouping<command>loadUserDefinedGrouping</command></gadget>
+    <gadget type="button" name="NuggetEditor-close" size1024="210 302 395 322" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$18457$$Close" textfontsize="12">$$18457$$Close<command>gadgetUnreal("NuggetEditor") editMode("None")</command></gadget>
+  </gadget>
+</layout>

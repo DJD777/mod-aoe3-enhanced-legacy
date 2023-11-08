@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = " This vast, remote region of Mongolia is divided by a winding river. A few wild goats wander the shoreline and sparse stands of trees stay near the water. While the area is rich in copper, it is fairly spread out and you will quickly be forced to take control of the map to continue gathering resources. The narrow chasms and crossings may prove easy to defend, but beware, you may find your army cut off from reinforcements. 
+\n
+ \n Outlaws: Wokou Horseman / Wokou Ronin
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+\n
+
+\n Map by dansil92 "
+ 
+imagepath="ui\random_map\unknown" 
+displayName = "ESOC Zavkhan"
+cannotReplace = ""
+loadDetailsText=" This vast, remote region of Mongolia is divided by a winding river. A few wild goats wander the shoreline and sparse stands of trees stay near the water. While the area is rich in copper, it is fairly spread out and you will quickly be forced to take control of the map to continue gathering resources. The narrow chasms and crossings may prove easy to defend, but beware, you may find your army cut off from reinforcements. 
+ \n Mercenaries: Wokou Horseman / Wokou Ronin
+\n
+\n Map by dansil92"
+ 
+loadBackground="ui\random_map\mongolia\mongolia_map">
+  <loadss>ui\random_map\mongolia\mongolia_ss_1</loadss>
+  <loadss>ui\random_map\mongolia\mongolia_ss_2</loadss>
+  <loadss>ui\random_map\mongolia\mongolia_ss_3</loadss>
+</mapinfo>

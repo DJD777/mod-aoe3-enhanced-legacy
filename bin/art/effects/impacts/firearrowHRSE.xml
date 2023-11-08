@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<impacteffect metercount="5" meterlength="1">
+	<wood fireexisttime="3000">
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</wood>
+	<stone>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</stone>
+	<flesh>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</flesh>
+	<dirt>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</dirt>
+	<snow>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</snow>
+	<animal>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</animal>
+	<terraingrass>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terraingrass>
+	<terrainwater>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terrainwater>
+	<terraindirt>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terraindirt>
+	<terrainstone>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terrainstone>
+	<terrainsnow>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terrainsnow>
+	<terrainsand>
+		<particleset>flameThrower_explosion</particleset>
+		<soundset>Explosion</soundset>
+	</terrainsand>
+</impacteffect>

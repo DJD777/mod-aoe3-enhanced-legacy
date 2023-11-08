@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget resizevert="" resizehorz="" textcolor="0 0 0" name="EditorTexturePalette" type="palette" size1024="256 550 800 768" palettecontentsize1024="40 40" paletteelemsize1024="200 60" palettetitleright="" bevel="" background="ui\core_ui\background_blue_dark" tilebackground="" paletteusedropdown="" alphasort="" refreshonreal="" a-dtype="textFontSize number Z number" hidden="" titlebar="$$20275$$Terrain" windowzstyle="">
+  </gadget>
+  <gadget resizevert="" resizehorz="" textcolor="255 255 255" name="EditorProtoPalette" type="palette" size1024="256 550 800 768" palettecontentsize1024="40 40" paletteelemsize1024="150 60" palettetitlebottom="" bevel="" background="ui\core_ui\background_blue_dark" tilebackground="" paletteusedropdown="" alphasort="" refreshonreal="" a-dtype="textFontSize number Z number" hidden="" titlebar="$$20281$$Objects" windowzstyle="">
+  </gadget>
+  <gadget name="playerModus" type="gadget" size1024="920 75 1024 480" background="ui\editor\editor_background" bevel="" titlebar="$$19095$$Player" hidden="" moveable="" windowzstyle="" closeonesc="" closebutton="">
+    <gadget name="PlayAsPlayerText" type="textBox" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0" size1024="940 105 1000 125">$$19803$$Player:</gadget>
+    <gadget name="PlayAsPlayerText" type="textBox" textfont="Arial nodrop" textfontsize="12" textcolor="255 30 30" size1024="1000 105 1020 125">{currentPlayerNum}</gadget>
+    <gadget name="PlayAsPlayer" type="radioset" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0" radiosetbuttonsize1024="43 25" radiosetdefaultbuttonindex="0" size1024="940 120 985 400">
+      <button command="player(1)">$$20524$$1</button>
+      <button command="player(2)">$$20525$$2</button>
+      <button command="player(3)">$$20526$$3</button>
+      <button command="player(4)">$$20527$$4</button>
+      <button command="player(5)">$$20528$$5</button>
+      <button command="player(6)">$$20529$$6</button>
+      <button command="player(7)">$$20530$$7</button>
+      <button command="player(8)">$$20531$$8</button>
+      <button command="player(0)">$$20319$$Gaia</button>
+    </gadget>
+    <gadget name="CameraStartButton" type="button" bevelbutton="" tooltiptext="$$32668$$Set Camera Start Location" foreground="ui\editor startpoint" size1024="935 420 955 440">
+      <command>uiSetCameraStartLoc()</command>
+    </gadget>
+    <gadget name="ShowCameraStartButton" type="button" bevelbutton="" tooltiptext="$$32669$$Show Camera Start Location" foreground="ui\editor show startpoint" size1024="965 420 985 440">
+      <command>uiShowCameraStartLoc()</command>
+    </gadget>
+    <gadget name="PlayAsScenarioDebugButton" type="button" bevelbutton="" tooltiptext="Debug Info" foreground="ui\Editor debuginfo" size1024="995 420 1015 440">
+      <command>uiShowAIDebugInfoKBUnit</command>
+    </gadget>
+    <gadget name="PlayAsScenarioCancelButton" type="button" bevelbutton="" textcolor="0 0 0" tooltiptext="$$18457$$Close" textfont="Arial nodrop" textfontsize="12" size1024="930 450 990 470">$$18457$$Close<command>gadgetUnReal("playerModus")</command></gadget>
+    <gadget name="PlayAsScenarioTestButton" type="button" tooltiptext="$$20269$$Playtest Scenario" foreground="ui\Editor testx" size1024="995 450 1015 470">
+      <command>gadgetUnReal("BruChange") gadgetUnreal("landErst") gadgetUnreal("portPict") gadgetUnreal("portxPict") gadgetUnreal("portyPict") gadgetUnreal("tgvUI") gadgetUnreal("txtBox") gadgetUnreal("playerModus") gadgetUnreal("ChangeBias") uiStartScenarioTest</command>
+    </gadget>
+  </gadget>
+  <gadget name="landErst" type="gadget" size1024="0 260 500 550" hidden="" moveable="" closeonesc="" closebutton="" bevel="" titlebar="$$19176$$Change" windowzstyle="" background="ui\editor\editor_background">
+    <gadget name="erstlabel1" type="gadget" sizerel1024="40 10 200 25">$$18830$$Paint Land</gadget>
+    <gadget name="erstList1" type="textField" scrollvert="" alphasort="" history="" sizerel1024="30 25 226 45" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground07_and&quot;)">ground07_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground08_and&quot;)">ground08_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground09_and&quot;)">ground09_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground10_and&quot;)">ground10_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground11_and&quot;)">ground11_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground12_and&quot;)">ground12_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground14_and&quot;)">ground14_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground16_and&quot;)">ground16_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground17_and&quot;)">ground17_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground18_and&quot;)">ground18_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground22_and&quot;)">ground22_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\andes\ground25_and&quot;)">ground25_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\ground1_ama&quot;)">ground1_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\ground2_ama&quot;)">ground2_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\ground3_ama&quot;)">ground3_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\ground4_ama&quot;)">ground4_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\ground5_ama&quot;)">ground5_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\groundforest_ama&quot;)">groundforest_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground07_ara&quot;)">ground07_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground08_ara&quot;)">ground08_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground09_ara&quot;)">ground09_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground10_ara&quot;)">ground10_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground11_ara&quot;)">ground11_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground12_ara&quot;)">ground12_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\groundforestcentral&quot;)">groundforestcentral</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_dirt1_ara&quot;)">ground_dirt1_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_dirt2_ara&quot;)">ground_dirt2_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_dirt3_ara&quot;)">ground_dirt3_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_grass1_ara&quot;)">ground_grass1_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_grass2_ara&quot;)">ground_grass2_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_grass3_ara&quot;)">ground_grass3_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground1_bay&quot;)">ground1_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground2_bay&quot;)">ground2_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground3_bay&quot;)">ground3_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground4_bay&quot;)">ground4_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground5_bay&quot;)">ground5_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground6_bay&quot;)">ground6_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\ground7_bay&quot;)">ground7_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\groundforest_bay&quot;)">groundforest_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_sand1_borneo&quot;)">ground_sand1_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_sand2_borneo&quot;)">ground_sand2_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_sand3_borneo&quot;)">ground_sand3_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_grass1_borneo&quot;)">ground_grass1_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_grass2_borneo&quot;)">ground_grass2_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_grass3_borneo&quot;)">ground_grass3_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_grass4_borneo&quot;)">ground_grass4_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_grass5_borneo&quot;)">ground_grass5_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\ground_forest_borneo&quot;)">ground_forest_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundforest2_cal&quot;)">groundforest2_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground5_cal&quot;)">ground5_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground6_cal&quot;)">ground6_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground7_cal&quot;)">ground7_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground8_cal&quot;)">ground8_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground9_cal&quot;)">ground9_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\desert2_cal&quot;)">desert2_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\desert3_cal&quot;)">desert3_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\desert4_cal&quot;)">desert4_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\desert5_cal&quot;)">desert5_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\desert6_cal&quot;)">desert6_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\fakecalifgrassmix_cal&quot;)">fakecalifgrassmix_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\fakecalifgrassmix2_cal&quot;)">fakecalifgrassmix2_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\madrone_forest_cal&quot;)">madrone_forest_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\madroneforest2_cal&quot;)">madrone_forest2_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundforest_cal&quot;)">groundforest_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground1_crb&quot;)">ground1_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground2_crb&quot;)">ground2_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground3_crb&quot;)">ground3_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground4_crb&quot;)">ground4_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground5_crb&quot;)">ground5_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground6_crb&quot;)">ground6_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground7_crb&quot;)">ground7_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\groundforest_crb&quot;)">groundforest_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\blackmap&quot;)">blackmap</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\groundforestmarsh_car&quot;)">groundforestmarsh_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\groundforest_car&quot;)">groundforest_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_grass1_car&quot;)">ground_grass1_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_grass2_car&quot;)">ground_grass2_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_grass3_car&quot;)">ground_grass3_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_grass4_car&quot;)">ground_grass4_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_sand1_ceylon&quot;)">ground_sand1_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_sand2_ceylon&quot;)">ground_sand2_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_sand3_ceylon&quot;)">ground_sand3_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_sand4_ceylon&quot;)">ground_sand4_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_grass1_ceylon&quot;)">ground_grass1_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_grass2_ceylon&quot;)">ground_grass2_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_grass3_ceylon&quot;)">ground_grass3_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_grass4_ceylon&quot;)">ground_grass4_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\city\ground1_cob&quot;)">ground1_cob</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_dirt1_co_japan&quot;)">ground_dirt1_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_dirt2_co_japan&quot;)">ground_dirt2_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_dirt3_co_japan&quot;)">ground_dirt3_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_dirt4_co_japan&quot;)">ground_dirt4_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_grass1_co_japan&quot;)">ground_grass1_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_grass2_co_japan&quot;)">ground_grass2_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_grass3_co_japan&quot;)">ground_grass3_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\ground_forest_co_japan&quot;)">ground_forest_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\wall_deccan&quot;)">wall_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_grass1_deccan&quot;)">ground_grass1_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_grass2_deccan&quot;)">ground_grass2_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_grass3_deccan&quot;)">ground_grass3_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_grass4_deccan&quot;)">ground_grass4_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_dirt2_deccan&quot;)">ground_dirt2_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_dirt3_deccan&quot;)">ground_dirt3_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_dirt4_deccan&quot;)">ground_dirt4_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_dirt5_deccan&quot;)">ground_dirt5_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\deccan\ground_forest_deccan&quot;)">ground_forest_deccan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\groundforest_gl&quot;)">groundforest_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_grass1_gl&quot;)">ground_grass1_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_grass2_gl&quot;)">ground_grass2_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_grass3_gl&quot;)">ground_grass3_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_grass4_gl&quot;)">ground_grass4_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_grass5_gl&quot;)">ground_grass5_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\default&quot;)">default</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground1_gp&quot;)">ground1_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground2_gp&quot;)">ground2_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground3_gp&quot;)">ground3_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground4_gp&quot;)">ground4_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground5_gp&quot;)">ground5_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground6_gp&quot;)">ground6_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground7_gp&quot;)">ground7_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\ground8_gp&quot;)">ground8_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\groundforest_gp&quot;)">groundforest_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\groundspc_nonpass_gp&quot;)">groundspc_nonpass_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_plains\pondbank_gp&quot;)">pondbank_gp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground1_ne&quot;)">ground1_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground2_cliff_ne&quot;)">ground2_cliff_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground2_ne&quot;)">ground2_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground3_ne&quot;)">ground3_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground4_ne&quot;)">ground4_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground5_ne&quot;)">ground5_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\ground6_ne&quot;)">ground6_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\groundforest_ne&quot;)">groundforest_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_grass1_nwt&quot;)">ground_grass1_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_grass1a_nwt&quot;)">ground_grass1a_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_grass2_nwt&quot;)">ground_grass2_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_grass3_nwt&quot;)">ground_grass3_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_grass5_nwt&quot;)">ground_grass5_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt1_himal&quot;)">ground_dirt1_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt2_himal&quot;)">ground_dirt2_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt3_himal&quot;)">ground_dirt3_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt4_himal&quot;)">ground_dirt4_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt5_himal&quot;)">ground_dirt5_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt6_himal&quot;)">ground_dirt6_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt7_himal&quot;)">ground_dirt7_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\ground_dirt8_himal&quot;)">ground_dirt8_himal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_forest_mongol&quot;)">ground_forest_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass1_mongol&quot;)">ground_grass1_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass2_mongol&quot;)">ground_grass2_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass3_mongol&quot;)">ground_grass3_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass4_mongol&quot;)">ground_grass4_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass5_mongol&quot;)">ground_grass5_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_grass6_mongol&quot;)">ground_grass6_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_sand1_mongol&quot;)">ground_sand1_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_sand2_mongol&quot;)">ground_sand2_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\mongolia\ground_sand3_mongol&quot;)">ground_sand3_mongol</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_a&quot;)">pd_ground_diffuse_a</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_b&quot;)">pd_ground_diffuse_b</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_c&quot;)">pd_ground_diffuse_c</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_d&quot;)">pd_ground_diffuse_d</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_e&quot;)">pd_ground_diffuse_e</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_f&quot;)">pd_ground_diffuse_f</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_g&quot;)">pd_ground_diffuse_g</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_h&quot;)">pd_ground_diffuse_h</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_i&quot;)">pd_ground_diffuse_i</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_j&quot;)">pd_ground_diffuse_j</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_k&quot;)">pd_ground_diffuse_k</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_ground_diffuse_l&quot;)">pd_ground_diffuse_l</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground1_pam&quot;)">ground1_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground2_pam&quot;)">ground2_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground3_pam&quot;)">ground3_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground4_pam&quot;)">ground4_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground5_pam&quot;)">ground5_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\ground6_pam&quot;)">ground6_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\groundforest_pam&quot;)">groundforest_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\groundforest_pat&quot;)">groundforest_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_dirt1_pat&quot;)">ground_dirt1_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_dirt2_pat&quot;)">ground_dirt2_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_dirt3_pat&quot;)">ground_dirt3_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_grass1_pat&quot;)">ground_grass1_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_grass2_pat&quot;)">ground_grass2_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_grass3_pat&quot;)">ground_grass3_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\props\east_colony&quot;)">east_colony</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\props\east_colony1&quot;)">east_colony1</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\props\east_colony2&quot;)">east_colony2</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\ground1_roc&quot;)">ground1_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\ground2_roc&quot;)">ground2_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\ground3_roc&quot;)">ground3_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\ground4_roc&quot;)">ground4_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\ground5_roc&quot;)">ground5_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundforest_roc&quot;)">groundforest_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground1_sag&quot;)">ground1_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground2_sag&quot;)">ground2_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground3_sag&quot;)">ground3_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground4_sag&quot;)">ground4_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground5_sag&quot;)">ground5_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\ground6_sag&quot;)">ground6_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\groundforest_sag&quot;)">groundforest_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground1_son&quot;)">ground1_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground2_son&quot;)">ground2_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground3_son&quot;)">ground3_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground4_son&quot;)">ground4_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground5_son&quot;)">ground5_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground6_son&quot;)">ground6_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground7_son&quot;)">ground7_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\groundforest_son&quot;)">groundforest_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground1_tex&quot;)">ground1_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground2_tex&quot;)">ground2_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground3_tex&quot;)">ground3_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground4_tex&quot;)">ground4_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground5_tex&quot;)">ground5_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\ground6_tex&quot;)">ground6_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\groundforestdirt_tex&quot;)">groundforestdirt_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\groundforest_tex&quot;)">groundforest_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\nonpassable_temp&quot;)">nonpassable_temp</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\forest_yellow_riv&quot;)">forest_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\grass1_yellow_riv&quot;)">grass1_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\grass2_yellow_riv&quot;)">grass2_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\grass3_yellow_riv&quot;)">grass3_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\grass4_yellow_riv&quot;)">grass4_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\stone1_yellow_riv&quot;)">stone1_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\stone2_yellow_riv&quot;)">stone2_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\stone3_yellow_riv&quot;)">stone3_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground10_yuk&quot;)">ground10_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground11_yuk&quot;)">ground11_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground1_yuk&quot;)">ground1_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground2_yuk&quot;)">ground2_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground3x_yuk&quot;)">ground3x_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground3_spcnonbuild_yuk&quot;)">ground3_spcnonbuild_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground3_yuk&quot;)">ground3_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground4_yuk&quot;)">ground4_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground5_yuk&quot;)">ground5_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground6_yuk&quot;)">ground6_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground7_yuk&quot;)">ground7_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground8_yuk&quot;)">ground8_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\ground9_yuk&quot;)">ground9_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yukon\groundforest_yuk&quot;)">groundforest_yuk</dropdown>
+    </gadget>
+    <gadget name="erstlabel2" type="gadget" sizerel1024="40 50 200 65">$$20333$$Cliffs</gadget>
+    <gadget name="erstList2" type="textField" scrollvert="" alphasort="" history="" sizerel1024="30 65 226 85" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_coast2_ara&quot;)">cliff_coast2_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_coast3_ara&quot;)">cliff_coast3_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_coast_ara&quot;)">cliff_coast_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_dirt2_ara&quot;)">cliff_dirt2_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_dirt_ara&quot;)">cliff_dirt_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\cliff_dirt_snow_ara&quot;)">cliff_dirt_snow_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\cliff_himal_edge&quot;)">cliff_himal_edge</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\himalayas\cliff_himal_top&quot;)">cliff_himal_top</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\ground_clifftop_cal&quot;)">ground_clifftop_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\cave\cave_ground1&quot;)">cave_ground1</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\cave\cave_ground2&quot;)">cave_ground2</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\cave\cave_ground3&quot;)">cave_ground3</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\cave\cave_ground4&quot;)">cave_ground4</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\cave\cave_top&quot;)">cave_top</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\clifftop_ceylon&quot;)">clifftop_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_edge_ne&quot;)">cliff_edge_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\cliff_edge_son&quot;)">cliff_edge_son</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\cliff_edge_tex&quot;)">cliff_edge_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_inland_edge_ne&quot;)">cliff_inland_edge_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_inland_side_ne&quot;)">cliff_inland_side_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_side_ne&quot;)">cliff_side_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\cliff_top_tex&quot;)">cliff_top_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_clifftop_pat&quot;)">ground_clifftop_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Painteddesert\pd_cliff_diffuse_a&quot;)">pd_cliff_diffuse_a</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_inland_top_ne&quot;)">cliff_inland_top_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\cliff_top_grass_tex&quot;)">cliff_top_grass_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\cliff_top_ne&quot;)">cliff_top_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\terrain\amazon\cliff_top1_ama&quot;)">cliff_top1_ama</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\bayou\cliff_top1_bay&quot;)">cliff_top1_bay</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\cliff_top1_car&quot;)">cliff_top1_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\cliff_top1_crb&quot;)">cliff_top1_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\clifftop_roc&quot;)">clifftop_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\cobblestone&quot;)">cobblestone</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\sonora\ground1clifftop_son&quot;)">ground1clifftop_son</dropdown>
+    </gadget>
+    <gadget name="erstlabel3" type="gadget" sizerel1024="40 90 200 105">Snow Terrain</gadget>
+    <gadget name="erstList3" type="textField" scrollvert="" alphasort="" history="" sizerel1024="30 105 226 125" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_snow1_ara&quot;)">ground_snow1_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_snow2_ara&quot;)">ground_snow2_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_snow3_ara&quot;)">ground_snow3_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_snow4_ara&quot;)">ground_snow4_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\ground_snow5_ara&quot;)">ground_snow5_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_glacier_pat&quot;)">ground_glacier_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_ice1_gl&quot;)">ground_ice1_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_ice2_gl&quot;)">ground_ice2_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_ice3_gl&quot;)">ground_ice3_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_snow1_pat&quot;)">ground_snow1_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_snow2_gl&quot;)">ground_snow2_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_snow1_gl&quot;)">ground_snow1_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_snow2_pat&quot;)">ground_snow2_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_snow3_gl&quot;)">ground_snow3_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_snow3_pat&quot;)">ground_snow3_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_snow4_gl&quot;)">ground_snow4_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_snow5_gl&quot;)">ground_snow5_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\groundforest_snow_gl&quot;)">groundforest_snow_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\groundforest_snow_pat&quot;)">groundforest_snow_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundforestsnow_roc&quot;)">groundforestsnow_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundforestsnow_yuk&quot;)">groundforestsnow_yuk</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow1_roc&quot;)">groundsnow1_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow2_roc&quot;)">groundsnow2_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow3_roc&quot;)">groundsnow3_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow4_roc&quot;)">groundsnow4_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow5_roc&quot;)">groundsnow5_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow6_roc&quot;)">groundsnow6_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow7_roc&quot;)">groundsnow7_roc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\rockies\groundsnow8_roc&quot;)">groundsnow8_roc</dropdown>
+    </gadget>
+    <gadget name="landBegrad" type="button" bevel="" tooltiptext="$$20318$$Fast" textfont="Arial nodrop" textfontsize="12" sizerel1024="30 150 130 170">$$20307$$Smooth<command>terrainFlatten</command></gadget>
+    <gadget name="landBegrad2" type="button" bevel="" tooltiptext="$$20317$$Slow" textfont="Arial nodrop" textfontsize="12" sizerel1024="30 185 130 205">$$20307$$Smooth<command>terrainFilter</command></gadget>
+    <gadget name="erstText" type="gadget" sizerel1024="156 130 226 145">$$21552$$Selection</gadget>
+    <gadget name="landArea" type="button" bevel="" tooltiptext="$$20318$$Fast" textfont="Arial nodrop" textfontsize="12" sizerel1024="156 150 226 165">$$20307$$Smooth<command>editMode("modifyterrain") uiFlattenTerrainSelection</command></gadget>
+    <gadget name="landArea" type="button" bevel="" tooltiptext="$$20317$$Slow" textfont="Arial nodrop" textfontsize="12" sizerel1024="156 170 226 185">$$20307$$Smooth<command>editMode("modifyterrain") uiFilterTerrainSelection</command></gadget>
+    <gadget name="landAreaClose" type="button" bevel="" tooltiptext="$$18457$$Close" textfont="Arial nodrop" textfontsize="12" sizerel1024="156 190 226 205">$$21199$$Done<command>editMode("none")</command></gadget>
+    <gadget name="erstwater0" type="gadget" sizerel1024="284 10 480 25">$$25966$$Place Shorelines</gadget>
+    <gadget name="erstwaterList0" type="textField" scrollvert="" alphasort="" history="" sizerel1024="284 25 480 45" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="terrainPaint(&quot;terrain\amazon\river1_am&quot;)">river1_am</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\river2_am&quot;)">river2_am</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\amazon\river3_am&quot;)">river3_am</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Andes\ground14_and&quot;)">ground14_and</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\groundshore1_ara&quot;)">groundshore1_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\groundshore5_ara&quot;)">groundshore5_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\araucania\groundshore8_ara&quot;)">groundshore8_ara</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\shoreline1_borneo&quot;)">shoreline1_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\borneo\seafloor1_borneo&quot;)">seafloor1_borneo</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore1_cal&quot;)">groundshore1_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore2_cal&quot;)">groundshore2_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore3b_cal&quot;)">groundshore3b_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore3c_cal&quot;)">groundshore3c_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore3d_cal&quot;)">groundshore3d_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\california\groundshore4_cal&quot;)">groundshore4_cal</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground_shoreline1_crb&quot;)">ground_shoreline1_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground_shoreline2_crb&quot;)">ground_shoreline2_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\ground_shoreline3_crb&quot;)">ground_shoreline3_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\seafloor_coral0_crb&quot;)">seafloor_coral0_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\seafloor_coral1_crb&quot;)">seafloor_coral1_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\seafloor_coral2_crb&quot;)">seafloor_coral2_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\seafloor_coral3_crb&quot;)">seafloor_coral3_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\caribbean\seafloor_coral4_crb&quot;)">seafloor_coral4_crb</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\seafloor_coral1_co_japan&quot;)">seafloor_coral1_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_shoreline1_car&quot;)">ground_shoreline1_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_shoreline2_car&quot;)">ground_shoreline2_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\ground_shoreline3_car&quot;)">ground_shoreline3_car</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\underwater1&quot;)">underwater1</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\underwater2&quot;)">underwater2</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\carolinas\underwater3&quot;)">underwater3</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_shoreline1_ceylon&quot;)">ground_shoreline1_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\ground_shoreline2_ceylon&quot;)">ground_shoreline2_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor0_ceylon&quot;)">seafloor0_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor1_ceylon&quot;)">seafloor1_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor2_ceylon&quot;)">seafloor2_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor3_ceylon&quot;)">seafloor3_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor4_ceylon&quot;)">seafloor4_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\ceylon\seafloor5_ceylon&quot;)">seafloor5_ceylon</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\coastal_japan\shoreline1_co_japan&quot;)">shoreline1_co_japan</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\Yellow_river\shoreline1_yellow_riv&quot;)">shoreline1_yellow_riv</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_shoreline1_gl&quot;)">ground_shoreline1_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_shoreline2_gl&quot;)">ground_shoreline2_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\great_lakes\ground_shoreline3_gl&quot;)">ground_shoreline3_gl</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\river1_ne&quot;)">river1_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\shoreline1_ne&quot;)">shoreline1_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\shoreline2_ne&quot;)">shoreline2_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\shoreline3_ne&quot;)">shoreline3_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\shoreline4_ne&quot;)">shoreline4_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\shoreline5_ne&quot;)">shoreline5_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\underwater1_ne&quot;)">underwater1_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\new_england\underwater2_ne&quot;)">underwater2_ne</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_riverbed_nwt&quot;)">ground_riverbed_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_riverbed2_nwt&quot;)">ground_riverbed2_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_shoreline3_nwt&quot;)">ground_shoreline3_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\nwterritory\ground_shoreline4_nwt&quot;)">ground_shoreline4_nwt</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\river_shoreline1_pam&quot;)">river_shoreline1_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\river_shoreline2_pam&quot;)">river_shoreline2_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\pampas\river_shoreline3_pam&quot;)">river_shoreline3_pam</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_shoreline1_pat&quot;)">ground_shoreline1_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_shoreline2_pat&quot;)">ground_shoreline2_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\patagonia\ground_shoreline3_pat&quot;)">ground_shoreline3_pat</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\river1_sag&quot;)">river1_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\shoreline1_sag&quot;)">shoreline1_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\shoreline2_sag&quot;)">shoreline2_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\shoreline3_sag&quot;)">shoreline3_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\underwater1_sag&quot;)">underwater1_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\underwater2_sag&quot;)">underwater2_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\saguenay\underwater3_sag&quot;)">underwater3_sag</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\spc\scorched01&quot;)">scorched01</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\spc\scorched02&quot;)">scorched02</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\spc\scorched03&quot;)">scorched03</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\spc\scorched04&quot;)">scorched04</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\river1_tex&quot;)">river1_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\texas\river2_tex&quot;)">river2_tex</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yucatan\ground_shoreline1_yuc&quot;)">ground_shoreline1_yuc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yucatan\ground_shoreline2_yuc&quot;)">ground_shoreline2_yuc</dropdown>
+      <dropdown command="terrainPaint(&quot;terrain\yucatan\ground_shoreline3_yuc&quot;)">ground_shoreline3_yuc</dropdown>
+    </gadget>
+    <gadget name="erstlabel4" type="gadget" sizerel1024="284 50 480 65">$$28144$$Mixes</gadget>
+    <gadget name="erstList4" type="textField" scrollvert="" history="" sizerel1024="284 65 480 85" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>AOE3</dropdown>
+      <dropdown command="terrainPaintMix(&quot;amazon grass&quot;)">amazon grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;bayou_forest&quot;)">bayou_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;bayou_grass&quot;)">bayou_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;caribbean grass&quot;)">caribbean grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;carolina_grass&quot;)">carolina_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;great plains drygrass&quot;)">great plains drygrass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;great plains grass&quot;)">great plains grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;great plains grass01&quot;)">great plains grass01</dropdown>
+      <dropdown command="terrainPaintMix(&quot;greatlakes_grass&quot;)">greatlakes_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;greatlakes_snow&quot;)">greatlakes_snow</dropdown>
+      <dropdown command="terrainPaintMix(&quot;great_lakes_ice&quot;)">great_lakes_ice</dropdown>
+      <dropdown command="terrainPaintMix(&quot;newengland_grass&quot;)">newengland_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;new_england_forest&quot;)">new_england_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;pampas_dirt&quot;)">pampas_dirt</dropdown>
+      <dropdown command="terrainPaintMix(&quot;pampas_forest&quot;)">pampas_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;pampas_grass&quot;)">pampas_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;patagonia_dirt&quot;)">patagonia_dirt</dropdown>
+      <dropdown command="terrainPaintMix(&quot;patagonia_grass&quot;)">patagonia_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;patagonia_snow&quot;)">patagonia_snow</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_dirt&quot;)">rockies_dirt</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_dirt_snow&quot;)">rockies_dirt_snow</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass&quot;)">rockies_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass_snow&quot;)">rockies_grass_snow</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_snow&quot;)">rockies_snow</dropdown>
+      <dropdown command="terrainPaintMix(&quot;saguenay grass&quot;)">saguenay grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;saguenay tundra&quot;)">saguenay tundra</dropdown>
+      <dropdown command="terrainPaintMix(&quot;saguenay_forest&quot;)">saguenay_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;scorched_ground&quot;)">scorched_ground</dropdown>
+      <dropdown command="terrainPaintMix(&quot;sonora_dirt&quot;)">sonora_dirt</dropdown>
+      <dropdown command="terrainPaintMix(&quot;testmix&quot;)">testmix</dropdown>
+      <dropdown command="terrainPaintMix(&quot;texas_dirt&quot;)">texas_dirt</dropdown>
+      <dropdown command="terrainPaintMix(&quot;texas_grass&quot;)">texas_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yucatan_grass&quot;)">yucatan_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yukon grass&quot;)">yukon grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yukon snow&quot;)">yukon snow</dropdown>
+      <dropdown>THE WAR CHIEFS</dropdown>
+      <dropdown command="terrainPaintMix(&quot;andes_grass_a&quot;)">andes_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;andes_grass_b&quot;)">andes_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;andes_grass_c&quot;)">andes_grass_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_dirt_a&quot;)">araucania_dirt_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_dirt_b&quot;)">araucania_dirt_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_grass_a&quot;)">araucania_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_grass_b&quot;)">araucania_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_grass_c&quot;)">araucania_grass_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_grass_d&quot;)">araucania_grass_d</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_dirt_a&quot;)">araucania_north_dirt_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_forest&quot;)">araucania_north_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_forest2&quot;)">araucania_north_forest2</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_grass_a&quot;)">araucania_north_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_grass_b&quot;)">araucania_north_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_north_grass_c&quot;)">araucania_north_grass_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_snow_a&quot;)">araucania_snow_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_snow_b&quot;)">araucania_snow_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;araucania_snow_c&quot;)">araucania_snow_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_desert&quot;)">california_desert</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_desert0&quot;)">california_desert0</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_desert2&quot;)">california_desert2</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_desert3&quot;)">california_desert3</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_forestground&quot;)">california_forestground</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_grass&quot;)">california_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_grassrocks&quot;)">california_grasrocks</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_madrone_forest&quot;)">california_madrone_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_shoregrass&quot;)">california_shoregrass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowforest&quot;)">california_snowforest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowground&quot;)">california_snowground</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowground2&quot;)">california_snowground2</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowground3&quot;)">california_snowground3</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowground4&quot;)">california_snowground4</dropdown>
+      <dropdown command="terrainPaintMix(&quot;california_snowground5&quot;)">california_snowground5</dropdown>
+      <dropdown command="terrainPaintMix(&quot;desertforestflr_cal&quot;)">desertforestflr_cal</dropdown>
+      <dropdown command="terrainPaintMix(&quot;GeometricPatterngrass&quot;)">GeometricPatterngrass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;grandcanyon_forest&quot;)">grandcanyon_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;grandcanyon_frstflr&quot;)">grandcanyon_frstflr</dropdown>
+      <dropdown command="terrainPaintMix(&quot;grandcanyon_rock_7&quot;)">grandcanyon_rock_7</dropdown>
+      <dropdown command="terrainPaintMix(&quot;grandcanyon_rock_8&quot;)">grandcanyon_rock_8</dropdown>
+      <dropdown command="terrainPaintMix(&quot;grandcanyon_rock_9&quot;)">grandcanyon_rock_9</dropdown>
+      <dropdown command="terrainPaintMix(&quot;newengland_grass_b&quot;)">newengland_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;nwt_forest&quot;)">nwt_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;nwt_grass1&quot;)">nwt_grass1</dropdown>
+      <dropdown command="terrainPaintMix(&quot;painteddesert_groundmix_1&quot;)">painteddesert_groundmix_1</dropdown>
+      <dropdown command="terrainPaintMix(&quot;painteddesert_groundmix_2&quot;)">painteddesert_groundmix_2</dropdown>
+      <dropdown command="terrainPaintMix(&quot;painteddesert_groundmix_3&quot;)">painteddesert_groundmix_3</dropdown>
+      <dropdown command="terrainPaintMix(&quot;painteddesert_groundmix_4&quot;)">painteddesert_groundmix_4</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass_snowa&quot;)">rockies_grass_snowa</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass_snowb&quot;)">rockies_grass_snowb</dropdown>
+      <dropdown>THE ASIAN DYNASTIES</dropdown>
+      <dropdown command="terrainPaintMix(&quot;borneo_grass_a&quot;)">borneo_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;borneo_grass_b&quot;)">borneo_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;borneo_grass_c&quot;)">borneo_grass_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;borneo_sand_a&quot;)">borneo_sand_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;borneo_underbrush&quot;)">borneo_underbrush</dropdown>
+      <dropdown command="terrainPaintMix(&quot;ceylon_grass_a&quot;)">ceylon_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;ceylon_sand_a&quot;)">ceylon_sand_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;coastal_japan_a&quot;)">coastal_japan_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;coastal_japan_b&quot;)">coastal_japan_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;coastal_japan_c&quot;)">coastal_japan_c</dropdown>
+      <dropdown command="terrainPaintMix(&quot;coastal_japan_forest&quot;)">coastal_japan_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;deccan_dirt_a&quot;)">deccan_dirt_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;deccan_forest&quot;)">deccan_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;deccan_grassy_Dirt_a&quot;)">deccan_grassy_Dirt_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;deccan_grass_a&quot;)">deccan_grass_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;deccan_grass_b&quot;)">deccan_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;himalayas_a&quot;)">himalayas_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;himalayas_b&quot;)">himalayas_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;mongolia_desert&quot;)">mongolia_desert</dropdown>
+      <dropdown command="terrainPaintMix(&quot;mongolia_forest&quot;)">mongolia_forest</dropdown>
+      <dropdown command="terrainPaintMix(&quot;mongolia_grass&quot;)">mongolia_grass</dropdown>
+      <dropdown command="terrainPaintMix(&quot;mongolia_grass_b&quot;)">mongolia_grass_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass_snowa&quot;)">rockies_grass_snowa</dropdown>
+      <dropdown command="terrainPaintMix(&quot;rockies_grass_snowb&quot;)">rockies_grass_snowb</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yellow_river_a&quot;)">yellow_river_a</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yellow_river_b&quot;)">yellow_river_b</dropdown>
+      <dropdown command="terrainPaintMix(&quot;yellow_river_forest&quot;)">yellow_river_forest</dropdown>
+    </gadget>
+    <gadget name="erstwater1" type="gadget" sizerel1024="260 105 480 120">$$20311$$Paint Water</gadget>
+    <gadget name="erstwaterText1" type="textBox" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" sizerel1024="260 125 330 145">$$18579$$Low</gadget>
+    <gadget name="erstwaterList1" type="textField" scrollvert="" alphasort="" history="" sizerel1024="330 125 480 145" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Amazon River&quot;)">Amazon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Andes River&quot;)">Andes River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Pampas River&quot;)">Pampas River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Yukon River&quot;)">Yukon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Atlantic Coast&quot;)">Atlantic Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Caribbean Coast&quot;)">Caribbean Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Cinematic Ship Ocean&quot;)">Cinematic Ship Ocean</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Hudson Bay&quot;)">Hudson Bay</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Bayou SPC&quot;)">Bayou SPC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Amazon River Basin&quot;)">Amazon River Basin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Yucatan Coast&quot;)">Yucatan Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Great Lakes Ice&quot;)">Great Lakes Ice</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Great Plains Pond&quot;)">Great Plains Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Texas Pond&quot;)">Texas Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Bayou&quot;)">Bayou</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;New England Lake&quot;)">New England Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Saguenay Lake&quot;)">Saguenay Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Amsterdam&quot;)">Amsterdam</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Lisbon&quot;)">Lisbon</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Paris&quot;)">Paris</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Berlin&quot;)">Berlin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;London&quot;)">London</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Seville&quot;)">Seville</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Constantinople&quot;)">Constantinople</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Great Lakes&quot;)">Great Lakes</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;New England Coast&quot;)">New England Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Iroquois_HC&quot;)">Iroquois_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Northwest Territory Water&quot;)">Northwest Territory Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;California Coast&quot;)">California Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Araucania North Coast&quot;)">Araucania North Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Araucania Central Coast&quot;)">Araucania Central Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Araucania Southern Coast&quot;)">Araucania Southern Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Deccan Plateau River&quot;)">Deccan Plateau River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Yellow River&quot;)">Yellow River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Borneo Coast&quot;)">Borneo Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Ceylon Coast&quot;)">Ceylon Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Coastal Japan&quot;)">Coastal Japan</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Borneo Water&quot;)">Borneo Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Japan_HC&quot;)">Japan_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;China_HC&quot;)">China_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;India_HC&quot;)">India_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,0.6,&quot;Yellow River Flooded&quot;)">Yellow River Flooded</dropdown>
+    </gadget>
+    <gadget name="erstwaterText2" type="textBox" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" sizerel1024="260 155 330 175">$$18846$$Medium</gadget>
+    <gadget name="erstwaterList2" type="textField" scrollvert="" alphasort="" history="" sizerel1024="330 155 480 175" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Amazon River&quot;)">Amazon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Andes River&quot;)">Andes River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Pampas River&quot;)">Pampas River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Yukon River&quot;)">Yukon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Atlantic Coast&quot;)">Atlantic Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Caribbean Coast&quot;)">Caribbean Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Cinematic Ship Ocean&quot;)">Cinematic Ship Ocean</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Hudson Bay&quot;)">Hudson Bay</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Bayou SPC&quot;)">Bayou SPC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Amazon River Basin&quot;)">Amazon River Basin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Yucatan Coast&quot;)">Yucatan Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Great Lakes Ice&quot;)">Great Lakes Ice</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Great Plains Pond&quot;)">Great Plains Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Texas Pond&quot;)">Texas Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Bayou&quot;)">Bayou</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;New England Lake&quot;)">New England Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Saguenay Lake&quot;)">Saguenay Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Amsterdam&quot;)">Amsterdam</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Lisbon&quot;)">Lisbon</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Paris&quot;)">Paris</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Berlin&quot;)">Berlin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;London&quot;)">London</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Seville&quot;)">Seville</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Constantinople&quot;)">Constantinople</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Great Lakes&quot;)">Great Lakes</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;New England Coast&quot;)">New England Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Iroquois_HC&quot;)">Iroquois_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Northwest Territory Water&quot;)">Northwest Territory Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;California Coast&quot;)">California Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Araucania North Coast&quot;)">Araucania North Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Araucania Central Coast&quot;)">Araucania Central Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Araucania Southern Coast&quot;)">Araucania Southern Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Deccan Plateau River&quot;)">Deccan Plateau River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Yellow River&quot;)">Yellow River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Borneo Coast&quot;)">Borneo Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Ceylon Coast&quot;)">Ceylon Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Coastal Japan&quot;)">Coastal Japan</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Borneo Water&quot;)">Borneo Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Japan_HC&quot;)">Japan_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;China_HC&quot;)">China_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;India_HC&quot;)">India_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,3,&quot;Yellow River Flooded&quot;)">Yellow River Flooded</dropdown>
+    </gadget>
+    <gadget name="erstwaterText3" type="textBox" textfont="Arial nobold nodrop" textfontsize="12" textcolor="0 0 0" sizerel1024="260 185 330 205">$$18578$$High</gadget>
+    <gadget name="erstwaterList3" type="textField" scrollvert="" alphasort="" history="" sizerel1024="330 185 480 205" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Amazon River&quot;)">Amazon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Andes River&quot;)">Andes River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Pampas River&quot;)">Pampas River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Yukon River&quot;)">Yukon River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Atlantic Coast&quot;)">Atlantic Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Caribbean Coast&quot;)">Caribbean Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Cinematic Ship Ocean&quot;)">Cinematic Ship Ocean</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Hudson Bay&quot;)">Hudson Bay</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Bayou SPC&quot;)">Bayou SPC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Amazon River Basin&quot;)">Amazon River Basin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Yucatan Coast&quot;)">Yucatan Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Great Lakes Ice&quot;)">Great Lakes Ice</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Great Plains Pond&quot;)">Great Plains Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Texas Pond&quot;)">Texas Pond</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Bayou&quot;)">Bayou</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;New England Lake&quot;)">New England Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Saguenay Lake&quot;)">Saguenay Lake</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Amsterdam&quot;)">Amsterdam</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Lisbon&quot;)">Lisbon</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Paris&quot;)">Paris</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Berlin&quot;)">Berlin</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;London&quot;)">London</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Seville&quot;)">Seville</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Constantinople&quot;)">Constantinople</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Great Lakes&quot;)">Great Lakes</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;New England Coast&quot;)">New England Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Iroquois_HC&quot;)">Iroquois_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Northwest Territory Water&quot;)">Northwest Territory Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;California Coast&quot;)">California Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Araucania North Coast&quot;)">Araucania North Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Araucania Central Coast&quot;)">Araucania Central Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Araucania Southern Coast&quot;)">Araucania Southern Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Deccan Plateau River&quot;)">Deccan Plateau River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Yellow River&quot;)">Yellow River</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Borneo Coast&quot;)">Borneo Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Ceylon Coast&quot;)">Ceylon Coast</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Coastal Japan&quot;)">Coastal Japan</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Borneo Water&quot;)">Borneo Water</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Japan_HC&quot;)">Japan_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;China_HC&quot;)">China_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;India_HC&quot;)">India_HC</dropdown>
+      <dropdown command="uiCoverTerrainWithWater(5,5,&quot;Yellow River Flooded&quot;)">Yellow River Flooded</dropdown>
+    </gadget>
+    <gadget name="LandErstSeparator" type="gadget" background="UI\editor\menu_separator" sizerel1024="25 215 485 220">
+    </gadget>
+    <gadget name="landAreaLandOpen" type="button" bevel="" tooltiptext="$$18829$$Paint Terrain" textfont="Arial nodrop" textfontsize="12" sizerel1024="30 230 130 250">$$18829$$Paint Terrain<command>editMode("Paint")</command></gadget>
+    <gadget name="landAreaMixOpen" type="button" bevel="" tooltiptext="$$28144$$Mixes" textfont="Arial nodrop" textfontsize="12" sizerel1024="140 230 240 250">$$28144$$Mixes<command>editMode("paintmix")</command></gadget>
+    <gadget name="landAreaRiverOpen" type="button" bevel="" tooltiptext="$$24834$$River Tool" foreground="ui\editor\river" textfont="Arial nodrop" textfontsize="12" sizerel1024="255 230 275 250">
+      <command>editMode("createRiver")</command>
+    </gadget>
+    <gadget name="landAreaWaterOpen" type="button" bevel="" tooltiptext="$$20311$$Paint Water" foreground="ui\editor edit water2" textfont="Arial nodrop" textfontsize="12" sizerel1024="285 230 305 250">
+      <command>editMode("paintWater")</command>
+    </gadget>
+    <gadget name="landAreaCliffOpen" type="button" bevel="" tooltiptext="$$20313$$Canyon and Cliff" foreground="ui\editor\cliff" textfont="Arial nodrop" textfontsize="12" sizerel1024="315 230 335 250">
+      <command>editMode("paintCliff")</command>
+    </gadget>
+    <gadget name="landAreaForestOpen" type="button" bevel="" tooltiptext="$$20314$$Forest" foreground="ui\editor\forest" textfont="Arial nodrop" textfontsize="12" sizerel1024="345 230 365 250">
+      <command>editMode("paintforest")</command>
+    </gadget>
+    <gadget name="landAreaClose" type="button" bevel="" tooltiptext="$$18457$$Close" textfont="Arial nodrop" textfontsize="12" sizerel1024="380 230 480 250">$$18457$$Close<command>gadgetUnreal("landErst")</command></gadget>
+  </gadget>
+  <gadget name="tgvUI" type="gadget" size1024="220 290 540 510" background="ui\editor\editor_background" bevel="" titlebar="$$22346$$Gadget" hidden="" windowzstyle="" closebutton="" closeonesc="" moveable="">
+    <gadget name="tgvUI-name" type="textField" enableime="" sizerel1024="20 20 300 40" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$20494$$Text<command>gadgetUnreal("portPict")</command></gadget>
+    <gadget name="gvlabel1" type="gadget" sizerel1024="20 50 300 70">$$22345$$Gadget Visible</gadget>
+    <gadget name="gvList1" type="textField" scrollvert="" sizerel1024="20 70 300 90" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>PoliticianDlg</dropdown>
+      <dropdown>chatInput</dropdown>
+      <dropdown>idleVillagerBanner</dropdown>
+      <dropdown>armyBanner-unfurled0</dropdown>
+      <dropdown>armyBanner-unfurled1</dropdown>
+      <dropdown>armyBanner-unfurled2</dropdown>
+      <dropdown>armyBanner-unfurled3</dropdown>
+      <dropdown>armyBanner-unfurled4</dropdown>
+      <dropdown>armyBanner-unfurled5</dropdown>
+      <dropdown>armyBanner-unfurled6</dropdown>
+      <dropdown>armyBanner-unfurled7</dropdown>
+      <dropdown>armyBanner-unfurled8</dropdown>
+    </gadget>
+    <gadget name="gvlabel2" type="gadget" sizerel1024="20 100 300 120">$$22373$$Render Sky</gadget>
+    <gadget name="gvList2" type="textField" scrollvert="" sizerel1024="100 130 220 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>SkyBlue</dropdown>
+      <dropdown>SkySunset</dropdown>
+      <dropdown>SkyStormy</dropdown>
+      <dropdown>SkyWinter</dropdown>
+    </gadget>
+    <gadget name="tgvUI-trigbut" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 160 120 180">$$20517$$Trigger Editor<command>editMode("Triggers")</command></gadget>
+    <gadget name="tgvUI-portbut" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="125 160 195 180">$$22386$$Portrait<command>gadgetToggle("portPict")</command></gadget>
+    <gadget name="tgvUI-closebut" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="200 160 300 180">$$18457$$Close<command>gadgetUnreal("tgvUI")</command></gadget>
+  </gadget>
+  <gadget name="portPict" type="gadget" size1024="140 150 800 500" background="ui\editor\editor_background" bevel="" titlebar="$$22386$$Portrait" hidden="" windowzstyle="" closebutton="" closeonesc="" moveable="">
+    <gadget name="portPict-name" enableime="" type="textField" sizerel1024="20 20 560 40" textcolor="0 0 0" textfont="Arial nobold nodrop" history="" textfontsize="12">$$20494$$Text</gadget>
+    <gadget name="portlabel1" type="gadget" sizerel1024="20 60 330 80">$$19038$$Military</gadget>
+    <gadget name="portList1" type="textField" scrollvert="" sizerel1024="10 80 330 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$24101$$Artillery</dropdown>
+      <dropdown>units\artillery\cannon\cannon_portrait</dropdown>
+      <dropdown>units\artillery\culverin\culverin_portrait</dropdown>
+      <dropdown>units\artillery\falconet\falconet_portrait</dropdown>
+      <dropdown>units\artillery\great_bombard\great_bombard_portrait</dropdown>
+      <dropdown>units\artillery\mortar\mortar_portrait</dropdown>
+      <dropdown>units\artillery\organ_gun\organ_gun_portrait</dropdown>
+      <dropdown>units\artillery\rocket\rocket_portrait</dropdown>
+      <dropdown>$$24100$$Cavalry</dropdown>
+      <dropdown>units\cavalry\cav_archer\cav_archer_portrait</dropdown>
+      <dropdown>units\cavalry\cossack\cossack_portrait</dropdown>
+      <dropdown>units\cavalry\cuirassier\cuirassier_portrait</dropdown>
+      <dropdown>units\cavalry\dragoon\dragoon_portrait</dropdown>
+      <dropdown>units\cavalry\lancer\lancer_portrait</dropdown>
+      <dropdown>units\cavalry\light_cavalry\light_cavalry_portrait</dropdown>
+      <dropdown>units\cavalry\oprichnik\oprichnik_portrait</dropdown>
+      <dropdown>units\cavalry\reiter\reiter_portrait</dropdown>
+      <dropdown>units\cavalry\spahi\spahi_portrait</dropdown>
+      <dropdown>units\cavalry\uhlan\uhlan_portrait</dropdown>
+      <dropdown>$$24098$$Infantry</dropdown>
+      <dropdown>units\infantry\boneguard\boneguard_age1_portrait</dropdown>
+      <dropdown>units\spc\boneguard\boneguard_age2_portrait</dropdown>
+      <dropdown>units\infantry\dopplesoldner\dopplesoldner_portrait</dropdown>
+      <dropdown>units\infantry\halberdier\halberdier_portrait</dropdown>
+      <dropdown>units\infantry\pikeman\pikeman_portrait</dropdown>
+      <dropdown>units\infantry\redolero\redolero_portrait</dropdown>
+      <dropdown>units\infantry_ranged\cacadore\cacadore_portrait</dropdown>
+      <dropdown>units\infantry_ranged\crossbow\crossbow_portrait</dropdown>
+      <dropdown>units\infantry_ranged\grenadier\grenadier_portrait</dropdown>
+      <dropdown>units\infantry_ranged\longbow\longbow_portrait</dropdown>
+      <dropdown>units\infantry_ranged\minuteman\minuteman_portrait</dropdown>
+      <dropdown>units\infantry_ranged\musketeer\musketeer_portrait</dropdown>
+      <dropdown>units\infantry_ranged\skirmisher\skirmisher_portrait</dropdown>
+      <dropdown>units\infantry_ranged\strelet\strelet_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel5" type="gadget" sizerel1024="340 60 640 80">$$42020$$Mercenary</gadget>
+    <gadget name="portList5" type="textField" scrollvert="" sizerel1024="340 80 650 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\mercenaries\balkan_stradiot\balkan_stradiot_portrait</dropdown>
+      <dropdown>units\mercenaries\barbary_corsair\barbary_corsair_portrait</dropdown>
+      <dropdown>units\mercenaries\black_rider\black_rider_portrait</dropdown>
+      <dropdown>units\mercenaries\hackapell\hackapell_portrait</dropdown>
+      <dropdown>units\mercenaries\highlander\highlander_portrait</dropdown>
+      <dropdown>units\mercenaries\jaeger\hessian_jaeger_portrait</dropdown>
+      <dropdown>units\mercenaries\landsknecht\landsknecht_portrait</dropdown>
+      <dropdown>units\mercenaries\mameluke\mameluke_portrait</dropdown>
+      <dropdown>units\mercenaries\manchurian_archer\manchurian_archer_portrait</dropdown>
+      <dropdown>units\mercenaries\samurai\ronin_portrait</dropdown>
+      <dropdown>units\mercenaries\swiss_pikeman\swiss_pikeman_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel2" type="gadget" sizerel1024="20 110 330 130">$$22824$$Explorer</gadget>
+    <gadget name="portList2" type="textField" scrollvert="" sizerel1024="10 130 330 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\spc\alain\alain_igc_portrait</dropdown>
+      <dropdown>units\spc\amelia_black\amelia_black_igc_icon</dropdown>
+      <dropdown>units\spc\Beaumont\beaumont_igc_icon</dropdown>
+      <dropdown>units\spc\bolivar\bolivar_portrait</dropdown>
+      <dropdown>units\spc\bolivar\bolivar_igc_icon</dropdown>
+      <dropdown>units\spc\chilche_young\chilche_young_portrait</dropdown>
+      <dropdown>units\spc\chilche_old\chilche_old_igc_icon</dropdown>
+      <dropdown>units\spc\george_washington\george_washington_igc_icon</dropdown>
+      <dropdown>units\spc\delgado\delgado_igc_icon</dropdown>
+      <dropdown>units\spc\elizabeth_ramsey\elizabeth_ramsey_igc_icon</dropdown>
+      <dropdown>units\spc\hoop_thrower\hoop_thrower_portrait</dropdown>
+      <dropdown>units\spc\john_black\john_black_igc_icon</dropdown>
+      <dropdown>units\spc\kanyenke\Kanyenke_igc_icon</dropdown>
+      <dropdown>units\spc\kanyenke\kanyenke_portrait</dropdown>
+      <dropdown>units\spc\kanyenke_old\igc_kanyenke_old_portrait</dropdown>
+      <dropdown>units\spc\lakota_chief\lakotachief_igc_icon</dropdown>
+      <dropdown>units\spc\major_cooper\major_cooper_igc_icon</dropdown>
+      <dropdown>units\spc\miner\miner_portrait</dropdown>
+      <dropdown>units\spc\morgan_black\morgan_black_igc_icon</dropdown>
+      <dropdown>units\spc\neamaltha\neamaltha_igc_icon</dropdown>
+      <dropdown>units\spc\nonahkee\nonahkee_igc_icon</dropdown>
+      <dropdown>units\spc\old_coot\old_coot_igc_icon</dropdown>
+      <dropdown>units\spc\sahin\sahin_igc_icon</dropdown>
+      <dropdown>units\spc\stuart_black\stuart_black_igc_icon</dropdown>
+      <dropdown>units\spc\Warwick\igc_falcon_portrait</dropdown>
+      <dropdown>units\spc\Warwick\igc_warwick_portrait</dropdown>
+      <dropdown>units\spc\white_jaguar\jaguar_white_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel6" type="gadget" sizerel1024="340 110 640 130">$$35675$$Miscellaneous</gadget>
+    <gadget name="portList6" type="textField" scrollvert="" sizerel1024="340 130 650 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>Special units</dropdown>
+      <dropdown>units\balloons\hot_air_balloon_portrait</dropdown>
+      <dropdown>units\explorers\explorer_portrait</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_rider_portrait</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_shotgun_portrait</dropdown>
+      <dropdown>units\spc\pirates\pirate_portrait</dropdown>
+      <dropdown>Cheat units</dropdown>
+      <dropdown>units\monster_truck\monster_truck_blue_icon</dropdown>
+      <dropdown>units\fluffy\fluffy_portrait</dropdown>
+      <dropdown>units\animals\tapir\flying_purple_tapir_icon</dropdown>
+      <dropdown>units\monster_truck\monster_truck_red_icon</dropdown>
+      <dropdown>$$25667$$Healer</dropdown>
+      <dropdown>units\priests\ottoman_priest_portrait</dropdown>
+      <dropdown>units\priests\spanish_priest_portrait</dropdown>
+      <dropdown>units\priests\we_priest_portrait</dropdown>
+      <dropdown>units\surgeons\surgeon_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel3" type="gadget" sizerel1024="20 160 330 180">$$22133$$Buildings</gadget>
+    <gadget name="portList3" type="textField" scrollvert="" sizerel1024="10 180 330 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>buildings\arsenal\arsenal_portrait</dropdown>
+      <dropdown>buildings\artillery_depot\artillery_depot_portrait</dropdown>
+      <dropdown>buildings\bank\bank_portrait</dropdown>
+      <dropdown>buildings\barracks\barracks_portrait</dropdown>
+      <dropdown>buildings\blockhouse\blockhouse_portrait</dropdown>
+      <dropdown>buildings\Capitol\capitol_portrait</dropdown>
+      <dropdown>buildings\church\church_portrait</dropdown>
+      <dropdown>buildings\dock\dock_portrait</dropdown>
+      <dropdown>buildings\factory\shared_factory_portrait</dropdown>
+      <dropdown>buildings\field_hospital\field_hospital_portrait</dropdown>
+      <dropdown>buildings\fort\fort_portrait</dropdown>
+      <dropdown>buildings\gold_min\gold_mine_portrait</dropdown>
+      <dropdown>buildings\house\house_portrait</dropdown>
+      <dropdown>buildings\livestock pen\livestock_pen_portrait</dropdown>
+      <dropdown>buildings\market\market_portrait</dropdown>
+      <dropdown>buildings\mill\mill_portrait</dropdown>
+      <dropdown>buildings\native_settlement\shared_settlement_portrait</dropdown>
+      <dropdown>buildings\outpost\outpost_portrait</dropdown>
+      <dropdown>buildings\plantation\plantation_portrait</dropdown>
+      <dropdown>buildings\stables\stables_portrait</dropdown>
+      <dropdown>buildings\town_center\towncenter_portrait</dropdown>
+      <dropdown>buildings\trading_post\trading_post_portrait</dropdown>
+      <dropdown>buildings\wall\gate_portrait</dropdown>
+      <dropdown>buildings\wall\wall_portrait</dropdown>
+      <dropdown>buildings\spc\aztec_temple\aztec_temple_portrait</dropdown>
+      <dropdown>buildings\spc\cherokee_warhut\spc_cherokee_warhut_portrait</dropdown>
+      <dropdown>buildings\spc\fixed_gun\fixed_gun_portrait</dropdown>
+      <dropdown>buildings\spc\fort\spc_fort_gate_portrait</dropdown>
+      <dropdown>buildings\spc\fort\spc_fort_wall_portrait</dropdown>
+      <dropdown>buildings\spc\fountain_of_youth_portrait</dropdown>
+      <dropdown>buildings\spc\inca_outpost\inca_outpost_portrait</dropdown>
+      <dropdown>buildings\spc\inca_temple_inca_temple_portrait</dropdown>
+      <dropdown>buildings\spc\ossuary\spc_ossuary_portrait</dropdown>
+      <dropdown>buildings\spc\stockades\stockades_portrait</dropdown>
+      <dropdown>buildings\spc\tents\largetent_portrait</dropdown>
+      <dropdown>buildings\spc\weapons_cache\weapons_cache_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel7a" type="gadget" sizerel1024="340 160 500 180">$$25736$$Trade</gadget>
+    <gadget name="portlabel7b" type="gadget" sizerel1024="500 160 640 180">Resources</gadget>
+    <gadget name="portList7" type="textField" scrollvert="" sizerel1024="340 180 650 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$25736$$Trade</dropdown>
+      <dropdown>ui\trade_route\trade_route_1_portrait</dropdown>
+      <dropdown>ui\trade_route\trade_route_2_portrait</dropdown>
+      <dropdown>ui\trade_route\trade_route_3_portrait</dropdown>
+      <dropdown>units\trade\factory_wagon_portrait</dropdown>
+      <dropdown>units\trade\fort_wagon_portrait</dropdown>
+      <dropdown>units\trade\outpost_wagon_portrait</dropdown>
+      <dropdown>units\trade\spc_wagon_portrait</dropdown>
+      <dropdown>units\trade\stagecoach_portrait</dropdown>
+      <dropdown>units\trade\travois_icon_portrait</dropdown>
+      <dropdown>units\trains\train_portrait</dropdown>
+      <dropdown>Resources</dropdown>
+      <dropdown>ui\command\generate_coin_portrait</dropdown>
+      <dropdown>ui\command\generate_fame_portrait</dropdown>
+      <dropdown>ui\command\generate_food_portrait</dropdown>
+      <dropdown>ui\command\generate_wood_portrait</dropdown>
+      <dropdown>objects\treasure\treasure_portrait</dropdown>
+      <dropdown>objects\spc\spanish_ship_ruins\ship_ruins_portrait</dropdown>
+      <dropdown>nuggets\spc_navigation_chart\spc_navigation_chart_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel4q" type="gadget" sizerel1024="20 210 330 230">$$28235$$Wildlife</gadget>
+    <gadget name="portList4" type="textField" scrollvert="" sizerel1024="10 230 330 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\animals\alligator\alligator_portrait</dropdown>
+      <dropdown>units\animals\bear\bearblack_portrait</dropdown>
+      <dropdown>units\animals\bear\beargrizzly_portrait</dropdown>
+      <dropdown>units\animals\bear\bearpolar_portrait</dropdown>
+      <dropdown>units\animals\bighorn_sheep\bighorn_sheep_portrait</dropdown>
+      <dropdown>units\animals\canadian_goose\canadian_goose_portrait</dropdown>
+      <dropdown>units\animals\capybara\capybara_portrait</dropdown>
+      <dropdown>units\animals\caribou\caribou_portrait</dropdown>
+      <dropdown>units\animals\cougar\cougar_portrait</dropdown>
+      <dropdown>units\animals\cow\cow_portrait</dropdown>
+      <dropdown>units\animals\deer\deer_portrait</dropdown>
+      <dropdown>units\animals\eagle\eagle_portrait</dropdown>
+      <dropdown>units\animals\elk\elk_portrait</dropdown>
+      <dropdown>units\animals\fish\bass_portrait</dropdown>
+      <dropdown>units\animals\fish\cod_portrait</dropdown>
+      <dropdown>units\animals\fish\fish_portrait</dropdown>
+      <dropdown>units\animals\fish\mahi_portrait</dropdown>
+      <dropdown>units\animals\fish\salmon_portrait</dropdown>
+      <dropdown>units\animals\fish\sardine_portrait</dropdown>
+      <dropdown>units\animals\fish\tarpon_portrait</dropdown>
+      <dropdown>units\animals\horse\horse_portrait</dropdown>
+      <dropdown>units\animals\jaguar\jaguar_portrait</dropdown>
+      <dropdown>units\animals\jaguar\jaguar_white_portrait</dropdown>
+      <dropdown>units\animals\llama\llama_portrait</dropdown>
+      <dropdown>units\animals\macaw\macaw_portrait</dropdown>
+      <dropdown>units\animals\musk_ox\musk_ox_portrait</dropdown>
+      <dropdown>units\animals\rhea\rhea_portrait</dropdown>
+      <dropdown>units\animals\seal\seal_portrait</dropdown>
+      <dropdown>units\animals\tapir\tapir_portrait</dropdown>
+      <dropdown>units\animals\turkey\turkey_portrait</dropdown>
+      <dropdown>units\animals\vulture\vulture_portrait</dropdown>
+      <dropdown>units\animals\whale\whale_beluga_portrait</dropdown>
+      <dropdown>units\animals\whale\whale_humpback_portrait</dropdown>
+      <dropdown>units\animals\whale_minke\minke_whale_portrait</dropdown>
+    </gadget>
+    <gadget name="portlabel8a" type="gadget" sizerel1024="340 210 470 230">$$33691$$Civilian</gadget>
+    <gadget name="portlabel8b" type="gadget" sizerel1024="470 210 640 230">$$31818$$Ships</gadget>
+    <gadget name="portList8" type="textField" scrollvert="" sizerel1024="340 230 650 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$33691$$Civilian</dropdown>
+      <dropdown>units\villagers\villager_portrait</dropdown>
+      <dropdown>units\villagers\villager_portrait_male</dropdown>
+      <dropdown>units\villagers\envoy_portrait</dropdown>
+      <dropdown>units\infantry_ranged\coureur\coureur_du_bois_portrait</dropdown>
+      <dropdown>units\villagers\settler_wagon\settler_wagon_portrait</dropdown>
+      <dropdown>$$31818$$Ships</dropdown>
+      <dropdown>units\naval\canoe\I_canoe_portrait</dropdown>
+      <dropdown>units\naval\caravel_ship\caravel_ship_portrait</dropdown>
+      <dropdown>units\naval\fluyt\fluyt_portrait</dropdown>
+      <dropdown>units\naval\frigate\frigate_icon_portrait</dropdown>
+      <dropdown>units\naval\galley\galley_portrait</dropdown>
+      <dropdown>units\naval\monitor\monitor_icon</dropdown>
+    </gadget>
+    <gadget name="portlabel9" type="gadget" sizerel1024="200 260 440 280">$$23630$$Native Americans</gadget>
+    <gadget name="portList9" type="textField" scrollvert="" sizerel1024="180 280 460 300" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\natives\axe_rider_portrait</dropdown>
+      <dropdown>units\natives\blowgun_portrait</dropdown>
+      <dropdown>units\natives\bola_portrait</dropdown>
+      <dropdown>units\natives\clubman_icon_portrait</dropdown>
+      <dropdown>units\natives\comanche_lancer_portrait</dropdown>
+      <dropdown>units\natives\cree_tracker_portrait</dropdown>
+      <dropdown>units\natives\dog_soldier_portrait</dropdown>
+      <dropdown>units\natives\eagle_warrior_portrait</dropdown>
+      <dropdown>units\natives\greta_portrait</dropdown>
+      <dropdown>units\natives\holcan_spearman_portrait</dropdown>
+      <dropdown>units\natives\horse_archer_portrait</dropdown>
+      <dropdown>units\natives\humainca_portrait</dropdown>
+      <dropdown>units\natives\jaguar_warrior_portrait</dropdown>
+      <dropdown>units\natives\mantlet_portrait</dropdown>
+      <dropdown>units\natives\medicine_man_portrait</dropdown>
+      <dropdown>units\natives\miskatonic_scout_portrait</dropdown>
+      <dropdown>units\natives\nootka_warchief_portrait</dropdown>
+      <dropdown>units\natives\rifleman_portrait</dropdown>
+      <dropdown>units\natives\sharktooth_bow_portrait</dropdown>
+      <dropdown>units\natives\tomahawk_portrait</dropdown>
+      <dropdown>units\natives\tupi_archer_portrait</dropdown>
+    </gadget>
+    <gadget name="portPortraitx" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 265 90 285">Portrait X<command>gadgetToggle("portxPict")</command></gadget>
+    <gadget name="portPortraitY" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="100 265 120 285">Y<command>gadgetToggle("portyPict")</command></gadget>
+    <gadget name="portGadget" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 295 120 315">$$22346$$Gadget<command>gadgetToggle("tgvUI")</command></gadget>
+    <gadget name="portTrigg" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="520 265 620 285">$$20517$$Trigger Editor<command>editMode("Triggers")</command></gadget>
+    <gadget name="portClose" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="520 295 620 315">$$18457$$Close<command>gadgetUnreal("portPict")</command></gadget>
+  </gadget>
+  <gadget name="portxPict" type="gadget" size1024="140 150 800 500" background="ui\editor\editor_background" bevel="" titlebar="Portrait X" hidden="" windowzstyle="" closebutton="" closeonesc="" moveable="">
+    <gadget name="portxPict-name" enableime="" type="textField" sizerel1024="20 20 560 40" textcolor="0 0 0" textfont="Arial nobold nodrop" history="" textfontsize="12">$$20494$$Text</gadget>
+    <gadget name="portxlabel1" type="gadget" sizerel1024="20 60 330 80">$$19038$$Military</gadget>
+    <gadget name="portxList1" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 80 330 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>ui\units\IRO_tomahawk_portrait</dropdown>
+      <dropdown>ui\units\iro_aenna_portrait</dropdown>
+      <dropdown>ui\units\iro_forrest_runner_portrait</dropdown>
+      <dropdown>ui\units\IRO_horseman_portrait</dropdown>
+      <dropdown>ui\units\iro_musket_rider_portrait</dropdown>
+      <dropdown>ui\units\iro_ram_portrait</dropdown>
+      <dropdown>ui\units\sx_light_cannon_portrait</dropdown>
+      <dropdown>ui\units\IRO_warchief_portrait</dropdown>
+      <dropdown>ui\units\az_war_canoe_portrait</dropdown>
+      <dropdown>ui\units\az_zapotec_lightning_warrior_portrait</dropdown>
+      <dropdown>ui\units\klamath_rifleman_portrait</dropdown>
+      <dropdown>ui\units\elmeti_portrait</dropdown>
+      <dropdown>ui\units\cheyenne_cav_portrait</dropdown>
+      <dropdown>ui\units\huron_mantlet_portrait</dropdown>
+      <dropdown>ui\units\ninja_portrait</dropdown>
+      <dropdown>ui\units\apache_cavalry_portrait</dropdown>
+      <dropdown>ui\units\navajo_rifleman_portrait</dropdown>
+      <dropdown>ui\units\sx_warclub_portrait</dropdown>
+      <dropdown>ui\units\sx_warbow_portrait</dropdown>
+      <dropdown>ui\units\sx_warchief_portrait</dropdown>
+      <dropdown>ui\units\sx_rifle_rider_portrait</dropdown>
+      <dropdown>ui\units\az_coyote_man_portrait</dropdown>
+      <dropdown>ui\units\az_macehuatlin_portrait</dropdown>
+      <dropdown>ui\units\sx_warrifle_portrait</dropdown>
+      <dropdown>ui\units\tlaloc_canoe_portrait</dropdown>
+      <dropdown>ui\units\az_eagle_knight_portrait</dropdown>
+      <dropdown>ui\units\az_jaguar_warrior_portrait</dropdown>
+      <dropdown>ui\units\az_arrow_knight_portrait</dropdown>
+      <dropdown>ui\units\az_puma_man_portrait</dropdown>
+      <dropdown>ui\units\az_skull_knight_portrait</dropdown>
+      <dropdown>ui\units\az_warchief_portrait</dropdown>
+      <dropdown>ui\units\az_travois_portrait</dropdown>
+      <dropdown>ui\units\fusilier_portrait</dropdown>
+      <dropdown>ui\units\colonial_militia_portrait</dropdown>
+      <dropdown>ui\units\sx_axe_rider_portrait</dropdown>
+      <dropdown>ui\units\sx_dog_soldier_portrait</dropdown>
+      <dropdown>ui\units\coup_rider_portrait</dropdown>
+      <dropdown>ui\units\guanaco_portrait</dropdown>
+      <dropdown>ui\units\petard_portrait</dropdown>
+      <dropdown>ui\units\mapuche_clubman_portrait</dropdown>
+      <dropdown>units\artillery\organ_gun\organ_gun_portrait</dropdown>
+      <dropdown>units\artillery\rocket\rocket_portrait</dropdown>
+      <dropdown>ui\units\flt_boat_portrait</dropdown>
+      <dropdown>ui\units\colonial_militia_portrait</dropdown>
+      <dropdown>ui\units\warrior_portrait</dropdown>
+      <dropdown>ui\units\flt_boat_bridge_portrait</dropdown>
+      <dropdown>ui\units\sx_bow_rider_portrait</dropdown>
+      <dropdown>ui\units\flt_boat_bridge_portrait</dropdown>
+      <dropdown>ui\units\spy_portrait</dropdown>
+      <dropdown>ui\units\IRO_warchief_portrait</dropdown>
+      <dropdown>ui\units\sx_warchief_portrait</dropdown>
+      <dropdown>ui\units\ironclad_portrait</dropdown>
+      <dropdown>ui\units\horse_artillery_portrait</dropdown>
+      <dropdown>ui\units\sx_warchief_portrait</dropdown>
+      <dropdown>ui\units\petard_portrait</dropdown>
+      <dropdown>ui\units\az_zapotec_lightning_warrior_portrait</dropdown>
+      <dropdown>ui\units\cheyenne_cav_portrait</dropdown>
+      <dropdown>ui\units\huron_mantlet_portrait</dropdown>
+      <dropdown>units\naval\galleon\galleon_icon_portrait</dropdown>
+      <dropdown>units\infantry_ranged\musketeer\musketeer_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel5" type="gadget" sizerel1024="340 60 640 80">$$23630$$Native Americans</gadget>
+    <gadget name="portxList5" type="textField" scrollvert="" alphasort="" history="" sizerel1024="340 80 650 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>ui\native_allies\Zapotec</dropdown>
+      <dropdown>ui\native_allies\Cheyenne</dropdown>
+      <dropdown>ui\native_allies\Huron</dropdown>
+      <dropdown>units\natives\mantlet_portrait</dropdown>
+      <dropdown>ui\native_allies\Apache</dropdown>
+      <dropdown>ui\native_allies\Klamath</dropdown>
+      <dropdown>ui\native_allies\Mapuche</dropdown>
+      <dropdown>ui\native_allies\Navajo</dropdown>
+      <dropdown>units\natives\dog_soldier_portrait</dropdown>
+      <dropdown>units\natives\holcan_spearman_portrait</dropdown>
+      <dropdown>units\natives\rifleman_portrait</dropdown>
+      <dropdown>units\natives\cree_tracker_portrait</dropdown>
+      <dropdown>units\natives\tupi_archer_portrait</dropdown>
+      <dropdown>units\natives\clubman_icon_portrait</dropdown>
+      <dropdown>units\natives\horse_archer_portrait</dropdown>
+      <dropdown>units\natives\blowgun_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel2" type="gadget" sizerel1024="20 110 330 130">$$22824$$Explorer</gadget>
+    <gadget name="portxList2" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 130 330 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\spc\crazy_horse\crazy_horse_portrait</dropdown>
+      <dropdown>units\spc\nate_black\nate_black_portrait</dropdown>
+      <dropdown>units\spc\sven\sven_portrait</dropdown>
+      <dropdown>units\spc\chayton\chayton_portrait</dropdown>
+      <dropdown>units\spc\chayton\chayton_ind_portrait</dropdown>
+      <dropdown>units\spc\sheriff_holmes\holme_portrait</dropdown>
+      <dropdown>units\spc\john_black\john_black_igc_icon</dropdown>
+      <dropdown>units\spc\delgado\delgado_igc_icon</dropdown>
+      <dropdown>units\spc\kanyenke_x\kanyenke_portrait</dropdown>
+      <dropdown>units\spc\nonahkee\nonahkee_igc_icon</dropdown>
+      <dropdown>units\spc\miner\miner_portrait</dropdown>
+      <dropdown>units\spc\alain\alain_igc_portrait</dropdown>
+      <dropdown>units\spc\major_cooper\major_cooper_igc_icon</dropdown>
+      <dropdown>units\spc\custer\custer_portrait</dropdown>
+      <dropdown>units\spc\nate_black\nate_black_portrait</dropdown>
+      <dropdown>units\spc\russian_cannon\russian_cannon_icon_portrait</dropdown>
+      <dropdown>units\spc\george_washington\george_washington_igc_icon</dropdown>
+      <dropdown>units\spc\george_washington_x\washington_portrait</dropdown>
+      <dropdown>units\spc\russian_cannon\russian_cannon_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel6" type="gadget" sizerel1024="340 110 640 130">$$35675$$Miscellaneous</gadget>
+    <gadget name="portxList6" type="textField" scrollvert="" sizerel1024="340 130 650 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>Special units</dropdown>
+      <dropdown>objects\treasure\treasure_portrait</dropdown>
+      <dropdown>ui\command\generate_food_portrait</dropdown>
+      <dropdown>ui\command\generate_wood_icon</dropdown>
+      <dropdown>units\balloons\hot_air_balloon_portrait</dropdown>
+      <dropdown>patch\plymouth\thanks_turkey_icon</dropdown>
+      <dropdown>patch\plymouth\pilgrims_icon</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_rider_portrait</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_shotgun_portrait</dropdown>
+      <dropdown>units\spc\pirates\pirate_portrait</dropdown>
+      <dropdown>Cheat units</dropdown>
+      <dropdown>units\monster_truck\monster_truck_blue_icon</dropdown>
+      <dropdown>units\fluffy\fluffy_portrait</dropdown>
+      <dropdown>units\animals\tapir\flying_purple_tapir_icon</dropdown>
+      <dropdown>units\monster_truck\monster_truck_red_icon</dropdown>
+    </gadget>
+    <gadget name="portxlabel3" type="gadget" sizerel1024="20 160 330 180">$$22133$$Buildings</gadget>
+    <gadget name="portxList3" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 180 330 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">s<dropdown>ui\buildings\war_hut_portrait</dropdown><dropdown>ui\buildings\medicine_shrine</dropdown><dropdown>ui\buildings\corral_portrait</dropdown><dropdown>ui\buildings\farm_portrait</dropdown><dropdown>ui\buildings\house_portrait</dropdown><dropdown>ui\buildings\iro_house_portrait</dropdown><dropdown>buildings\barracks\barracks_portrait</dropdown><dropdown>buildings\gold_mine\gold_mine_portrait</dropdown><dropdown>ui\buildings\fire_pit_portrait</dropdown><dropdown>ui\buildings\nobles_hut_portrait</dropdown><dropdown>buildings\spc\fixed_gun\fixed_gun_portrait</dropdown><dropdown>buildings\factory\shared_factory_portrait</dropdown><dropdown>buildings\arsenal\arsenal_portrait</dropdown><dropdown>ui\buildings\native_embassy_portrait</dropdown><dropdown>ui\buildings\barn_portrait</dropdown><dropdown>ui\buildings\baker_portrait</dropdown><dropdown>buildings\spc\tents\largetent_portrait</dropdown><dropdown>ui\buildings\teepee_portrait</dropdown><dropdown>ui\buildings\feed_store_portrait</dropdown><dropdown>buildings\spc\fort\spc_fort_wall_portrait</dropdown><dropdown>ui\buildings\az_house_portrait</dropdown><dropdown>buildings\spc\weapons_cache\weapons_cache_portrait</dropdown><dropdown>ui\buildings\saloon_portrait</dropdown><dropdown>ui\buildings\barn_portrait</dropdown><dropdown>buildings\spc\fountain_of_youth\fountain_youth_portrait</dropdown><dropdown>buildings\spc\inca_outpost\inca_outpost_portrait</dropdown></gadget>
+    <gadget name="portxlabel7a" type="gadget" sizerel1024="340 160 500 180">$$25736$$Trade</gadget>
+    <gadget name="portxlabel7b" type="gadget" sizerel1024="500 160 640 180">Resources</gadget>
+    <gadget name="portxList7" type="textField" scrollvert="" sizerel1024="340 180 650 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$25736$$Trade</dropdown>
+      <dropdown>units\trade\spc_wagon_portrait</dropdown>
+      <dropdown>units\trade\fort_wagon_portrait</dropdown>
+      <dropdown>units\trade\travois_icon_portrait</dropdown>
+      <dropdown>ui\units\bank_wagon_portrait</dropdown>
+      <dropdown>Resources</dropdown>
+      <dropdown>terrain\trees\tree_icon_portrait</dropdown>
+      <dropdown>objects\treasure\treasure_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel4q" type="gadget" sizerel1024="20 210 330 230">$$28235$$Wildlife</gadget>
+    <gadget name="portxList4" type="textField" scrollvert="" sizerel1024="10 230 330 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\animals\bison\bison_icon_portrait</dropdown>
+      <dropdown>units\animals\caribou\caribou_portrait</dropdown>
+      <dropdown>ui\units\guanaco_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel8a" type="gadget" sizerel1024="340 210 470 230">$$33691$$Civilian</gadget>
+    <gadget name="portxlabel8b" type="gadget" sizerel1024="470 210 640 230">$$31818$$Ships</gadget>
+    <gadget name="portxList8" type="textField" scrollvert="" sizerel1024="340 230 650 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$33691$$Civilian</dropdown>
+      <dropdown>units\villagers\villager_portrait</dropdown>
+      <dropdown>units\villagers\villager_portrait_male</dropdown>
+      <dropdown>units\villagers\envoy_portrait</dropdown>
+      <dropdown>units\infantry_ranged\coureur\coureur_du_bois_portrait</dropdown>
+      <dropdown>units\villagers\settler_wagon\settler_wagon_portrait</dropdown>
+      <dropdown>$$31818$$Ships</dropdown>
+      <dropdown>ui\units\flt_boat_portrait</dropdown>
+    </gadget>
+    <gadget name="portxlabel9" type="gadget" sizerel1024="200 260 440 280">$$23630$$Native Americans</gadget>
+    <gadget name="portxList9" type="textField" scrollvert="" sizerel1024="180 280 460 300" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\natives\axe_rider_portrait</dropdown>
+      <dropdown>units\natives\blowgun_portrait</dropdown>
+      <dropdown>units\natives\bola_portrait</dropdown>
+      <dropdown>units\natives\clubman_icon_portrait</dropdown>
+      <dropdown>units\natives\comanche_lancer_portrait</dropdown>
+      <dropdown>units\natives\cree_tracker_portrait</dropdown>
+      <dropdown>units\natives\dog_soldier_portrait</dropdown>
+      <dropdown>units\natives\eagle_warrior_portrait</dropdown>
+      <dropdown>units\natives\greta_portrait</dropdown>
+      <dropdown>units\natives\holcan_spearman_portrait</dropdown>
+      <dropdown>units\natives\horse_archer_portrait</dropdown>
+      <dropdown>units\natives\humainca_portrait</dropdown>
+      <dropdown>units\natives\jaguar_warrior_portrait</dropdown>
+      <dropdown>units\natives\mantlet_portrait</dropdown>
+      <dropdown>units\natives\medicine_man_portrait</dropdown>
+      <dropdown>units\natives\miskatonic_scout_portrait</dropdown>
+      <dropdown>units\natives\nootka_warchief_portrait</dropdown>
+      <dropdown>units\natives\rifleman_portrait</dropdown>
+      <dropdown>units\natives\sharktooth_bow_portrait</dropdown>
+      <dropdown>units\natives\tomahawk_portrait</dropdown>
+      <dropdown>units\natives\tupi_archer_portrait</dropdown>
+    </gadget>
+    <gadget name="portx2Portrait" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 265 90 285">$$22386$$Portrait<command>gadgetToggle("portPict")</command></gadget>
+    <gadget name="portxyPortrait" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="100 265 120 285">Y<command>gadgetToggle("portyPict")</command></gadget>
+    <gadget name="portxGadget" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 295 120 315">$$22346$$Gadget<command>gadgetToggle("tgvUI")</command></gadget>
+    <gadget name="portxTrigg" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="520 265 620 285">$$20517$$Trigger Editor<command>editMode("Triggers")</command></gadget>
+    <gadget name="portxClose" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="520 295 620 315">$$18457$$Close<command>gadgetUnreal("portxPict")</command></gadget>
+  </gadget>
+  <gadget name="portyPict" type="gadget" size1024="100 150 880 500" background="ui\editor\editor_background" bevel="" titlebar="Portrait Y" hidden="" windowzstyle="" closebutton="" closeonesc="" moveable="">
+    <gadget name="portyPict-name" enableime="" type="textField" sizerel1024="50 20 700 40" textcolor="0 0 0" textfont="Arial nobold nodrop" history="" textfontsize="12">$$20494$$Text</gadget>
+    <gadget name="portylabel1" type="gadget" sizerel1024="20 60 390 80">$$19038$$Military</gadget>
+    <gadget name="portyList1" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 80 390 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\infantry\pikeman\pikeman_portrait</dropdown>
+      <dropdown>units\infantry_ranged\musketeer\musketeer_portrait</dropdown>
+      <dropdown>units\cavalry\light_cavalry\light_cavalry_portrait</dropdown>
+      <dropdown>units\cavalry\dragoon\dragoon_portrait</dropdown>
+      <dropdown>units\cavalry\lancer\lancer_portrait</dropdown>
+      <dropdown>units\cavalry\reiter\reiter_portrait</dropdown>
+      <dropdown>units\artillery\falconet\falconet_portrait</dropdown>
+      <dropdown>units\artillery\culverin\culverin_portrait</dropdown>
+      <dropdown>units\artillery\mortar\mortar_portrait</dropdown>
+      <dropdown>units\artillery\great_bombard\great_bombard_portrait</dropdown>
+      <dropdown>ui\units\horse_artillery_portrait</dropdown>
+      <dropdown>units\infantry_ranged\crossbow\crossbow_portrait</dropdown>
+      <dropdown>units\infantry\redolero\redolero_portrait</dropdown>
+      <dropdown>units\infantry_ranged\musketeer\musketeer_portrait</dropdown>
+      <dropdown>units\infantry_ranged\janissary\janissary_icon_128</dropdown>
+      <dropdown>units\cavalry\cuirassier\cuirassier_portrait</dropdown>
+      <dropdown>units\cavalry\uhlan\uhlan_portrait</dropdown>
+      <dropdown>units\infantry\dopplesoldner\dopplesoldner_portrait</dropdown>
+      <dropdown>units\infantry_ranged\skirmisher\skirmisher_portrait</dropdown>
+      <dropdown>units\infantry_ranged\janissary\janissary_icon_128</dropdown>
+      <dropdown>units\artillery\cannon\cannon_portrait</dropdown>
+      <dropdown>units\cavalry\light_cavalry\light_cavalry_portrait</dropdown>
+      <dropdown>units\cavalry\dragoon\dragoon_portrait</dropdown>
+      <dropdown>ui\units\ninja_portrait</dropdown>
+      <dropdown>ui\units\elmeti_portrait</dropdown>
+      <dropdown>ui\units\fusilier_portrait</dropdown>
+      <dropdown>units\asians\chinese\ming_army\ming_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\qing_army\qing_army_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel5" type="gadget" sizerel1024="410 60 770 80">$$60004$$Asians</gadget>
+    <gadget name="portyList5" type="textField" scrollvert="" alphasort="" history="" sizerel1024="400 80 770 100" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\asians\chinese\arquebusier\arquebusier_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\changdao\changdao_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\chu_ko_nu\chu_ko_nu_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\flame_thrower\flame_thrower_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\flying_crow\flying_crow_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\forbidden_army\forbidden_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\hand_mortar\hand_mortar_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\iron_flail\iron_flail_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\keshik\keshik_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\mandarin_army\mandarin_army_icon_64</dropdown>
+      <dropdown>units\asians\chinese\meteor_hammer\meteor_hammer_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\mongol_scout\mongol_scout_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\mongolian_army\mongolian_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\monk\shaolin_monk_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\new_mongolian_army\new_mongolian_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\old_han_army\old_han_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\qiang_pikeman\qiang_pikeman_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\shaolin_disciple\shaolin_master_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\standard_army\standard_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\steppe_rider\steppe_rider_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\territorial_army\territorial_army_icon_portrait</dropdown>
+      <dropdown>units\asians\chinese\wokou_army\wokou_army_icon_64</dropdown>
+      <dropdown>units\asians\consulate\british_armies\british_army_icon_64</dropdown>
+      <dropdown>units\asians\consulate\british_armies\british_company_icon_64</dropdown>
+      <dropdown>units\asians\consulate\british_armies\british_force_icon_64</dropdown>
+      <dropdown>units\asians\consulate\dutch_expeditionary_company</dropdown>
+      <dropdown>units\asians\consulate\dutch_expeditionary_force</dropdown>
+      <dropdown>units\asians\consulate\french_armies\french_army_icon_64</dropdown>
+      <dropdown>units\asians\consulate\french_armies\french_company_icon_64</dropdown>
+      <dropdown>units\asians\consulate\french_armies\french_force_icon_64</dropdown>
+      <dropdown>units\asians\consulate\german_expeditionary_company</dropdown>
+      <dropdown>units\asians\consulate\ottoman_expeditionary_company</dropdown>
+      <dropdown>units\asians\consulate\por_armies\por_company_icon_64</dropdown>
+      <dropdown>units\asians\consulate\por_armies\por_force_icon_64</dropdown>
+      <dropdown>units\asians\consulate\rus_armies\rus_company_icon_64</dropdown>
+      <dropdown>units\asians\consulate\rus_armies\rus_force_icon_64</dropdown>
+      <dropdown>units\asians\indians\howdah\howdah_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mahout\mahout_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\flail_elephant_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\gurkha_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\howdah_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\mahout_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\rajput_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\sepoy_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\siege_elephant_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\sowar_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\urumi_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\mansabdar\zamburak_mansabdar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\monk\indian_monk_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\rajput\rajput_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\siege_elephant\siege_elephant_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\sowar\sowar_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\urumi\urumi_icon_portrait</dropdown>
+      <dropdown>units\asians\indians\zamburak\zamburak_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\ashigaru\ashigaru_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\daimyo_Kiyomasa\daimyo_kiyomasa_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\daimyo_Masamune\daimyo_massamune_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\daimyo_mototada\daimyo_mototada_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\flaming_arrow\flaming_arrow_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\monk\monk_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\morutaru\morutaru_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\naginata_rider\naginata_rider_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\samurai\samurai_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\shinobi\shinobi_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\shinobi\shinobi_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\shogun\regecide_shogun_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\shogun\shogun_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\sohei\sohei_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\yabusame\yabusame_icon_portrait</dropdown>
+      <dropdown>units\asians\japanese\yumi\yumi_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\chakram\chakram_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\conquistador\conquistador_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\gurkha\gurkha_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\jesuit\unit_jesuit_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\rattan_shield\shield_rattan_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\sepoy\sepoy_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\tiger_claw\Tiger_claw_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\war_elephant\war_elephant_icon_portrait</dropdown>
+      <dropdown>units\asians\natives\yamabushi\yamabushi_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel2" type="gadget" sizerel1024="20 110 390 130">$$32485$$Hero</gadget>
+    <gadget name="portyList2" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 130 390 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\asians\spc\arsonist\arsonist_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\chen\chen_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\coin_wagon_asian\coin_wagon_asian_portrait</dropdown>
+      <dropdown>units\asians\spc\edwardson\clnl_edwardson_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\emperor_bahadar_shar_zafar\badur_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\huang\huang_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\jinhai\jinhai_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\kichiro\kichiro_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\mototada\mototada_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\nanib\nanib_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\prava\pravar_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\riderless_elephant\rampaging_elephant_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\sepoy\igc_sepoy_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\tokugawa\tokugawa_icon_portrait</dropdown>
+      <dropdown>units\asians\spc\treasure_ship\china_ship_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel6" type="gadget" sizerel1024="410 110 770 130">$$35675$$Miscellaneous</gadget>
+    <gadget name="portyList6" type="textField" scrollvert="" sizerel1024="400 130 770 150" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>Special units</dropdown>
+      <dropdown>objects\treasure\treasure_portrait</dropdown>
+      <dropdown>ui\command\generate_food_portrait</dropdown>
+      <dropdown>ui\command\generate_wood_icon</dropdown>
+      <dropdown>units\balloons\hot_air_balloon_portrait</dropdown>
+      <dropdown>patch\plymouth\thanks_turkey_icon</dropdown>
+      <dropdown>patch\plymouth\pilgrims_icon</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_rider_portrait</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_shotgun_portrait</dropdown>
+      <dropdown>units\spc\pirates\pirate_portrait</dropdown>
+      <dropdown>Cheat units</dropdown>
+      <dropdown>units\asians\eggs\flaming_hot_dog_cart\unit_hot_dog_cart_icon_portrait</dropdown>
+      <dropdown>units\asians\eggs\monster_ice_Cream_truck\unit_monster_ice_</dropdown>
+      <dropdown>cream_truck_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel3" type="gadget" sizerel1024="20 160 390 180">$$22133$$Buildings</gadget>
+    <gadget name="portyList3" type="textField" scrollvert="" alphasort="" history="" sizerel1024="10 180 390 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>buildings\arsenal\arsenal_portrait</dropdown>
+      <dropdown>buildings\asian_civs\barracks\india_barracks_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\barracks\japan_barracks_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\caravanserai\india\caravanserai_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\castle\China\chinese_castle_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\castle\Indian\indian_castle_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\castle\Japan\japan_castle_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\castle_regicide\shogun_castle_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\consulate\consulate_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\dock\india_dock_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\dojo\dojo_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\grove\grove_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\house_indian\house_indian_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\monastery\monastery_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\orchard\orchard_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\rice_paddy\china\china_rice_paddy_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\sacred_field\sacredfield_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\shrine\shrine_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\aztec_house\az_house_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\aztec_nobles_hut\nobles_hut_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\aztec_temple\aztec_temple_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\aztec_war_hut\war_hut_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\gunpowder_stores\gunpowder_stores_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\japanese_outpost\asian_outpost_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\spc\war_tent\Asian_war_tent\asian_war_tent_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\trade_market\japan\japanese_market_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\village\chinese_village_icon_portrait</dropdown>
+      <dropdown>buildings\asian_civs\war_academy\china_waracademy_icon_portrait</dropdown>
+      <dropdown>buildings\bank\bank_portrait</dropdown>
+      <dropdown>buildings\church\church_portrait</dropdown>
+      <dropdown>buildings\livestock</dropdown>
+      <dropdown>buildings\native_settlement\indian_native_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_bhakti_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_jesuit_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_shaolin_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_sufi_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_udasi_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\native_zen_site_icon_portrait</dropdown>
+      <dropdown>buildings\native_settlement\SM_indian_guy_icon_portrait</dropdown>
+      <dropdown>buildings\spc\fort\spc_fort_gate_portrait</dropdown>
+      <dropdown>buildings\spc\fort\spc_fort_wall_portrait</dropdown>
+      <dropdown>buildings\stables\stables_portrait</dropdown>
+      <dropdown>buildings\wonders\agra_fort\agra_fort_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\charminar_gate\charminar_gate_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\confucian_academy\confucian_academy_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\giant_buddha\giant_buddha_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\golden_pavillion\golden_pavillion_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\imperial_palace\shogunate_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\karni_mata\karni_mata_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\porcelain_tower\porcelain_tower_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\summer_palace\summer_palace_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\taj_mahal\taj_mahal_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\temple_of_heaven\temple_of_heaven_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\torii_gates\torii_gates_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\toshogu_shrine\toshogu_shrine_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\tower_of_victory\tower_of_victory_icon_portrait</dropdown>
+      <dropdown>buildings\wonders\white_pagoda\White_Pagoda_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel7a" type="gadget" sizerel1024="410 160 590 180">$$25736$$Trade</gadget>
+    <gadget name="portylabel7b" type="gadget" sizerel1024="590 160 770 180">Resources</gadget>
+    <gadget name="portyList7" type="textField" scrollvert="" sizerel1024="400 180 770 200" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$25736$$Trade</dropdown>
+      <dropdown>ui\trade_route\trade_route_1_portrait</dropdown>
+      <dropdown>ui\units\bank_wagon_portrait</dropdown>
+      <dropdown>units\trade\spc_wagon_portrait</dropdown>
+      <dropdown>units\trade\fort_wagon_portrait</dropdown>
+      <dropdown>units\trade\travois_icon_portrait</dropdown>
+      <dropdown>Resources</dropdown>
+      <dropdown>objects\treasure\treasure_portrait</dropdown>
+      <dropdown>terrain\trees\tree_icon_portrait</dropdown>
+      <dropdown>ui\command\generate_coin_portrait</dropdown>
+      <dropdown>ui\command\generate_food_portrait</dropdown>
+      <dropdown>ui\command\generate_wood_portrait</dropdown>
+      <dropdown>units\animals\bison\bison_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel4q" type="gadget" sizerel1024="20 210 390 230">$$28235$$Wildlife</gadget>
+    <gadget name="portyList4" type="textField" scrollvert="" sizerel1024="10 230 390 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>units\animals\black_panther\black_panther_icon_portrait</dropdown>
+      <dropdown>units\animals\cow\cow_portrait</dropdown>
+      <dropdown>units\animals\fish\carp_icon_portrait</dropdown>
+      <dropdown>units\animals\fish\catfish_icon_portrait</dropdown>
+      <dropdown>units\animals\fish\mola_mola_icon_portrait</dropdown>
+      <dropdown>units\animals\fish\tuna_icon_portrait</dropdown>
+      <dropdown>units\animals\giant_salamander\giant_salamander_icon_portrait</dropdown>
+      <dropdown>units\animals\goat\goat_icon_portrait</dropdown>
+      <dropdown>units\animals\great_white_shark\shark_icon_portrait</dropdown>
+      <dropdown>units\animals\ibex\ibex_icon_portrait</dropdown>
+      <dropdown>units\animals\lion\lion_icon_portrait</dropdown>
+      <dropdown>units\animals\lion_tailed_macaque\Liontailed_Macaque_icon_portrait</dropdown>
+      <dropdown>units\animals\marco_polo_sheep\marco_polo_sheep_icon_portrait</dropdown>
+      <dropdown>units\animals\monitor_lizard\monitor_lizard_icon_portrait</dropdown>
+      <dropdown>units\animals\musk_deer\musk_deer_icon_portrait</dropdown>
+      <dropdown>units\animals\nilgai\nilgai_icon_portrait</dropdown>
+      <dropdown>units\animals\orangutan\orangutan_icon_portrait</dropdown>
+      <dropdown>units\animals\orca\orca_icon_portrait</dropdown>
+      <dropdown>units\animals\panda\panda_icon_portrait</dropdown>
+      <dropdown>units\animals\rhino\rhino_icon_portrait</dropdown>
+      <dropdown>units\animals\saiga\saiga_icon_portrait</dropdown>
+      <dropdown>units\animals\serow\serow_icon_portrait</dropdown>
+      <dropdown>units\animals\snow_leopard\snow_leopard_icon_portrait</dropdown>
+      <dropdown>units\animals\snow_monkey\snowmonkey_icon_portrait</dropdown>
+      <dropdown>units\animals\squid\squid_icon_portrait</dropdown>
+      <dropdown>units\animals\tibetan_macaque\Macaque_icon_portrait</dropdown>
+      <dropdown>units\animals\tiger\tiger_icon_portrait</dropdown>
+      <dropdown>units\animals\turkey\turkey_portrait</dropdown>
+      <dropdown>units\animals\water_buffalo\water_buffalo_icon_portrait</dropdown>
+      <dropdown>units\animals\white_tiger\white_tiger_icon_portrait</dropdown>
+      <dropdown>units\animals\wild_elephant\elephant_icon_portrait</dropdown>
+      <dropdown>units\animals\yak\yak_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel8a" type="gadget" sizerel1024="410 210 590 230">$$33691$$Civilian</gadget>
+    <gadget name="portylabel8b" type="gadget" sizerel1024="590 210 770 230">$$31818$$Ships</gadget>
+    <gadget name="portyList8" type="textField" scrollvert="" sizerel1024="400 230 770 250" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>$$33691$$Civilian</dropdown>
+      <dropdown>ui\home_city\HC_migrants_shipment_spawn_icon_64</dropdown>
+      <dropdown>ui\home_city\hc_northern_refugees</dropdown>
+      <dropdown>ui\home_city\hc_western_refugees</dropdown>
+      <dropdown>ui\home_city\hc_year_of_the_ox</dropdown>
+      <dropdown>units\asians\shared\rickshaw\rickshaw2_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\rickshaw\unit_chinese_grove_rickshaw_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\rickshaw\unit_indian_grove_rickshaw_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\villager\indian_peasant_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\villager\peasant_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\wagon\chinese_castle_wagon_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\wagon\chinese_town_center_wagon_icon_portrait</dropdown>
+      <dropdown>units\asians\shared\wagon\indian_town_center_wagon_icon_portrait</dropdown>
+      <dropdown>units\trade\factory_wagon_portrait</dropdown>
+      <dropdown>units\trade\outpost_wagon_portrait</dropdown>
+      <dropdown>$$31818$$Ships</dropdown>
+      <dropdown>units\asians\naval\atakabune\atakebune_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\catamaran\catamaran_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\fire_ship\fire_ship_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\fishing_boat_asian\chinese_fishing_boat_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\fuchuan\fuchuan_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\fune\fune_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\tekkousen\tekkousen_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\war_junk\war_junk_icon_portrait</dropdown>
+      <dropdown>units\asians\naval\wokou_junk\wokou_junk_icon_portrait</dropdown>
+    </gadget>
+    <gadget name="portylabel9" type="gadget" sizerel1024="200 260 570 280">$$42020$$Mercenaries</gadget>
+    <gadget name="portyList9" type="textField" scrollvert="" sizerel1024="180 280 590 300" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">
+      <dropdown>nuggets\outlaw_kidnap\outlaw_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\blind_monk\blind_monk_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\delinquent_thuggee\thuggee_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\flail_elephant\flail_elephant_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\fugitive_dacoit\dacoit_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\iron_troop\iron_troop_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\jat_lancer\jat_lancer_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\wandering_horseman\wandering_horseman_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\wayward_ronin\wayward_ronin_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\wokou_pirate\wokou_pirate_icon_portrait</dropdown>
+      <dropdown>units\asians\mercenaries\yojimbo\yojimbo_icon_portrait</dropdown>
+      <dropdown>units\mercenaries\balkan_stradiot\balkan_stradiot_portrait</dropdown>
+      <dropdown>units\mercenaries\barbary_corsair\barbary_corsair_portrait</dropdown>
+      <dropdown>units\mercenaries\black_rider\black_rider_portrait</dropdown>
+      <dropdown>units\mercenaries\hackapell\hackapell_portrait</dropdown>
+      <dropdown>units\mercenaries\highlander\highlander_portrait</dropdown>
+      <dropdown>units\mercenaries\jaeger\hessian_jaeger_portrait</dropdown>
+      <dropdown>units\mercenaries\manchurian_archer\manchurian_archer_portrait</dropdown>
+      <dropdown>units\mercenaries\manchurian_archer\manchurian_archer_portrait</dropdown>
+      <dropdown>units\mercenaries\samurai\ronin_portrait</dropdown>
+      <dropdown>units\mercenaries\swiss_pikeman\swiss_pikeman_portrait</dropdown>
+      <dropdown>units\natives\miskatonic_scout_portrait</dropdown>
+      <dropdown>units\spc\elizabeth_ramsey\elizabeth_ramsey_igc_icon</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_rider_portrait</dropdown>
+      <dropdown>units\spc\outlaws\outlaw_shotgun_portrait</dropdown>
+      <dropdown>units\spc\pirates\pirate_portrait</dropdown>
+    </gadget>
+    <gadget name="portyPortrait" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 265 90 285">$$22386$$Portrait<command>gadgetToggle("portPict")</command></gadget>
+    <gadget name="portyxPortrait" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="100 265 120 285">X<command>gadgetToggle("portxPict")</command></gadget>
+    <gadget name="portyGadget" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 295 120 315">$$22346$$Gadget<command>gadgetToggle("tgvUI")</command></gadget>
+    <gadget name="portyTrigg" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="660 265 760 285">$$20517$$Trigger Editor<command>editMode("Triggers")</command></gadget>
+    <gadget name="portyClose" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="660 295 760 315">$$18457$$Close<command>gadgetUnreal("portyPict")</command></gadget>
+  </gadget>
+  <gadget name="txtBox" type="gadget" size1024="197 75 610 297" background="ui\editor\editor_background" bevel="" titlebar="$$22360$$Animation" hidden="" closebutton="" closeonesc="" moveable="" windowzstyle="">
+    <gadget name="animlabel1" type="gadget" tooltiptext="AoE3" sizerel1024="20 50 200 70">$$32485$$Hero</gadget>
+    <gadget name="animsList1" type="textField" scrollvert="" sizerel1024="20 70 200 90" textcolor="0 0 0" textfont="Arial nobold nodrop" showselect="" textfontsize="12">
+      <dropdown>Idle</dropdown>
+      <dropdown>IGC_TrainPassing</dropdown>
+      <dropdown>KneelIdle</dropdown>
+      <dropdown>KneelTalk2Sec</dropdown>
+      <dropdown>KneelTalk4Sec</dropdown>
+      <dropdown>Pointleftforward</dropdown>
+      <dropdown>pointLeftSide</dropdown>
+      <dropdown>pointrightforward</dropdown>
+      <dropdown>pointRightSide</dropdown>
+      <dropdown>Talk1Sec</dropdown>
+      <dropdown>Talk2Sec</dropdown>
+      <dropdown>TalkAngry</dropdown>
+      <dropdown>TalkAngryPointing</dropdown>
+      <dropdown>TalkComeWith</dropdown>
+      <dropdown>TalkGreetingHow</dropdown>
+      <dropdown>TalkLaughA</dropdown>
+      <dropdown>TalkLaughB</dropdown>
+      <dropdown>TalkNod</dropdown>
+      <dropdown>TalkQuestion</dropdown>
+      <dropdown>TalkShake</dropdown>
+      <dropdown>TalkShakingFist</dropdown>
+      <dropdown>TalkShrug</dropdown>
+      <dropdown>TalkStartled</dropdown>
+      <dropdown>TalkWoe</dropdown>
+      <dropdown>TurnLeft</dropdown>
+      <dropdown>TurnRight</dropdown>
+      <dropdown>WalkTalkA</dropdown>
+      <dropdown>WalkTalkB</dropdown>
+      <dropdown>WalkTalkC</dropdown>
+      <dropdown>WalkTalkD</dropdown>
+    </gadget>
+    <gadget name="animlabel2" type="gadget" tooltiptext="AoE3" sizerel1024="220 50 380 70">$$20178$$All</gadget>
+    <gadget name="animsList2" type="textField" scrollvert="" sizerel1024="210 70 390 90" textcolor="0 0 0" textfont="Arial nobold nodrop" showselect="" textfontsize="12">
+      <dropdown>Aim</dropdown>
+      <dropdown>Assault_bored</dropdown>
+      <dropdown>Assault_jog</dropdown>
+      <dropdown>Assault_melee_attack</dropdown>
+      <dropdown>Assault_melee_idle</dropdown>
+      <dropdown>Assault_run</dropdown>
+      <dropdown>Assault_walk</dropdown>
+      <dropdown>Attack_melee</dropdown>
+      <dropdown>Attack_ranged_reload</dropdown>
+      <dropdown>Attack_ranged</dropdown>
+      <dropdown>Attack_trample</dropdown>
+      <dropdown>Attack</dropdown>
+      <dropdown>Bear_campsite_idle</dropdown>
+      <dropdown>Bear_Tree_Bear_Exit</dropdown>
+      <dropdown>Bear_Tree_Bear_Idle</dropdown>
+      <dropdown>Bear_Tree_Captive_Exit</dropdown>
+      <dropdown>Bear_Tree_Captive_Idle</dropdown>
+      <dropdown>Bombard_aim</dropdown>
+      <dropdown>Bombard_bored</dropdown>
+      <dropdown>Bombard_cheer</dropdown>
+      <dropdown>Bombard_death</dropdown>
+      <dropdown>Bombard_jog</dropdown>
+      <dropdown>Bombard_limber</dropdown>
+      <dropdown>Bombard_melee_attack</dropdown>
+      <dropdown>Bombard_melee_idle</dropdown>
+      <dropdown>Bombard_ranged_attack</dropdown>
+      <dropdown>Bombard_ranged_bored</dropdown>
+      <dropdown>Bombard_ranged_idle</dropdown>
+      <dropdown>Bombard_Recoil</dropdown>
+      <dropdown>Bombard_reload</dropdown>
+      <dropdown>Bombard_run</dropdown>
+      <dropdown>Bombard_unlimber</dropdown>
+      <dropdown>Bombard_walk</dropdown>
+      <dropdown>BombardAttack</dropdown>
+      <dropdown>Bored</dropdown>
+      <dropdown>Build</dropdown>
+      <dropdown>BuildLifting</dropdown>
+      <dropdown>Buildold</dropdown>
+      <dropdown>BuildSaw</dropdown>
+      <dropdown>BuildStaking</dropdown>
+      <dropdown>Carry</dropdown>
+      <dropdown>Charge_Attack</dropdown>
+      <dropdown>Charge_Bored</dropdown>
+      <dropdown>Charge_death_by_melee</dropdown>
+      <dropdown>Charge_death_by_range</dropdown>
+      <dropdown>Charge_Idle</dropdown>
+      <dropdown>Charge_Jog</dropdown>
+      <dropdown>Charge_Run</dropdown>
+      <dropdown>Charge_special_attack</dropdown>
+      <dropdown>Charge_Walk</dropdown>
+      <dropdown>Cheer</dropdown>
+      <dropdown>Closed</dropdown>
+      <dropdown>CloseDoor</dropdown>
+      <dropdown>Closing</dropdown>
+      <dropdown>CombatIdle</dropdown>
+      <dropdown>Cover_Bored</dropdown>
+      <dropdown>Cover_Idle</dropdown>
+      <dropdown>Cover_Jog</dropdown>
+      <dropdown>Cover_melee_attack</dropdown>
+      <dropdown>Cover_melee_idle</dropdown>
+      <dropdown>Cover_Ranged_Idle</dropdown>
+      <dropdown>Cover_Run</dropdown>
+      <dropdown>Cover_Walk</dropdown>
+      <dropdown>Death_by_havoc</dropdown>
+      <dropdown>Death_by_melee</dropdown>
+      <dropdown>Death_by_range</dropdown>
+      <dropdown>Death_havoc_flail</dropdown>
+      <dropdown>Death_havoc_spin</dropdown>
+      <dropdown>Death</dropdown>
+      <dropdown>Defend_attack</dropdown>
+      <dropdown>Defend_Bored</dropdown>
+      <dropdown>Defend_Idle</dropdown>
+      <dropdown>Defend_jog</dropdown>
+      <dropdown>Defend_run</dropdown>
+      <dropdown>Defend_walk</dropdown>
+      <dropdown>Empower</dropdown>
+      <dropdown>EmpowerWalk</dropdown>
+      <dropdown>Escort</dropdown>
+      <dropdown>Extinguish_Fire</dropdown>
+      <dropdown>Field_promotion</dropdown>
+      <dropdown>FlagWave</dropdown>
+      <dropdown>Flail</dropdown>
+      <dropdown>fly</dropdown>
+      <dropdown>Gallop</dropdown>
+      <dropdown>GatherBush</dropdown>
+      <dropdown>GatherChop</dropdown>
+      <dropdown>GatherCrate</dropdown>
+      <dropdown>GatherFarm</dropdown>
+      <dropdown>GatherFarmHoe</dropdown>
+      <dropdown>GatherFarmSow</dropdown>
+      <dropdown>GatherFarmWalk</dropdown>
+      <dropdown>GatherFarmWeed</dropdown>
+      <dropdown>GatherFish</dropdown>
+      <dropdown>GatherFruit</dropdown>
+      <dropdown>GatherHunt</dropdown>
+      <dropdown>GatherMine</dropdown>
+      <dropdown>GetUp</dropdown>
+      <dropdown>Graze</dropdown>
+      <dropdown>HandAttack</dropdown>
+      <dropdown>Havoc_death</dropdown>
+      <dropdown>Havoc_flail</dropdown>
+      <dropdown>HC_closeDoor</dropdown>
+      <dropdown>HC_openDoor</dropdown>
+      <dropdown>Heal</dropdown>
+      <dropdown>Highstep</dropdown>
+      <dropdown>Hurricane_Idle</dropdown>
+      <dropdown>Idle</dropdown>
+      <dropdown>IGC_10b_dying_dead</dropdown>
+      <dropdown>IGC_10b_dying_death</dropdown>
+      <dropdown>IGC_10b_dying_idle</dropdown>
+      <dropdown>IGC_10b_dying_talking</dropdown>
+      <dropdown>IGC_Attacked</dropdown>
+      <dropdown>igc_death_idle</dropdown>
+      <dropdown>igc_death</dropdown>
+      <dropdown>IGC_Escorted</dropdown>
+      <dropdown>IGC_Idle</dropdown>
+      <dropdown>IGC_Pointing</dropdown>
+      <dropdown>IGC_TrainPassing</dropdown>
+      <dropdown>IGC_Walk</dropdown>
+      <dropdown>IGC_WellThatsOkay</dropdown>
+      <dropdown>Jog</dropdown>
+      <dropdown>kidnap_hostageA_exit</dropdown>
+      <dropdown>kidnap_hostageA_idle</dropdown>
+      <dropdown>kidnap_outlawA_exit</dropdown>
+      <dropdown>kidnap_outlawA_idle</dropdown>
+      <dropdown>KneelIdle</dropdown>
+      <dropdown>KneelTalk2Sec</dropdown>
+      <dropdown>KneelTalk4Sec</dropdown>
+      <dropdown>Knockout</dropdown>
+      <dropdown>KnockoutIdle</dropdown>
+      <dropdown>LayDown</dropdown>
+      <dropdown>LayDownBored</dropdown>
+      <dropdown>LayDownIdle</dropdown>
+      <dropdown>Limber</dropdown>
+      <dropdown>Look</dropdown>
+      <dropdown>Mode1_Bored</dropdown>
+      <dropdown>Mode1_Idle</dropdown>
+      <dropdown>Mode1_Mode2</dropdown>
+      <dropdown>Mode1_Mode3</dropdown>
+      <dropdown>Mode2_Bored</dropdown>
+      <dropdown>Mode2_Idle</dropdown>
+      <dropdown>Mode2_Mode1</dropdown>
+      <dropdown>Mode3_Idle</dropdown>
+      <dropdown>Mode3_Mode1</dropdown>
+      <dropdown>musket_idle</dropdown>
+      <dropdown>musket_talk</dropdown>
+      <dropdown>musket_walk</dropdown>
+      <dropdown>None</dropdown>
+      <dropdown>NormToBomb</dropdown>
+      <dropdown>NormToBroad</dropdown>
+      <dropdown>NoWeapon_Idle</dropdown>
+      <dropdown>NoWeapon_Talk1Sec</dropdown>
+      <dropdown>NoWeapon_Talk2Sec</dropdown>
+      <dropdown>NoWeapon_Walk</dropdown>
+      <dropdown>nugget_hostageA_exit</dropdown>
+      <dropdown>nugget_hostageA_idle</dropdown>
+      <dropdown>Nugget_Idle</dropdown>
+      <dropdown>Nugget_Missionary</dropdown>
+      <dropdown>Nugget_Mount</dropdown>
+      <dropdown>Nugget_rock_exit</dropdown>
+      <dropdown>Nugget_rock_idle</dropdown>
+      <dropdown>NuggetPirate1_Exit</dropdown>
+      <dropdown>NuggetPirate1_Idle</dropdown>
+      <dropdown>NuggetPirate2_Exit</dropdown>
+      <dropdown>NuggetPirate2_Idle</dropdown>
+      <dropdown>NuggetPirate3_Idle</dropdown>
+      <dropdown>OpenDoor</dropdown>
+      <dropdown>Opened</dropdown>
+      <dropdown>Opening</dropdown>
+      <dropdown>Petard_bored</dropdown>
+      <dropdown>Petard_idle</dropdown>
+      <dropdown>Petard_jog</dropdown>
+      <dropdown>Petard_set</dropdown>
+      <dropdown>Petard_walk</dropdown>
+      <dropdown>Physician</dropdown>
+      <dropdown>Pickup</dropdown>
+      <dropdown>pointLeftForward</dropdown>
+      <dropdown>pointLeftSide</dropdown>
+      <dropdown>PointRight</dropdown>
+      <dropdown>pointRightForward</dropdown>
+      <dropdown>pointRightSide</dropdown>
+      <dropdown>Powder_trail</dropdown>
+      <dropdown>Ranged_Attack</dropdown>
+      <dropdown>RangedAttack</dropdown>
+      <dropdown>RangedAttackLeft</dropdown>
+      <dropdown>RangedAttackRight</dropdown>
+      <dropdown>RangedAttackSharpshoot</dropdown>
+      <dropdown>RangedAttackShip</dropdown>
+      <dropdown>Raze_Attack</dropdown>
+      <dropdown>Raze_Idle</dropdown>
+      <dropdown>Recoil</dropdown>
+      <dropdown>Recover</dropdown>
+      <dropdown>Reload</dropdown>
+      <dropdown>Run</dropdown>
+      <dropdown>Salute</dropdown>
+      <dropdown>SittingIdle</dropdown>
+      <dropdown>SittingTalkA</dropdown>
+      <dropdown>SittingTalkB</dropdown>
+      <dropdown>SittingTalkC</dropdown>
+      <dropdown>SmokingA</dropdown>
+      <dropdown>SmokingB</dropdown>
+      <dropdown>Surrender</dropdown>
+      <dropdown>Swashbuckler</dropdown>
+      <dropdown>Talk</dropdown>
+      <dropdown>Talk1Sec</dropdown>
+      <dropdown>Talk2Sec</dropdown>
+      <dropdown>TalkAngry</dropdown>
+      <dropdown>TalkAngryPointing</dropdown>
+      <dropdown>TalkComewith</dropdown>
+      <dropdown>TalkGreetingHow</dropdown>
+      <dropdown>TalkLaughA</dropdown>
+      <dropdown>TalkLaughB</dropdown>
+      <dropdown>TalkNod</dropdown>
+      <dropdown>TalkQuestion</dropdown>
+      <dropdown>TalkShake</dropdown>
+      <dropdown>TalkShakingFist</dropdown>
+      <dropdown>TalkShrug</dropdown>
+      <dropdown>TalkStartled</dropdown>
+      <dropdown>TalkWoe</dropdown>
+      <dropdown>Tanner_working</dropdown>
+      <dropdown>Townbell</dropdown>
+      <dropdown>TurnLeft</dropdown>
+      <dropdown>TurnRight</dropdown>
+      <dropdown>Unlimber</dropdown>
+      <dropdown>Volley_jog</dropdown>
+      <dropdown>Volley_melee_attack</dropdown>
+      <dropdown>Volley_melee_idle</dropdown>
+      <dropdown>Volley_run</dropdown>
+      <dropdown>Volley_standing_attack</dropdown>
+      <dropdown>Volley_standing_bored</dropdown>
+      <dropdown>Volley_standing_idle</dropdown>
+      <dropdown>Volley_standing_reload</dropdown>
+      <dropdown>Volley_walk</dropdown>
+      <dropdown>Walk</dropdown>
+      <dropdown>WalkEnd</dropdown>
+      <dropdown>WalkTalkA</dropdown>
+      <dropdown>WalkTalkB</dropdown>
+      <dropdown>WalkTalkC</dropdown>
+      <dropdown>WalkTalkD</dropdown>
+      <dropdown>Weapon_Aim_to_Idle</dropdown>
+      <dropdown>Weapon_Aim</dropdown>
+      <dropdown>Weapon_fire</dropdown>
+      <dropdown>Weapon_Idle</dropdown>
+      <dropdown>Weapon_talk</dropdown>
+      <dropdown>Weapon_Talk1Sec</dropdown>
+      <dropdown>Weapon_Talk2Sec</dropdown>
+      <dropdown>Weapon_Walk</dropdown>
+      <dropdown>Wildfire_idle</dropdown>
+      <dropdown>Wildfire_walk_left</dropdown>
+      <dropdown>Wildfire_walk_right</dropdown>
+      <dropdown>Wolf_Treebent_Captive_Exit</dropdown>
+      <dropdown>Wolf_Treebent_Captive_Idle</dropdown>
+      <dropdown>Wolf_Treebent_Wolf_Exit</dropdown>
+      <dropdown>Wolf_Treebent_Wolf_Idle</dropdown>
+      <dropdown>Wolf_Wagon_WolfA_Exit</dropdown>
+      <dropdown>Wolf_Wagon_WolfA_Idle</dropdown>
+      <dropdown>Wolf_Wagon_WolfB_Exit</dropdown>
+      <dropdown>Wolf_Wagon_WolfB_Idle</dropdown>
+    </gadget>
+    <gadget name="animlabel3" type="gadget" tooltiptext="The War Chiefs (+ AoE3)" sizerel1024="20 110 60 130">$$20178$$All</gadget>
+    <gadget name="animlabel3a" type="gadget" tooltiptext="The War Chiefs (+ AoE3)" sizerel1024="60 110 160 130">TWC (+AoE3)</gadget>
+    <gadget name="animsList3" type="textField" scrollvert="" sizerel1024="20 130 200 150" textcolor="0 0 0" textfont="Arial nobold nodrop" showselect="" textfontsize="12">
+      <dropdown>AblBeastMaster</dropdown>
+      <dropdown>Cover_In</dropdown>
+      <dropdown>Cover_Out</dropdown>
+      <dropdown>DanceActive</dropdown>
+      <dropdown>DanceIdle</dropdown>
+      <dropdown>Draw_Pistol</dropdown>
+      <dropdown>Fall_Hold</dropdown>
+      <dropdown>Fall_MineShaft_Hold</dropdown>
+      <dropdown>Fall_MineShaft</dropdown>
+      <dropdown>Fall</dropdown>
+      <dropdown>Fire_Pistol</dropdown>
+      <dropdown>Fly_Back</dropdown>
+      <dropdown>Idle_Pistol_Drawn</dropdown>
+      <dropdown>Knock_Over</dropdown>
+      <dropdown>Walk_Back_Pistol</dropdown>
+      <dropdown>Walk_Back</dropdown>
+    </gadget>
+    <gadget name="animlabel4" type="gadget" tooltiptext="The Asian Dynasties (+ X + AoE3)" sizerel1024="220 110 260 130">$$20178$$All</gadget>
+    <gadget name="animlabel4a" type="gadget" tooltiptext="The Asian Dynasties (+ X + AoE3)" sizerel1024="260 110 360 130">TAD (+X+ AoE3)</gadget>
+    <gadget name="animsList4" type="textField" scrollvert="" sizerel1024="210 130 390 150" textcolor="0 0 0" textfont="Arial nobold nodrop" showselect="" textfontsize="12">
+      <dropdown>AngryPointing</dropdown>
+      <dropdown>Applause_A</dropdown>
+      <dropdown>Applause_B</dropdown>
+      <dropdown>Applause_C</dropdown>
+      <dropdown>Applause_D</dropdown>
+      <dropdown>Applause_E</dropdown>
+      <dropdown>Bite</dropdown>
+      <dropdown>BlackPanther_Wagon_Exit01</dropdown>
+      <dropdown>BlackPanther_Wagon_Idle01</dropdown>
+      <dropdown>BloodSmash</dropdown>
+      <dropdown>Bow</dropdown>
+      <dropdown>Combat_Idle</dropdown>
+      <dropdown>Death2</dropdown>
+      <dropdown>DrawSword</dropdown>
+      <dropdown>DrawSwordIdle</dropdown>
+      <dropdown>DrawSwordStrike</dropdown>
+      <dropdown>FallKnees</dropdown>
+      <dropdown>Finish</dropdown>
+      <dropdown>Greeting</dropdown>
+      <dropdown>HeavenlyFireBomb</dropdown>
+      <dropdown>Idle_Trample</dropdown>
+      <dropdown>Into Idle</dropdown>
+      <dropdown>Juggle</dropdown>
+      <dropdown>JuggleIn</dropdown>
+      <dropdown>JuggleOut</dropdown>
+      <dropdown>KneesIdle</dropdown>
+      <dropdown>KneesShaking</dropdown>
+      <dropdown>LaughA</dropdown>
+      <dropdown>LaughB</dropdown>
+      <dropdown>Lion_Wagon_Exit01</dropdown>
+      <dropdown>Lion_Wagon_Idle01</dropdown>
+      <dropdown>Nugget_Idle01</dropdown>
+      <dropdown>NuggetRonin_Exit01</dropdown>
+      <dropdown>NuggetRonin_Idle01</dropdown>
+      <dropdown>Out of Idle</dropdown>
+      <dropdown>RangedAttack2</dropdown>
+      <dropdown>Raze_Attack2</dropdown>
+      <dropdown>Raze_Idle2</dropdown>
+      <dropdown>RifleIdle</dropdown>
+      <dropdown>RifleIdle01</dropdown>
+      <dropdown>RiflePoint</dropdown>
+      <dropdown>RiflePointIdle</dropdown>
+      <dropdown>RiflePointShake</dropdown>
+      <dropdown>RiflePointTalk</dropdown>
+      <dropdown>RifleShoot</dropdown>
+      <dropdown>RifleStand</dropdown>
+      <dropdown>RifleWalkTo</dropdown>
+      <dropdown>Scatter</dropdown>
+      <dropdown>SilentBloodSmash</dropdown>
+      <dropdown>Smokescreen</dropdown>
+      <dropdown>SnowLeopard_Wagon_exit01</dropdown>
+      <dropdown>SnowLeopard_Wagon_Idle01</dropdown>
+      <dropdown>starting</dropdown>
+      <dropdown>Startled</dropdown>
+      <dropdown>State_ActionA</dropdown>
+      <dropdown>State_ActionB</dropdown>
+      <dropdown>State_ActionC</dropdown>
+      <dropdown>State_ActionD</dropdown>
+      <dropdown>State_ActionE</dropdown>
+      <dropdown>State_ActionF</dropdown>
+      <dropdown>State_Idle</dropdown>
+      <dropdown>State_In</dropdown>
+      <dropdown>State_Out</dropdown>
+      <dropdown>stun_attack</dropdown>
+      <dropdown>Treebent_exit</dropdown>
+      <dropdown>Treebent_Idle</dropdown>
+      <dropdown>Trick</dropdown>
+      <dropdown>Trot</dropdown>
+      <dropdown>Wagon_Exit01</dropdown>
+      <dropdown>Wagon_Idle01</dropdown>
+      <dropdown>Walk_Trample</dropdown>
+      <dropdown>Weapon_Toss</dropdown>
+      <dropdown>Woe</dropdown>
+    </gadget>
+    <gadget name="txtModus-name" enableime="" type="textField" history="" sizerel1024="20 20 390 40" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12">$$20494$$Text</gadget>
+    <gadget name="txtanimModusTrigg" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="20 170 120 190">$$20517$$Trigger Editor<command>editMode("Triggers")</command></gadget>
+    <gadget name="txanimtModusGadget" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="125 170 200 190">$$22346$$Gadget<command>gadgetToggle("tgvUI")</command></gadget>
+    <gadget name="txtanimModusPortrait" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="210 170 280 190">Portrait<command>gadgetToggle("portPict")</command></gadget>
+    <gadget name="txtanimModusClose" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" sizerel1024="290 170 390 190">$$18457$$Close<command>gadgetUnreal("txtBox")</command></gadget>
+  </gadget>
+</layout>

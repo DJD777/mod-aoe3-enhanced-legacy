@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>bows<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\natives\iroquois\aenna\bow_warrior_1_bow</file></assetreference></none><championaennas><assetreference type="GrannyModel"><file>units\natives\iroquois\aenna\bow_warrior_2_bow</file></assetreference></championaennas><ImpLegendaryAennas><assetreference type="GrannyModel"><file>units\natives\iroquois\aenna\bow_warrior_3_bow</file></assetreference></ImpLegendaryAennas></logic></component>
+  <anim>Idle<component>bows</component></anim>
+</animfile>

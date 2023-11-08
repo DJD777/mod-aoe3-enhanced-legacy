@@ -1,0 +1,4 @@
+<animfile>
+  <component>hats<logic type="Tech"><VeteranManAtArms><assetreference type="GrannyModel"><file>units\infantry_ranged\longbow\longbow_3age_hat</file></assetreference></VeteranManAtArms><GuardManAtArms><assetreference type="GrannyModel"><file>units\infantry_ranged\longbow\longbow_4age_hat</file></assetreference></GuardManAtArms></logic></component>
+  <anim>Idle<component>hats</component></anim>
+</animfile>

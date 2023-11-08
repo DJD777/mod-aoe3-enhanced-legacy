@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "
+Wadmalaw island is a part of Johns Island in South Carolina. This land map got 3 trading posts in the west side of the map where there are usually a lot of resources.
+The east side of the map is surrounded by water where there is the possibility for discovering the new world, and maybe some other islands ! \n
+---------------------------------\n
+\n
+-NativeCiv:    Seminoles \n
+-Outlaws:   Renegado / Pistolero \n
+\n
+--------------------------------- \n
+\n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath  = "ui\esoc_map\wadmalaw"
+displayName = "UI 2.2 ESOC Wadmalaw"
+cannotReplace = ""
+loadDetailsText = "
+Wadmalaw island is a part of Johns Island in South Carolina. This land map got 3 trading posts in the west side of the map where there are usually a lot of resources.
+The east side of the map is surrounded by water where there is the possibility for discovering the new world, and maybe some other islands ! \n
+---------------------------------\n
+\n
+-NativeCiv:    Seminoles  \n
+-Outlaws:   Renegado / Pistolero \n
+\n
+---------------------------------\n
+"
+loadBackground="ui\esoc_map\wadmalaw_map">
+
+   <loadss>ui\random_map\carolina\carolina_ss_01</loadss>
+   <loadss>ui\random_map\carolina\carolina_ss_02</loadss>
+   <loadss>ui\random_map\carolina\carolina_ss_03</loadss>
+  
+</mapinfo>

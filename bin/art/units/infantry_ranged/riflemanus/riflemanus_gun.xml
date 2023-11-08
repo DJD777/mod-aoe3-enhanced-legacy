@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>gun<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\asians\spc\nanib\nanib_lp_gun</file></assetreference></none><RGPartisans><assetreference type="GrannyModel"><file>units\infantry_ranged\skirmisher\skirmisher_3age_gun</file></assetreference></RGPartisans><UnionPartisans><assetreference type="GrannyModel"><file>units\infantry_ranged\janissary\jannisary_gun_guard</file></assetreference></UnionPartisans></logic></component>
+  <anim>Idle<component>gun</component></anim>
+</animfile>

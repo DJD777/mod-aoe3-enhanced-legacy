@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_rain</definebone>
+	<attachment>
+		cloud_attachment_A
+		<component>
+			cloud_particles
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\clouds\cloud.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cloud_particles</component>
+		</anim>
+	</attachment>
+	<component>
+		rain
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\impacts\directional_arrow</file>
+				</assetreference>
+				<attach a="cloud_attachment_A" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>rain</component>
+	</anim>
+</animfile>

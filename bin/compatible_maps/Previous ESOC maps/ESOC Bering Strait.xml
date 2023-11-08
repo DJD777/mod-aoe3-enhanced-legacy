@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText="Welcome to the Bering Strait that has frozen over to connect Alaska and Russia. Resources are plentiful but you will need to move away from your starting town to obtain more resources as the match progresses. You may choose to stay within your peninsula or expand across the frozen sea to the central islands.
+\n
+---------------------------------\n
+\n
+Natives: None \n
+Outlaws: Wokou Horsemen and Wokou Ronin \n
+\n
+---------------------------------\n
+\n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+\n Map made by vividlyplain 
+\n Observer UI by Aizamk
+"
+
+imagepath  = "ui\esoc_map\bering_strait"
+displayName = "ESOC Bering Strait"
+cannotReplace = ""
+loadDetailsText = "Welcome to the Bering Strait that has frozen over to connect Alaska and Russia. Resources are plentiful but you will need to move away from your starting town to obtain more resources as the match progresses. You may choose to stay within your peninsula or expand across the frozen sea to the central islands.
+\n
+---------------------------------\n
+\n
+Natives: None \n
+Outlaws: Wokou Horsemen and Wokou Ronin \n
+\n
+---------------------------------\n
+\n
+"
+loadBackground="ui\random_map\siberia\siberia_map"
+>
+
+<loadss>ui\random_map\siberia\ss_siberia_1</loadss>
+  <loadss>ui\random_map\siberia\ss_siberia_2</loadss>
+  <loadss>ui\random_map\siberia\ss_siberia_3</loadss>
+</mapinfo>

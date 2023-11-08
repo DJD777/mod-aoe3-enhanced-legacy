@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo 
+detailsText="You've settled near the Fraser River in British Columbia, Canada. Teams will face off on opposite sides of the river, each having access to their own trade route. While resources are abundant, they are found primarily in the river valley. \n
+
+\n
+---------------------------------\n
+\n
+Natives: Cree or Nootka or Cheyenne \n
+Outlaws: Pistolero and Renegado \n
+\n
+---------------------------------\n
+\n
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+&lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+\n Made by vividlyplain.
+\n Observer ui by Aizamk.
+ "
+
+imagepath = "ui\esoc_map\fraser_river" 
+
+displayName = "ESOC Fraser River" 
+
+cannotReplace = ""
+
+loadDetailsText="You've settled near the Fraser River in British Columbia, Canada. Teams will face off on opposite sides of the river, each having access to their own trade route. While resources are abundant, they are found primarily in the river valley. \n
+\n
+---------------------------------\n
+\n
+Natives: Cree or Nootka or Cheyenne \n
+Outlaws: Pistolero and Renegado \n
+\n
+---------------------------------\n
+\n
+"
+ loadBackground="ui\random_map\rockies\rockies_map">
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_01</loadss>
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_02</loadss>
+   <loadss>ui\random_map\northwest_territory\northwest_territory_ss_03</loadss>
+   <loadss>ui\random_map\rockies\rockies_ss_01</loadss>
+   <loadss>ui\random_map\rockies\rockies_ss_02</loadss>
+   <loadss>ui\random_map\rockies\rockies_ss_03</loadss>
+
+</mapinfo>

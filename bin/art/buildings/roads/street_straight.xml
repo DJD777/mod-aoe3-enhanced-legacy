@@ -1,0 +1,5 @@
+<animfile>
+  <submodel>street<component>city street<notshadowcaster></notshadowcaster><logic type="Variation"><v1><assetreference type="GrannyModel"><file>terrain\city\street_empty</file></assetreference><decal><effecttype>bump</effecttype><texture>terrain\city\street_straight</texture><bumptexture>terrain\city\street_straight_bump</bumptexture><width>8.00</width><height>8.00</height></decal></v1></logic></component><anim>Idle<component>city street</component></anim></submodel>
+  <submodel>street_con<component>base_con<assetreference type="GrannyModel"><file>terrain\city\street_empty</file></assetreference><decal><effecttype>bump</effecttype><texture>buildings\cabin\cabin_ground</texture><bumptexture>shadows_selections\flat_normal_black_spec</bumptexture><width>8.00</width><height>8.00</height></decal></component><anim>Idle<component>base_con</component></anim></submodel>
+  <component>wall<logic type="BuildingCompletion"><p0><submodelref ref="street_con"></submodelref></p0><p100><submodelref ref="street"></submodelref></p100></logic></component>
+</animfile>

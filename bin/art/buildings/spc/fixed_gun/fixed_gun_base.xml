@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_flag</definebone>
+  
+  <!-- Additions -->
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_1d</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_2d</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<definebone>bone_debris_3c</definebone>
+	<definebone>bone_debris_3d</definebone>
+	<definebone>bone_debris_3e</definebone>
+	<definebone>bone_debris_4a</definebone>
+	<definebone>bone_debris_4b</definebone>
+	<definebone>bone_debris_4d</definebone>
+	<definebone>bone_debris_5a</definebone>
+	<definebone>bone_debris_5b</definebone>
+	<definebone>bone_debris_5c</definebone>
+	<definebone>bone_debris_5d</definebone>
+
+	<submodel>sub_construction_stage_01<component>construction_stage_01<assetreference type="GrannyModel"><file>buildings\constructions\4x4_stage1</file></assetreference><decal><effecttype>default</effecttype><selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture><width>14.00</width><height>14.00</height></decal></component><anim>Idle<component>construction_stage_01</component></anim></submodel>
+	<submodel>sub_construction_stage_02<component>construction_stage_02<assetreference type="GrannyModel"><file>buildings\constructions\4x4_stage2</file></assetreference><decal><effecttype>default</effecttype><selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture><width>14.00</width><height>14.00</height></decal></component><anim>Idle<component>construction_stage_02</component></anim></submodel>
+	<submodel>sub_construction_age2_stage_03_b<attachment>scalf<component>scalf<assetreference type="GrannyModel"><file>buildings\constructions\4x4_stage3</file></assetreference></component><anim>Idle<component>scalf</component></anim></attachment><component>construction_stage_02<assetreference type="GrannyModel"><file>buildings\spc\fixed_gun\fixed_gun_base</file></assetreference><attach a="scalf" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach><attach a="cranes" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"></attach></component><anim>Idle<component>construction_stage_02</component></anim></submodel>
+	<submodel>base
+		<component>fixed gun base
+			<assetreference type="GrannyModel">
+				<file>buildings\spc\fixed_gun\fixed_gun_base</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_circle_128x128</selectedtexture>
+				<width>13.50</width>
+				<height>13.00</height>
+			</decal>
+		</component>
+		
+		<anim>Idle
+			<assetreference type="GrannyAnim">
+				<file>buildings\spc\fixed_gun\fixed_gun_base_idle</file>
+			</assetreference>
+			<component>fixed gun base</component>
+		</anim>
+		<anim>RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>buildings\spc\fixed_gun\fixed_gun_base_rangedAttack</file>
+			</assetreference>
+			<component>fixed gun base</component>
+		</anim>
+	</submodel>
+	<component>fgunbase<logic type="Culture"><mediterranean><logic type="BuildingCompletion"><p0><submodelref ref="sub_construction_stage_01"></submodelref></p0><p33><submodelref ref="sub_construction_stage_02"></submodelref></p33><p66><submodelref ref="sub_construction_age2_stage_03_b"></submodelref></p66><p100><submodelref ref="base"></submodelref></p100></logic></mediterranean></logic></component>
+</animfile>

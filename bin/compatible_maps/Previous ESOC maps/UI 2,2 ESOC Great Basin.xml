@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "The Great Basin is an area of alternating ranges and valleys. \n
+Resource amount varies greatly depending on the altitude. \n
+Make sure to control the trade route and the native posts to gain a long term strategic advantage. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Klamath / Navajo   \n
+-Outlaws:  Comanchero / Renegado \n
+\n
+--------------------------------- \n
+\n 
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Map designed by Garja \n
+ Observer UI by Aizamk \n
+"
+
+imagepath  = "ui\esoc_map\great_basin"
+displayName = "UI 2.2 ESOC Great Basin"
+cannotReplace = ""
+loadDetailsText = "The Great Basin is an area of alternating ranges and valleys. \n
+Resource amount varies greatly depending on the altitude. \n
+Make sure to control the trade route and the native posts to gain a long term strategic advantage. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Klamath / Navajo   \n
+-Outlaws:  Comanchero / Renegado \n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\greatbasin_map"
+>
+	<loadss>ui\random_map\california\california_ss_02</loadss>
+	<loadss>ui\random_map\california\california_ss_03</loadss>
+  
+</mapinfo>

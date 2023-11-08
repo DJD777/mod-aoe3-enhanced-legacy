@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+		<component>
+		gold_mine
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>effects\weather\snow\snow</texture>
+			<bumptexture>terrain\new_england\coastal_rock_bump</bumptexture>
+			<width>16.00</width>
+			<height>16.00</height>
+			<xoffset>0.00</xoffset>
+			<zoffset>0.00</zoffset>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>gold_mine</component>
+	</anim>
+</animfile>

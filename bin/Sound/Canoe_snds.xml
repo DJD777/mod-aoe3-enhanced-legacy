@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="Canoe">
+    <soundtype name="Select">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="Spanish">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="French">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="SPCAct1">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="SPCAct2">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="SPCAct3">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Pirate">
+        </choice>
+        <choice name="TheCircle">
+        </choice>
+        <choice name="NativeAmerican">
+        </choice>
+        <choice name="XPIroquois">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="XPSioux">
+          <soundset name="SiouxCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="XPAztec">
+          <soundset name="AztecCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="XPSPC">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Americans">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+        <choice name="Zapotec">
+        </choice>
+        <choice name="Huron">
+        </choice>
+        <choice name="Cheyenne">
+        </choice>
+        <choice name="Klamath">
+        </choice>
+        <choice name="Mapuche">
+        </choice>
+        <choice name="Navajo">
+        </choice>
+        <choice name="Apache">
+        </choice>
+        <choice name="Chinese">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Indians">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+        <choice name="Japanese">
+          <soundset name="IroquoisCanoeSelect">
+          </soundset>
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Grunt">
+      <soundset name="GenericMaleGrunt">
+      </soundset>
+    </soundtype>
+    <soundtype name="Death">
+      <soundset name="ShipDeath">
+      </soundset>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="ShipBirth">
+      </soundset>
+    </soundtype>
+    <soundtype name="Acknowledge">
+      <civlogic>
+        <choice name="Nature">
+        </choice>
+        <choice name="Spanish">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="British">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="French">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Portuguese">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Dutch">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Russians">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Germans">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Ottomans">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="SPCAct1">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="SPCAct2">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="SPCAct3">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Pirate">
+        </choice>
+        <choice name="TheCircle">
+        </choice>
+        <choice name="NativeAmerican">
+        </choice>
+        <choice name="XPIroquois">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="XPSioux">
+          <soundset name="SiouxCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="XPAztec">
+          <soundset name="AztecCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="XPSPC">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Maltese">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Americans">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Aztecs">
+        </choice>
+        <choice name="Caribs">
+        </choice>
+        <choice name="Cherokee">
+        </choice>
+        <choice name="Comanche">
+        </choice>
+        <choice name="Cree">
+        </choice>
+        <choice name="Incas">
+        </choice>
+        <choice name="Iroquois">
+        </choice>
+        <choice name="Lakota">
+        </choice>
+        <choice name="Maya">
+        </choice>
+        <choice name="Nootka">
+        </choice>
+        <choice name="Seminoles">
+        </choice>
+        <choice name="Tupi">
+        </choice>
+        <choice name="Zapotec">
+        </choice>
+        <choice name="Huron">
+        </choice>
+        <choice name="Cheyenne">
+        </choice>
+        <choice name="Klamath">
+        </choice>
+        <choice name="Mapuche">
+        </choice>
+        <choice name="Navajo">
+        </choice>
+        <choice name="Apache">
+        </choice>
+        <choice name="Chinese">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Indians">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+        <choice name="Japanese">
+          <soundset name="IroquoisCanoeAcknowledge">
+          </soundset>
+        </choice>
+      </civlogic>
+    </soundtype>
+    <soundtype name="Exists">
+      <soundset name="AmbienceShip">
+      </soundset>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

@@ -1,0 +1,47 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "Settled along the three parallel rivers, players will have to proceed upstream to explore this scenic region. \n
+Natural obstacles could prove friends or foes, either shielding or trapping your units. \n
+No trade routes run through this region but you can easily find Zen monasteries along the way. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Zen \n
+-Outlaws:  Wokou Horseman / Wokou Monk   \n
+\n
+--------------------------------- \n
+\n 
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Map designed by Garja \n
+ Observer UI by Aizamk \n
+"
+
+imagepath  = "ui\esoc_map\parallel_rivers"
+displayName = "UI 2.2 ESOC Parallel Rivers"
+cannotReplace = ""
+loadDetailsText = "Settled along the three parallel rivers, players will have to proceed upstream to explore this scenic region. \n
+Natural obstacles could prove friends or foes, either shielding or trapping your units. \n
+No trade routes run through this region but you can easily find Zen monasteries along the way. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Zen \n
+-Outlaws:  Wokou Horseman / Wokou Monk   \n
+\n
+---------------------------------\n"
+loadBackground="ui\esoc_map\parallelrivers_map"
+>
+  <loadss>ui\random_map\yellow_river\yellow_river_ss_2</loadss>
+
+
+
+  
+</mapinfo>

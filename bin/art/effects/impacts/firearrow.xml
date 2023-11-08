@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<impacteffect metercount="5" meterlength="1">
+	<wood fireexisttime="3000">
+		<particleset>torchFire</particleset>
+		<soundset>TorchImpact</soundset>
+	</wood>
+	<stone>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</stone>
+	<flesh>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</flesh>
+	<dirt>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</dirt>
+	<snow>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</snow>
+	<animal>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</animal>
+	<terraingrass>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terraingrass>
+	<terrainwater>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terrainwater>
+	<terraindirt>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terraindirt>
+	<terrainstone>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terrainstone>
+	<terrainsnow>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terrainsnow>
+	<terrainsand>
+		<particleset>torchFire</particleset>
+		<soundset>placeholder</soundset>
+	</terrainsand>
+</impacteffect>

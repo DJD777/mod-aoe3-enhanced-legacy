@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo 
+detailsText=" Town centers are located at the opposite extremes of this mountainous region, divided by a rock face.
+Follow the tortuous trade routes  that meander through the mountains to seek new resouces for your colony.\n
+ \n Researching stagecoach on one trade route also upgrades the other one.\n
+ \n Native Civs: Comanche
+ \n Mercenaries: Pistolero / Renegado
+ \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n"
+
+imagepath = "ui\esoc_map\colorado" displayName = "UI 2.2 ESOC Colorado" cannotReplace = ""
+		loadDetailsText="Town centers are located at the opposite extremes of this mountainous region, divided by a rock face.
+Follow the tortuous trade routes  that meander through the mountains to seek new resouces for your colony.
+\n
+\n---------------------------------\n
+\n
+-NativeCivs : Comanche\n
+-Mercenaries:  Pistolero / Renegado   \n
+\n
+---------------------------------\n
+\n
+\nResearching stagecoach on one trade route also upgrades the other one.
+" loadBackground="ui\esoc_map\colorado_map">
+   <loadss>ui\random_map\rockies\rockies_ss_01</loadss>
+   <loadss>ui\random_map\rockies\rockies_ss_02</loadss>
+   <loadss>ui\random_map\rockies\rockies_ss_03</loadss>
+</mapinfo>

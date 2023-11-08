@@ -1,0 +1,13 @@
+<mapinfo detailstext="The malaysian peninsula is surrounded by two oceans that brings substantial natural resources such as whales and fishes. \n Trees are rather scarce but are a natural wall that should help you to defend your base. You should find some buffalos which are scattered in this region.\n \n ---------------------------------\n \n -NativeCiv: Jesuit / Sufi    \n -Outlaws: Wokou Pirate / Marathan Dacoit\n \n --------------------------------- \n \n  \n  \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n" imagepath="ui\esoc_map\malaysia"  displayName = "UI 2.2 ESOC Malaysia" cannotReplace="" loadDetailsText=" The malaysian peninsula is surrounded by two oceans that brings substantial natural resources such as whales and fishes. \n Trees are rather scarce but are a natural wall that should help you to defend your base. You should find some buffalos which are scattered in this region.\n \n ---------------------------------\n \n -NativeCiv: Jesuit / Sufi    \n -Mercenaries: Wokou Pirate / Marathan Dacoit\n \n --------------------------------- \n \n  " loadBackground="ui\esoc_map\malaysia_map"><loadss>ui\random_map\borneo\borneo_ss_1</loadss><loadss>ui\random_map\borneo\borneo_ss_2</loadss><loadss>ui\random_map\borneo\borneo_ss_3</loadss></mapinfo>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>ModelComp<assetreference type="GrannyModel"><file>buildings\trading_post\socket_Jesuit</file></assetreference><decal><effecttype>default</effecttype><selectedtexture>shadows_selections\selection_square_128x128</selectedtexture><width>9.00</width><height>9.00</height><xoffset>0.00</xoffset></decal></component>
+  <anim>Idle<component>ModelComp</component></anim>
+</animfile>

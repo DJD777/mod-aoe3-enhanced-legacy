@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>axe<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\natives\iroquois\axe_rider\axe_rider_1_axe</file></assetreference></none><championaxeriders><assetreference type="GrannyModel"><file>units\natives\iroquois\axe_rider\axe_rider_2_axe</file></assetreference></championaxeriders><ImpLegendaryAxeRiders><assetreference type="GrannyModel"><file>units\natives\iroquois\axe_rider\axe_rider_3_axe</file></assetreference></ImpLegendaryAxeRiders></logic></component>
+  <anim>Idle<component>axe</component></anim>
+</animfile>

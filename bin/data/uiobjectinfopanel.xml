@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="ObjectInfo" type="gadget" size1024="697 45 1023 275" background="ui\file_system\file_system_background" bevel="" titlebar="$$20285$$Object Info" closebutton="" windowzstyle="" moveable="">
+    <gadget name="ObjectInfo_singleUnitHeaderPanel" type="gadget" size1024="708 101 1011 189" z="10">
+      <gadget name="ObjectInfo_singleUnitLine0" type="formatText" size1024="774 101 1011 125" textcolor="255 255 255" textcentervert="" textcenterhoriz="" textwrapon="" textfont="StatUnitName" textfontsize="18" z="35">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitLine1" type="formatText" size1024="762 122 1011 140" textcentervert="" textcenterhoriz="" textwrapon="" textfont="StatText" textfontsize="12" z="35">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitLine2Label" type="formatText" size1024="708 137 856 155" textcentervert="" textfont="StatText" textfontsize="12" z="30">$$26015$$Class:</gadget>
+      <gadget name="ObjectInfo_singleUnitLine2" type="formatText" size1024="806 137 1011 155" textmarkup="" formattextusedatareplace="" textcentervert="" textfont="StatText" textfontsize="12" z="35">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitLine3Label" type="formatText" size1024="708 152 856 170" textcentervert="" textfont="StatText" textfontsize="12" z="30">$$26017$$Beats:</gadget>
+      <gadget name="ObjectInfo_singleUnitLine3" type="formatText" size1024="806 152 1011 170" textcentervert="" textfont="StatText" textfontsize="12" z="35">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitLine4Label" type="formatText" size1024="708 167 856 185" textcentervert="" textfont="StatText" textfontsize="12" z="30">$$26018$$Loses To:</gadget>
+      <gadget name="ObjectInfo_singleUnitLine4" type="formatText" size1024="806 167 1011 185" textcentervert="" textfont="StatText" textfontsize="12" z="35">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitPortrait" type="button" size1024="708 74 772 138" donthighlight="" background="" foreground="" sound="" z="30">
+      </gadget>
+    </gadget>
+    <gadget name="ObjectInfo_singleUnitStatPanel" type="gadget" size1024="758 182 1011 245" z="10">
+      <gadget name="ObjectInfo_singleUnitStatsLabel0" type="formatText" size1024="758 182 856 200" textcentervert="" textfont="StatText" textfontsize="12" z="30">$$24320$$Hitpoints:</gadget>
+      <gadget name="ObjectInfo_singleUnitStatsValue0" type="formatText" size1024="856 182 1011 200" textcentervert="" textfont="StatText" textfontsize="12" z="30">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitStatsLabel1" type="formatText" size1024="758 197 856 215" textcentervert="" textfont="StatText" textfontsize="12" z="30">$$24319$$Attack:</gadget>
+      <gadget name="ObjectInfo_singleUnitStatsValue1" type="formatText" size1024="856 197 1011 215" textcentervert="" textfont="StatText" textfontsize="12" z="30">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitStatsLabel2" type="formatText" size1024="758 212 856 230" textcentervert="" textfont="StatText" textfontsize="12" z="30" textmarkup="">$$20944$$Upgrades:</gadget>
+      <gadget name="ObjectInfo_singleUnitStatsValue2" type="formatText" size1024="856 212 1011 230" textcentervert="" textfont="StatText" textfontsize="12" z="30">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitStatsLabel3" type="formatText" size1024="758 227 856 245" textcentervert="" textfont="StatText" textfontsize="12" z="30" textmarkup="">$$18417$$Range:</gadget>
+      <gadget name="ObjectInfo_singleUnitStatsValue3" type="formatText" size1024="856 227 1011 245" textcentervert="" textfont="StatText" textfontsize="12" z="30">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitStatsLabel4" type="formatText" size1024="708 244 875 263" textcentervert="" textfont="StatText" textfontsize="12" z="30" textmarkup="">$$28204$$Has Prescenario Events?</gadget>
+      <gadget name="ObjectInfo_singleUnitStatsValue4" type="formatText" size1024="898 243 931 263" textcentervert="" textfont="StatText" textfontsize="12" z="30">
+      </gadget>
+      <gadget name="ObjectInfo_singleUnitStats_EditPrescenarioEvents" type="button" bevel="" size1024="884 246 1011 263" z="10">$$28205$$Edit Events...</gadget>
+    </gadget>
+  </gadget>
+</layout>

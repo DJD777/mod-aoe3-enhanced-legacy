@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="AMPHCPage-ScreenContainer" hidden="" type="gadget" size1024="210 106 1024 768" z="20">
+    <gadget name="AMPHCPage-HCViewContainer" hidden="" type="gadget" size1024="210 106 1024 768" backgroundcolor="64 64 64" z="5">
+    </gadget>
+    <gadget name="AMPHCPage-HCUIContainer" hidden="" type="gadget" size1024="212 107 238 143" backgroundcolor="64 64 64" z="25">
+    </gadget>
+    <gadget name="AMPHCPage-ManageDlgContainer" type="gadget" size="214 581 508 767" transparent="">
+      <gadget name="AMPHCPage-Background" type="gadget" background="ui\pregame\skirmhcoptions" size1024="233 501 488 805" z="10" transparent="">
+      </gadget>
+      <gadget name="AMPHCPage-ExitButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="253 693 469 725" z="11">$$18457$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="AMPHCPage-UpgradeButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="253 579 469 611" z="11">$$37432$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="AMPHCPage-DeckBuilderButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="253 617 469 649" z="11">$$37433$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      <gadget name="AMPHCPage-CustomizeButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" mouseovertext="$$42142$$" textcenterhoriz="" textcentervert="" size1024="253 655 469 687" z="11">$$37434$$<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+    </gadget>
+    <gadget name="AMPHCPage-LoadingScreen" type="gadget" hidden="" backgroundcolor="0 0 0" backgroundalpha="0.5" size1024="0 0 1024 768" z="31">
+      <gadget name="AMPHCPage-LoadingImage" type="gadget" background="\ui\home_city\intro_hc" backgroundalpha="0.5" size1024="210 106 1024 768" texturecoords="0 0 1 0.7509766" transparent="">
+      </gadget>
+      <gadget name="AMPHCPage-LoadingDlg" type="gadget" background="ui\core_ui\resign_window" size1024="371 223 794 450" z="31">
+        <gadget name="AMPHCPage-Loading-Text" type="formatText" textcenterhoriz="" textcolor="255 200 3" textfont="PregameHeaders" textfontsize="22" size1024="374 282 669 317" transparent="" z="38">$$22605$$Loading...</gadget>
+        <gadget name="AMPHCPage-Loading-CancelButton" type="stateButton" bevelbutton="" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" textcenterhoriz="" textcentervert="" size1024="424 370 616 402" z="27" texturecoords="0 0 1 1">$$18466$$Cancel<stateentry background="ui\core_ui\button_256x32_normal"></stateentry><stateentry background="ui\core_ui\button_256x32_clicked"></stateentry><stateentry background="ui\core_ui\button_256x32_rollover"></stateentry><stateentry background="ui\core_ui\button_256x32_disabled"></stateentry></gadget>
+      </gadget>
+    </gadget>
+  </gadget>
+</layout>

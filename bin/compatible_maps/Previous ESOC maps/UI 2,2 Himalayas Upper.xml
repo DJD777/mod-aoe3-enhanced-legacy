@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapinfo
+detailsText=" Upper Himalayas: The same chokepoints of the Himalayas but without the Trade Route to obstruct your wall placement.\n
+\n
+Gain control of this expanded map's vital choke points to restrict your enemies' access to the most valuable resources. Players start with Town Centers in close proximity to thick forests. Beyond the trees, in the lush central valley, vast quantities of Food and Gold lie ripe for the taking. Beware, as established native settlements dot the landscape.\n
+ \n
+ \n Native Civs: Udasi / Bhakti
+ \n Mercenaries: Marathan Dacoit / Wokou Horseman
+ \n
+--------------------------------- \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+ "
+imagepath = "ui\random_map\himalayas"
+displayName = "UI 2.2 Himalayas - Upper"
+cannotReplace = ""
+loadDetails="70039"
+loadBackground="ui\random_map\himalayas\himalayas_map">
+  <loadss>ui\random_map\himalayas\himalayas_ss_1</loadss>
+  <loadss>ui\random_map\himalayas\himalayas_ss_2</loadss>
+  <loadss>ui\random_map\himalayas\himalayas_ss_3</loadss>
+</mapinfo>

@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText="From the foothills of Mount Everest to the cliffy plateaus where players spawn, the Himalayan Mountains provide an abundance of resources, a long winding trade route, and many chokepoints. Establish map control to keep the enemy from the central resources. 
+\n
+---------------------------------\n
+\n
+Natives: Bhakti \n
+Outlaws: Marathan Dacoit and Wokou Horseman \n
+\n
+---------------------------------\n
+\n
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+\n
+\n Map made by vividlyplain
+\n Observer UI by Aizamk"
+
+imagepath="ui\esoc_map\nepal"
+displayName = "UI 2.2 ESOC Nepal"
+cannotReplace = ""
+loadDetailsText = "From the foothills of Mount Everest to the cliffy plateaus where players spawn, the Himalayan Mountains provide an abundance of resources, a long winding trade route, and many chokepoints. Establish map control to keep the enemy from the central resources. 
+\n
+---------------------------------\n
+\n
+Natives: Bhakti \n
+Outlaws: Marathan Dacoit and Wokou Horseman \n
+\n
+---------------------------------\n
+\n
+"
+loadBackground="ui\random_map\himalayas\himalayas_map"
+>
+
+  <loadss>ui\random_map\himalayas\himalayas_ss_1</loadss>
+  <loadss>ui\random_map\himalayas\himalayas_ss_2</loadss>
+  <loadss>ui\random_map\himalayas\himalayas_ss_3</loadss>
+  
+</mapinfo>

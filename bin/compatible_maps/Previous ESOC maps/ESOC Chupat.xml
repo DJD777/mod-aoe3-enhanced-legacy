@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText = " Located in southern patagonia, this region is home to the Mapuche. You are seperated from the opposing team by an impassable cliff surrounded by a narrow river. While there are few fish, this river may prove useful for transport or for adding naval firepower to defensive tactics. A few llamas may be found wandering in the south alongside a small trade route. The trade route is not available in FFA games. \n
+ \n Outlaws: Pistolero / Comanchero
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+\n
+
+\n Map by dansil92 "
+ 
+imagepath = "ui\random_map\unknown"
+displayName = "ESOC Chupat"
+cannotReplace = ""
+loadDetailsText=" Located in southern patagonia, this region is home to the Mapuche. You are seperated from the opposing team by an impassable cliff surrounded by a narrow river. While there are few fish, this river may prove useful for transport or for adding naval firepower to defensive tactics. A few llamas may be found wandering in the south alongside a small trade route. The trade route is not available in FFA games. \n
+ \n Outlaws: Pistolero / Comanchero
+\n
+\n Map by dansil92"
+ 
+loadBackground="ui\random_map\pampas\pampas_map">
+   <loadss>ui\random_map\pampas\pampas_ss_01</loadss>
+   <loadss>ui\random_map\pampas\pampas_ss_02</loadss>
+   <loadss>ui\random_map\pampas\pampas_ss_03</loadss>
+ 
+</mapinfo>

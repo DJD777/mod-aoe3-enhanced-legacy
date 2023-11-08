@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <attachment>flag<include>homecity\spc\flag.xml</include></attachment>
+  <component>mesh<assetreference type="GrannyModel"><file></file></assetreference><attach a="flag" frombone="ATTACHPOINT" tobone="bone_flowers01" syncanims="0"></attach></component>
+  <anim>Idle<component>mesh</component></anim>
+</animfile>

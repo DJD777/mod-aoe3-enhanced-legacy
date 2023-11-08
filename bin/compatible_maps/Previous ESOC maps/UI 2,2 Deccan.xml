@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapinfo detailsText="Players start on opposite sides of a central plateau that contains thick forests and abundant wildlife. Resources are plentiful, as Mines, small herds, and sparse forests ring the surrounding lowlands. Trade sites are situated at the edge of the map, while natives inhabit the plateau. The plateau is not present in free-for-all games.
+\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Udasi / Bhakti / Sufi  \n
+-Mercenaries:  Dacoit / Thuggee    \n
+\n
+--------------------------------- \n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Observer UI by Aizamk \n
+ " 
+
+imagepath="ui\random_map\deccan"
+displayName="UI 2.2 Deccan"
+cannotReplace="" 
+loadDetailsText="Players start on opposite sides of a central plateau that contains thick forests and abundant wildlife. Resources are plentiful, as Mines, small herds, and sparse forests ring the surrounding lowlands. Trade sites are situated at the edge of the map, while natives inhabit the plateau. The plateau is not present in free-for-all games.
+\n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Udasi / Bhakti / Sufi  \n
+-Mercenaries:  Dacoit / Thuggee    \n
+\n
+--------------------------------- \n
+ \n" 
+loadBackground="ui\random_map\deccan\deccan_map">
+  <loadss>ui\random_map\deccan\deccan_ss_01</loadss>
+  <loadss>ui\random_map\deccan\deccan_ss_02</loadss>
+  <loadss>ui\random_map\deccan\deccan_ss_03</loadss>
+</mapinfo>

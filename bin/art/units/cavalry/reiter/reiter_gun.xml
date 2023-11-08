@@ -1,0 +1,4 @@
+<animfile>
+  <component>gun<logic type="Tech"><none><assetreference type="GrannyModel"><file>units\cavalry\reiter\reiter_gun_age1</file></assetreference></none><veteranruytersshadow><assetreference type="GrannyModel"><file>units\cavalry\reiter\reiter_gun_age2</file></assetreference></veteranruytersshadow><guardruyters><assetreference type="GrannyModel"><file>units\cavalry\reiter\reiter_gun_age3</file></assetreference></guardruyters><imperialcarabineer><assetreference type="GrannyModel"><file>units\cavalry\reiter\reiter_gun_age4</file></assetreference></imperialcarabineer></logic></component>
+  <anim>Idle<component>gun</component></anim>
+</animfile>

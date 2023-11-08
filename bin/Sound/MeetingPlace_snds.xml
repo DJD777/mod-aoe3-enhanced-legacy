@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<protounitsounddef>
+  <protounit name="MeetingPlace">
+    <soundtype name="Select">
+      <soundset name="UI_Building_Economic">
+      </soundset>
+    </soundtype>
+    <soundtype name="Death">
+      <soundset name="MeetingPlaceDeath">
+      </soundset>
+    </soundtype>
+    <soundtype name="Creation">
+      <soundset name="UI_Building_Economic">
+      </soundset>
+    </soundtype>
+  </protounit>
+</protounitsounddef>

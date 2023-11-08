@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>academy_bunting<assetreference type="GrannyModel"><file>homecity\russian\prop_russian_nwtc_bunting</file><replacetexture><from>homecity\home_city_props\patriotic_bunting</from><to>homecity\home_city_props\usaacademy_bunting</to></replacetexture></assetreference></component>
+  <anim>Idle<component>academy_bunting</component></anim>
+</animfile>

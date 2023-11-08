@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "You are about to establish a colony in the southern part of Florida, surrounded by resources of every kind. \n
+The starting market and the nearby trade route can help raising a strong economy in a short time. Sea resources could boost your economy even further. \n
+Seminole and Carib natives may also help your cause providing useful technologies. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:  Seminole / Caribs    \n
+-Mercenaries:   Pirate    \n
+\n
+--------------------------------- \n
+\n 
+ &lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Garja \n
+ Observer UI by Aizamk \n"
+
+imagepath  = "ui\esoc_map\florida"
+displayName = "ESOC Florida"
+cannotReplace = ""
+loadDetailsText = "You are about to establish a colony in the southern part of Florida, surrounded by resources of every kind. \n
+The starting market and the nearby trade route can help raising a strong economy in a short time. Sea resources could boost your economy even further. \n
+Seminole and Carib natives may also help your cause providing useful technologies. \n
+\n
+---------------------------------\n
+\n
+-NativeCiv:   Seminole / Caribs  \n
+-Mercenaries:   Pirate   \n
+\n
+---------------------------------\n
+"
+loadBackground="ui\esoc_map\florida_map"
+>
+
+   <loadss>ui\random_map\caribbean\caribbean_ss_01</loadss>
+  
+</mapinfo>

@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<mapinfo
+detailsText =  "Welcome to Bangladesh. This region known for its many waterways and fertile plains. Players start on either side of the Meghna River. Udasi and/or Bhakti villages spawn in the North while the sea in the South provides an abundance of fish and whales. The trade route is not present in FFA.
+\n
+---------------------------------\n
+\n
+Natives: Bhakti \n
+Outlaws: Dacoit and Thuggee \n
+\n
+---------------------------------\n
+\n
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+&lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+\n Made by vividlyplain.
+\n Observer ui by Aizamk.
+"
+
+imagepath="ui\esoc_map\dhaka"
+displayName = "UI 2.2 ESOC Dhaka"
+cannotReplace = ""
+loadDetailsText = "Welcome to Bangladesh. This region known for its many waterways and fertile plains. Players start on either side of the Meghna River. Udasi and/or Bhakti villages spawn in the North while the sea in the South provides an abundance of fish and whales. The trade route is not present in FFA.
+\n
+---------------------------------\n
+\n
+Natives: Bhakti \n
+Outlaws: Dacoit and Thuggee \n
+\n
+---------------------------------\n
+\n
+"
+loadBackground="ui\random_map\deccan\deccan_map"
+>
+
+  <loadss>ui\random_map\borneo\borneo_ss_1</loadss>
+  <loadss>ui\random_map\borneo\borneo_ss_2</loadss>
+  <loadss>ui\random_map\borneo\borneo_ss_3</loadss>
+ 
+  
+</mapinfo>

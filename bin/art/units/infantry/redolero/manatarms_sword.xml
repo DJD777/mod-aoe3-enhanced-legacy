@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+  <component>axe<logic type="Tech"><none><logic type="LowPoly"><normal><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sword</file></assetreference></normal><lowpoly></lowpoly></logic></none><veteranmanatarms><logic type="LowPoly"><normal><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sword2</file></assetreference></normal><lowpoly></lowpoly></logic></veteranmanatarms><guardmanatarms><logic type="LowPoly"><normal><assetreference type="GrannyModel"><file>units\infantry\redolero\redolero_sword3</file></assetreference></normal><lowpoly></lowpoly></logic></guardmanatarms></logic></component>
+  <anim>Idle<component>axe</component></anim>
+</animfile>

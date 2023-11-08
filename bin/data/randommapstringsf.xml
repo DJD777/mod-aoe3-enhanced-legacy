@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StringTable version="130">
+  <Language name="English">&gt;
+	  <String _locID="36010">Silk Road</String>
+	  <String _locID="130015">Ozarks</String>
+	  <String _locID="130016">Ozarks: Dense thickets filled with wildlife dot this rolling terrain.</String>
+	  <String _locID="130017">Hilltop trading posts sit beside a trade route that crosses the map from East to West. Teams are split across the trade route.</String>
+	  <String _locID="130018">Plymouth</String>
+	  <String _locID="130019">Plymouth: A bountiful land of natural treasures and grateful Pilgrims.</String>
+	  <String _locID="130020">Each colony can use intrepid Pilgrims and Scout Turkeys to explore the bountiful wilderness for Native Settlements and unique treasures.</String>
+	  <String _locID="66519">Asian Maps</String>
+	  <String _locID="66521">Randomly selects from all maps geographically located in Asia.\n\nContents:\nBengal\nBorneo\nCeylon\nDeccan\nDeccan Large\nDhaka\nHimalayas\nHimalayas Upper\nHimalayas Upper\nHonshu\nIndochina\nIndonesia\nKamchatka\nMalaysia\nManchuria\nMongolia\nNepal\nParallel Rivers\nSiberia\nSiberia Large\nSilk Road\nSilk Road Large\nThailand\nThar Desert\nTibet\nVietnam\nYalu River\nYellow River (Dry)\nYellow River\nYellow River Large\nZavkhan</String>
+	  <String _locID="43432">Classic Maps</String>
+	  <String _locID="43433">Randomly selects from classic Age of Empires III maps.\n\nContents:\nAmazonia\nAndes\nAraucania\nBayou\nCalifornia\nCaribbean\nCarolina\nCarolina Large\nGreat Lakes\nGreat Plains\nGreat Plains Large\nHispaniola\nNew England\nNorthwest Territory\nOrinoco\nOzarks\nPainted Desert\nPampas\nPatagonia\nPlymouth\nRockies\nSaguenay\nSaguenay Large\nSonora\nSonora Large\nTexas\nTexas Large\nUnknown\nYucatan\nYukon</String>
+	  <String _locID="19836">Team Maps</String>
+	  <String _locID="18610">Randomly selects from a mix of maps suitable for team games.\n\nContents:\nAdirondacks\nAlaska\nAndes\nArkansas\nBaja California\nBengal\nBering Strait\nCascade Range\nColorado\nDeccan\nDhaka\nFertile Crescent\nFlorida\nFraser River\nGran Chaco\nGuatemala\nHigh Plains\nHimalayas (Upper)\nHimalayas\nHudson Bay\nKamchatka\nManchuria\nMendocino\nNepal\nNew England\nPainted Desert\nPampas Sierras\nSiberia\nSilk Road\nThar Desert\nTuparro\nWabakimi\nYalu River</String>
+	  <String _locID="33470">Standard Maps</String>
+	  <String _locID="18882">A map-set featuring relatively standard maps, striking a compromise between balance and variety.\n\nContents:\nAdirondacks\nAlaska\nAmazonia\nAndes\nAraucania\nArizona\nArkansas\nBaja California\nBayou\nBengal\nBering Strait\nBorneo\nCalifornia\nCaribbean\nCarolina\nCarolina Large\nCascade Range\nColorado\nDhaka\nFertile Crescent\nFlorida\nGran Chaco\nGreat Basin\nGreat Lakes\nGreat Plains\nGreat Plains Large\nHerald Island\nHigh Plains\nHimalayas\nHimalayas Upper\nHispaniola\nHonshu\nHudson Bay\nMore...</String>
+	  <String _locID="70525">Land Maps</String>
+	  <String _locID="70526">Randomly selects from all maps that do not feature naval combat.\n\nContents:\nAndes\nArizona\nArkansas\nBayou\nBengal\nBering Strait\nBonnie Springs\nCerrado\nColorado\nDeccan\nDeccan Large\nFertile Crescent\nFraser River\nDried Lake\nGran Chaco\nGreat Basin\nGreat Plains\nGreat Plains Large\nHerald Island\nHigh Plains\nHimalayas\nHimalayas (Upper)\nKlondike\nManchac\nMendocino\nMongolia\nNahanni\nNepal\nOzarks\nPainted Desert\nPampas\nRockies\nSiberia\nSiberia Large\nMore...</String>
+	  <String _locID="70527">7 Rodeleros</String>
+	  <String _locID="34029" symbol="cStringESOCRCMismatch">≠EP: %s</String>
+	  <String _locID="38274" symbol="cStringESOCRC">This room is not compatible with ESOC Patch</String>
+	  <String _locID="18459" symbol="cStringAoMVersion">Age of Empires(R) III: The Asian Dynasties, version {gameVersion}; ESOC Patch, version 9.0.0.1</String>
+	  <String _locID="22683" symbol="cStringRecordGameFileName">EP recorded game</String>
+	  <String _locID="36012">All Crates contain 125 resources instead of 100.</String>
+	  <String _locID="47028">All your Pikemen transform into Rodeleros.</String>
+	  <String _locID="46855">Dragoons have increased range, line of sight and hit points and do more damage.</String>
+	  <String _locID="35853">19 Strelets</String>
+	  <String _locID="35662">4 Lancers</String>
+	  <String _locID="35739">5 Lancers</String>
+	  <String _locID="35734">8 Rodeleros</String>
+	  <String _locID="35736">9 Rodeleros</String>
+	  <String _locID="65966">Increases the hitpoints and attack of Disciples.</String>
+	  <String _locID="47188">Your War Hut units can build War Huts and Corrals.</String>
+	  <String _locID="47035">Decreases Cuirassier cost.</String>
+	  <String _locID="61889">Yumi Archer range increased.</String>
+	  <String _locID="68310">Daimyo and Shoguns train units faster, move faster, and have greater line of sight.</String>
+	  <String _locID="69932">TEAM 4 Urumis shipment has been received.</String>
+	  <String _locID="70304">TEAM 4 Urumis shipment has been received.</String>
+	  <String _locID="61484">TEAM 4 Urumi</String>
+	  <String _locID="70511">Increased all Crates to 125 resources.</String>
+	  <String _locID="42961">Increased all Crates to 125 resources.</String>
+	  <String _locID="46651">Increased all Crates to 125 resources.</String>
+	  <String _locID="36484">Docks have a greater attack, heal ships faster, and train ships more quickly.</String>
+	  <String _locID="62191">Highwayman, good against cavalry.</String>
+	  <String _locID="23334">Musketeer, Fusilier, Janissary, Highlander, Ashigaru, Consulate Stadhouder, Consulate Guerreiros, Dacoit, Pistolero, and Grenadier hand attack increased.</String>
+	  <String _locID="46847">Falconet, Heavy Cannon, Culverin, and Horse Artillery damage increased.</String>
+	  <String _locID="37305">Fishing Boats are cheaper and train faster.</String>
+	  <String _locID="66280">Warships have more range, line of sight and a greater attack.</String>
+	  <String _locID="66284">Warships have more range, line of sight and a greater attack, +1 Villager.</String>
+	  <String _locID="69662">Decreases cost and research time of naval military upgrades, +1 Villager.</String>
+	  <String _locID="29538">Decreases cost and research time of naval military upgrades.</String>
+	  <String _locID="36574">Decreases cost and research time of naval military upgrades, +2 Uhlans.</String>
+	  <String _locID="70528">400 Coin Crate with every shipment</String>
+	  <String _locID="47093">Precious metals from the new world grant additional coin with all your shipments, starting with this one.</String>
+	  <String _locID="70529">Supply of 400 Coin.</String>
+	  <String _locID="70530">Huge Chests of 400 Coin</String>
+	  <String _locID="70531">Crate 400 Coin Large</String>
+	  <String _locID="32065">Abus Gun attack, line of sight, range and hitpoints increased.</String>
+	  <String _locID="70533">Hazza's computer can worth a crate of 100 Wood</String>
+	  <String _locID="70532">%s has found Hazza's computer worth a crate of 100 Wood</String>
+	  <String _locID="47047">Warships have more range, line of sight and a greater attack.</String>
+	  <String _locID="34686">This building requires more space for gatherers or crops around it.</String>
+	  <String _locID="43751">Crates of 300 Food, 300 Wood, and 200 Coin</String>
+	  <String _locID="70535">Diplomacy</String>
+	  <String _locID="66077">Distributivism Shipment has arrived.</String>
+	  <string _locID="69877">Distributivism Shipment has arrived.</string>
+	  <String _locID="70536">Observer Mode</String>
+	  <String _locID="70537">Allows for observers on any UIx map. See the map description for details on observer mode setup.</String>
+	  <String _locID="70538">Auto-pest inviters</String>
+	  <String _locID="70539">Enable/Disable InviteShield</String>
+	  <String _locID="70540">Show games hosted on a different patch</String>
+	  <String _locID="70541">Show/Hide Games with mismatching CRC</String>
+	  <String _locID="70542">Speed Factor</String>
+	  <String _locID="61557">Chu Ko Nu, Qiang Pikemen, Keshiks and Steppe Riders attack and hitpoints increased greatly, but their cost and the cost of their armies is also increased.</String>
+	  <String _locID="61558">Old Dynasty Reforms</String>
+	  <String _locID="70482">Old Dynasty Reforms Shipment has arrived.</String>
+	  <String _locID="69404">Ranged cavalry, good against cavalry / raiding cavalry</String>
+	  <String _locID="69405">Fast, flexible army of heavy and ranged cavalry.\n2 Keshik: Fast ranged cavalry that is good against heavy cavalry.\n2 Steppe Riders: Hand cavalry good against villagers and buildings.</String>
+	  <String _locID="69407">Ranged cavalry, good against cavalry / raiding cavalry</String>
+	  <String _locID="68727">Hand infantry, good against cavalry / artillery, good against infantry</String>
+	  <String _locID="68728">Versatile army of swordsmen and heavy cavalry.\n4 Changdao: Hand infantry good against cavalry and buildings.\n2 Meteor Hammer: Heavy cavalry that strikes from a distance, especially good against artillery.</String>
+	  <String _locID="68730">Hand infantry, good against cavalry / artillery, good against infantry</String>
+	  <String _locID="47024">Now your missionaries boost the attack of nearby soldiers, +1 missionary.</String>
+	  <String _locID="37360">Lancers do increased damage to infantry and can strike from range.</String>
+	  <String _locID="65905">German Allies\n-20% to Banner Army Food Costs</String>
+	  <String _locID="35308">Longbowman range increased.</String>
+	  <String _locID="44328">The priests of Xipe Totec send 12 Coyote Runners and boost all Coyote Runner attacks and armor.</String>
+	  <String _locID="44327">The priests of Centeotl send 18 Macehualtins and boost all Macehualtin hitpoints, range and line of sight.</String>
+	  <String _locID="64151">Trains:\nCrossbowmen\nCulverins\nMusketeers\n \nShipments:\nBoats</String>
+	  <String _locID="36517">TEAM Crossbowmen, Longbowmen and Pikemen train faster.</String>
+	  <String _locID="44243">TEAM Crossbowmen, Longbowmen and Pikemen train faster.</String>
+	  <String _locID="46891">TEAM Crossbowmen, Longbowmen and Pikemen train faster.</String>
+	  <String _locID="33155">Allows you to send the Philosopher Prince, who advances you to Colonial Age and makes archaic units (Longbowmen and Pikemen) better.</String>
+	  <String _locID="36962" symbol="cStringNuggetWardog">A stray dog in need of rescue.</String>
+	  <String _locID="36963" symbol="cStringNuggetWardogActivate">%s has rescued a War Dog!</String>
+	  <String _locID="63033" symbol="cStringypSpawnWaterBuffalo2">Four stray water buffalo, which you can capture.</String>
+	  <String _locID="63052" symbol="cStringypSpawnWaterBuffalo2Activate" comment="1 - player">%1s has captured four stray water buffalo.</String>
+	  <String _locID="63036" symbol="cStringypGiveInfantryHP" comment="2.2f - floating point number - amount">El Pollo Guapo's guide to healthy living, which increases infantry HP of whomever recovers it by 5 percent.</String>
+	  <String _locID="63055" symbol="cStringypGiveInfantryHPActivate" comment="s - player, 2.2f - amount">%1s has recovered El Pollo Guapo's guide to healthy living, which increases infantry HP by 5 percent.</String>
+	  <String _locID="63450" symbol="cStringypGiveCavalryHP">El Pollo Guapo's guide to proper discipline, which increases cavalry HP of whomever recovers it by 5 percent.</String>
+	  <String _locID="63451" symbol="cStringypGiveCavalryHPActivate">%1s has recovered El Pollo Guapo's guide to proper discipline, which increases cavalry HP by 5 percent.</String>
+	  <String _locID="68661" symbol="cStringypCavTrainSpeed">El Pollo Guapo's long lost feed bag, which reduces cavalry training time by 5 percent.</String>
+	  <String _locID="68662" symbol="cStringypCavTrainSpeedActivate">%1s has recovered El Pollo Guapo's feed bag, which reduces cavalry training time by 5 percent.</String>
+	  <String _locID="68667" symbol="cStringypCavVilBonus">The barbed spear of El Pollo Guapo, which increases hand cavalry damage against Villagers by 25 percent.</String>
+	  <String _locID="68668" symbol="cStringypCavVilBonusActivate">%1s has recovered the barbed spear of El Pollo Guapo, which increases hand cavalry damage against Villagers by 25 percent.</String>
+	  <String _locID="70543">Three stray sheep.</String>
+	  <String _locID="70544">%s has found three stray sheep.</String>
+	  <String _locID="70545">Three stray dogies (Cows), which you can capture.</String>
+	  <String _locID="70546">%1s has recovered three stray dogies (Cows).</String>
+	  <String _locID="70547">Three stray llamas, which you can capture.</String>
+	  <String _locID="70548">%1s has recovered three stray llamas.</String>
+	  <String _locID="70549">Four stray llamas, which you can capture.</String>
+	  <String _locID="70550" symbol="cStringWonderSummerPalaceBlackFlag">Black Flag Army spawn</String>
+	  <String _locID="68733" symbol="cStringWonderBlackFlagArmy">Configure this Wonder to produce the Black Flag Army.\n4 Changdao\n2 Meteor Hammer</String>
+	  <String _locID="68734" symbol="cStringWonderBlackFlagArmyActive">This Wonder is producing the Black Flag Army.\n4 Changdao\n2 Meteor Hammer</String>
+	  <String _locID="70551" symbol="cStringWonderMongolianArmy">Configure this Wonder to produce the Mongolian Army.\n2 Keshik\n2 Steppe Rider</String>
+	  <String _locID="70552" symbol="cStringWonderMongolianArmyActive">This Wonder is producing the Mongolian Army.\n2 Keshik\n2 Steppe Rider</String>
+	  <String _locID="42229" symbol="cStringStatBonusDamageRollover1">%1.2fX Bonus Damage against %2s (%3s)</String>
+	  <String _locID="70553">Choose a specific variant of the map. Only supported on certain maps.</String>
+	  <String _locID="70554">Default Map Variability</String>
+	  <String _locID="70555">Summer (if applicable)</String>
+	  <String _locID="70556">Winter (if applicable)</String>
+	  <String _locID="70557">Old World (if applicable)</String>
+	  <String _locID="45712">The Strawberry Festival provides you with 500 Food for every 10 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45714">A successful Maple Festival provides you with 500 Coin for every 10 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45718">Knowledge of the surrounding woodlands provides you with 500 Wood for every 10 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45898">The War Arrow! You get 1 Dog Soldier for every 3 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="46177">Worship of the God of Wealth, Tezcatlipoca, brings forth 1 Skull Knight for every 4 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="46171">Free cotton armor recruits 1 Puma Spearman for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="46173">The Aztec nobles rally, giving you 1 Arrow Knight for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="46183">Emphasis on the Serpent Goddess, Coatlicue, summons 1 Macehualtin for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="61112">Preparation for the Pilgrimage to Mecca provides 1 Fattened Goat for every 2 minutes of game time.</String>
+	  <String _locID="45363">Mountain-dwelling allies of the Zapotec provide you with 100 high-altitude Wood in crates for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45373">The Huron mercantile monopoly permits you to get 1 Mantlet for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45399">It's the early fall Huckleberry Feast! You get 100 Food in crates for every 3 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="45426">Formal European recognition of the Mapuche nation provides 100 Coin in crates for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="46161">Worship of the Corn God, Cinteotl, recruits 1 Eagle Runner Knight for every 2 minutes of game length, up to 30 minutes.</String>
+	  <String _locID="66594">Anti-cavalry army of pikemen and ranged cavalry.\n2 Qiang Pikemen: Archaic hand infantry good against cavalry and buildings.\n3 Keshik: Ranged cavalry good against heavy cavalry.</String>
+	  <String _locID="62089">Well-rounded army of archers and pikemen.\n3 Chu Ko Nu: Archaic archers good against infantry.\n3 Qiang Pikemen: Archaic hand infantry good against cavalry and buildings.</String>
+	  <String _locID="66591">Anti-infantry army of archers and heavy cavalry.\n3 Chu Ko Nu: Archaic archers good against infantry.\n2 Steppe Riders: Hand cavalry good against Villagers and buildings.</String>
+	  <String _locID="62097">Mixed heavy cavalry army.\n2 Iron Flail: Heavy cavalry good only against ranged infantry.\n2 Meteor Hammer: Heavy cavalry that strikes from a distance, especially good against artillery.</String>
+	  <String _locID="62093">Anti-infantry army of riflemen and heavy cavalry.\n3 Arquebusier: Ranged infantry good against infantry and light cavalry.\n2 Iron Flail: Heavy cavalry good only against ranged infantry.</String>
+	  <String _locID="62101">Well-rounded army of swordsmen and riflemen.\n3 Changdao: Hand infantry good against cavalry and buildings.\n3 Arquebusier: Ranged infantry good against infantry and light cavalry.</String>
+	  <String _locID="70558">ESOC+ Maps</String>
+	  <String _locID="70559">A map-set that features only maps that were made by the ESOC team and others.\n\nContents:\nAdirondacks\nAlaska\nArizona\nArkansas\nBaja California\nBengal\nBering Strait\nBonnie Springs\nCascade Range\nCerrado\nCeylon\nChupat\nColorado\nDeccan\nDhaka\nFertile Crescent\nFlorida\nFraser River\nGlobal Warming\nGran Chaco\nGreat Basin\nGuatemala\nHerald Island\nHigh Plains\nHimalayas Upper\nHudson Bay\nIndonesia\nIowa\nKamchatka\nKlondike\nMalaysia\nManchac\nManchuria\nMore...</String>
+	  <String _locID="70560">Dutch-only extra +5% infantry hitpoints</String>
+	  <String _locID="70561">Grants an extra +5% infantry hitpoints to Dutch only.</String>
+	  <String _locID="70562">Dutch-only extra +5% infantry hitpoints activated.</String>
+	  <String _locID="70563">Germans-only extra +5% cavalry attack</String>
+	  <String _locID="70564">Grants an extra +5% cavalry attack to Germans only.</String>
+	  <String _locID="70565">Germans-only extra +5% cavalry attack activated.</String>
+	  <String _locID="63958">British Allies\n+7% Land Unit Hitpoints</String>
+	  <String _locID="65442">Ottoman Allies\n+7 Land Unit / Building LOS</String>
+	  <String _locID="33492">All unique Ottoman Mosque improvements cost 60% less.</String>
+	  <String _locID="47189">Aggressive Expansion Policy</String>
+	  <String _locID="70566">Unexpected Events</String>
+	  <String _locID="37439">10 Halberdiers</String>
+	  <String _locID="37441">12 Musketeers</String>
+	  <String _locID="37291">TEAM 2 Outpost Wagon that can transform into an Outpost or Tower.</String>
+	  <String _locID="44443">15 Bison</String>
+	  <String _locID="65619">All hand attacks do more damage, but especially Rajputs’, +1 Villager.</String>
+	  <String _locID="70567">A trapped monkey that may join the cause of a rescuer.</String>
+	  <String _locID="70568">%1s has rescued a trapped monkey.</String>
+	  <String _locID="68231">Japanese Isolation\n+7% Land Unit Attack</String>
+	  <String _locID="44230">Coyote Runner speed, hitpoints and armor increased.</String>
+	  <String _locID="47222">Villagers gather Coin from Plantations faster.</String>
+	  <String _locID="70568">Delivery of Food</String>
+	  <String _locID="70569">Trade Routes can generate Food.</String>
+	  <String _locID="70570">Delivery of Food</String>
+	  <String _locID="70571">Delivery of Wood</String>
+	  <String _locID="70572">Trade Routes can generate Wood.</String>
+	  <String _locID="70573">Delivery of Wood</String>
+	  <String _locID="70574">Delivery of Coin</String>
+	  <String _locID="70575">Trade Routes can generate Coin.</String>
+	  <String _locID="70576">Delivery of Coin</String>
+	  <String _locID="31180">Delivery of Experience Points</String>
+	  <String _locID="32715">Delivery of Experience Points</String>
+	  <String _locID="38245">Delivery of Experience Points</String>
+	  <String _locID="44058">9 Cherokee Allies</String>
+	  <String _locID="44057">9 Cree Allies</String>
+	  <String _locID="44059">7 Huron Allies</String>
+	  <String _locID="61656">Hire 24 Rattan Shields</String>
+	  <String _locID="44665">7 Cheyenne Allies</String>
+	  <String _locID="44663">8 Comanche Allies</String>
+	  <String _locID="44719">11 Mayan Allies</String>
+	  <String _locID="70577">All types of canoes cost less Wood.</String>
+	  <String _locID="70578">Birchbark</String>
+  </Language>
+</StringTable>

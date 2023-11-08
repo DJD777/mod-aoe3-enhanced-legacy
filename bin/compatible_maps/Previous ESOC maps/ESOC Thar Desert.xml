@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapinfo detailstext="\n
+The Thar Desert is a waypoint for merchants in the silk road. In this big dry area, the fauna is scarce, but you will find for sure much copper to mine.
+As you can be really lost in the desert, you don't really know where your settlement is, and it may change every game.
+\n
+---------------------------------\n
+\n
+-Outlaws:  Wokou Horseman / Wokou Ronin  \n
+-Natives: Udasi \n
+\n
+--------------------------------- \n
+\n
+&lt;icon=(20)(ui\ingame\stat_icon_heavy_infantry)&gt; &lt;u&gt;Player Setup in Observer Mode&lt;/u&gt;\n
+-1v1: FFA\n
+-2v2: 1+2 vs 3+4\n
+-3v3: 1+2+3 vs 4+5+6\n
+ \n
+ &lt;icon=(20)(ui\ingame\stat_icon_ceasefire)&gt; &lt;u&gt;Observer Setup&lt;/u&gt;\n
+-Team does not matter\n
+-Don't use Iroquois / Aztec / Sioux!\n
+ \n
+ Designed by Rikikipu \n
+ Observer UI by Aizamk \n
+\n"
+imagepath="ui\esoc_map\thar_desert"  displayName = "ESOC Thar Desert" cannotReplace=""
+loadDetailsText="\n
+The Thar Desert is a waypoint for merchants in the silk road. In this big dry area, the fauna is scarce, but you will find for sure much copper to mine.
+As you can be really lost in the desert, you don't really know where your settlement is, and it may change every game.
+\n
+---------------------------------\n
+\n
+-Outlaws:  Wokou Horseman / Wokou Ronin  \n
+-Natives: Udasi \n
+\n
+--------------------------------- \n
+\n"
+loadBackground="ui\esoc_map\thardesert_map">
+   <loadss>ui\random_map\silk_road\ss_silk_road</loadss>
+   <loadss>ui\random_map\silk_road\ss_silk_road</loadss>
+   <loadss>ui\random_map\silk_road\ss_silk_road</loadss>
+</mapinfo>

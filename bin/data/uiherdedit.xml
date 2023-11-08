@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="HerdEditor" type="gadget" size1024="50 70 350 340" background="ui\editor\editor_background" bevel="" titlebar="$$33175$$Herd Editor" closebutton="" windowzstyle="" moveable="">
+    <gadget name="AE-HerdList" type="list" background="ui\editor\editor_background" sunkenbevel="" showselect="" selectedcolor="255 255 255" buttonsize1024="125 15" scrollvert="" alphasort="" titlebar="$$33176$$Current Herds" locktitlebarmove="" size1024="60 102 200 322">
+    </gadget>
+    <gadget name="AE-CreateHerd" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" tooltiptext="$$33177$$Create a herd with all the selected units." size1024="210 102 340 122">$$33179$$Create Herd</gadget>
+    <gadget name="AE-DeleteHerd" type="button" bevel="" textfont="Arial nodrop" textfontsize="12" tooltiptext="$$33178$$Delete the selected herd." size1024="210 127 340 147">$$33180$$Delete Herd</gadget>
+    <gadget name="AE-MoveUnitButton" type="button" tooltiptext="$$20315$$Move Object" foreground="ui\editor\MoveUnit" size1024="290 252 310 272">
+      <command>editMode("moveunit")</command>
+    </gadget>
+    <gadget name="AE-RotateUnitButton" type="button" tooltiptext="Objekt drehen" foreground="ui\Editor rotateunit" size1024="320 252 340 272">
+      <command>uiRotateSelection</command>
+    </gadget>
+    <gadget type="button" name="AE-PlaceObject-open" size1024="210 277 340 297" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$20282$$Place Object..." textfontsize="12">$$20282$$Place Object...<command>editMode("PlaceUnit")</command></gadget>
+    <gadget type="button" name="AE-Herd-close" size1024="210 302 340 322" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$18457$$Close" textfontsize="12">$$18457$$Close<command>gadgetUnreal("HerdEditor")</command></gadget>
+  </gadget>
+</layout>

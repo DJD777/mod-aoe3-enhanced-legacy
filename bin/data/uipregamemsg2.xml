@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <gadget name="pregame-messagedialog2" type="gadget" backgroundcolor="0 0 0" hidden="" windowzstyle="" backgroundalpha="0.5" size1024="0 0 1024 768" z="90">
+    <gadget name="pregame-messagedialog2-panel" type="gadget" size1024="345 188 689 419" z="99" background="ui\ingame\resign_window" texturecoords="0 0 0.7109375 0.90234375">
+      <gadget name="pregame-messagedialog2-prompt" type="formatText" textcenterhoriz="" texttruecentervert="" textcolor="255 255 255" textfont="IngameDialogs" textfontsize="16" size1024="356 245 677 324">Message Text Goes Here</gadget>
+      <gadget name="pregame-messagedialog2-OKButton" type="stateButton" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" statebuttonuseinternalstates="" size1024="375 366 503 398">$$18465$$OK<stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_high"></stateentry><stateentry background="ui\core_ui\button_med_disable"></stateentry></gadget>
+      <gadget name="pregame-messagedialog2-CancelButton" type="stateButton" textfont="PregameButtons" textfontsize="18" textcolor="255 255 255" statebuttonuseinternalstates="" size1024="531 366 659 398">$$18466$$Cancel<command>gadgetUnreal("pregame-messagedialog2")</command><stateentry background="ui\core_ui\button_med_normal"></stateentry><stateentry background="ui\core_ui\button_med_clicked"></stateentry><stateentry background="ui\core_ui\button_med_high"></stateentry><stateentry background="ui\core_ui\button_med_disable"></stateentry></gadget>
+    </gadget>
+  </gadget>
+</layout>

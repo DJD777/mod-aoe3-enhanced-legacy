@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<animfile>
+	<component>
+		Falcon
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon</file>
+				<replacetexture>
+					<from>source\animals\falcon\falcon</from>
+					<to>War of the Triple Alliance\DLC\Malta\falcon\falcon</to>
+				</replacetexture>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>War of the Triple Alliance\Units\Delta\Balkans\Romanians\Domnitor\select</selectedtexture>
+			<noncinematictexture>War of the Triple Alliance\Units\Delta\Balkans\Romanians\Domnitor\shadow</noncinematictexture>
+			<width>1.50</width>
+			<height>1.50</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+			<weight>15</weight>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_die</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.33</tag>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		LayDown
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		LayDownIdle
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+			<weight>30</weight>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		GetUp
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		LayDownBored
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\DLC\Malta\falcon\falcon_flying</file>
+			<weight>70</weight>
+		</assetreference>
+		<component>Falcon</component>
+	</anim>
+</animfile>
