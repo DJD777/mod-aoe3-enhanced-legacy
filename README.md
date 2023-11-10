@@ -11,7 +11,7 @@ This mod was designed to *enhance* the Legacy (original 2007) version of Age of 
 - Enhances AI with a customized version of DraugurAI to make CPU players more versatile, efficient, and competitive.
 - Improves graphics with added blood and corpse effects, an AI-upscaled UI, optional AI-upscaled building textures, and now nearly all unit upgrades will reflect with visual changes.
 - Adds more high-qulity, fitting music to the gameplay soundtrack, for a nearly 2-hour long loop, with a carefully ordered playlist that separates the soundtrack into European, Native, and Asian flavors, before transitional music sets up the start of the loop (similar to the Age of Empires II: Conquerors Expansion's soundtrack).
-- Optional singleplayer-only, randomized, historcally-representative, and civ-appropriate music tracks and Explorer audio kick off each new random map game. 
+- A singleplayer-only option to have randomized, historcally-representative, and civ-appropriate music tracks and Explorer audio start at the beginning of each new random map game. 
 - Fixes minor visual, text, and audio bugs, such as misspellings, potrait/icon discrepancies, and missing unit audio.
 - Introduces minor gameplay changes, including a third wall upgrade, increased Homecity level rewards and card deck limits, and new Homecity customizations for all civs.
 - Everything new was made with historicity and uniformity in mind--from visual unit upgrades, to tech names, to the soundtrack's play order.
