@@ -45,11 +45,11 @@ The Maltese specialize in defense, healing capabilities, and archaic unit combat
 
 Best units: 
 - The Hoop Thrower is a relatively expensive unit, but their ranged damage resistance, combined with their splash damage, lend them high utility against tightly-packed masses of ranged infantry.
-- Hospitallers are heavily armored melee infantry who are deadly against other heavy infantry, and yet can also provide triage to wounded friendly units for armies far away from home.
-- Knights are the Maltese tanks of their era, excelling at mowing down infantry and light cavalry.
+- Hospitallers are heavily armored melee infantry who are deadly in hand-to-hand combat, and who also provide triage to wounded friendly units for armies far away from home.
+- Knights are the Maltese tanks of their era, excelling at mowing down infantry with their lances, with an additional small bonus against cavalry.
 
 ### Americans
-The Americans excel at gunpowder combat, while the bonuses provided by their Age-up politicians, and the specialization of their citenzry, allow them to boom through Ages when competently managed. Representatives and (via a Homecity card) Senators gather a new resource called Favor, which can be used to enact bonus-providing Policies at the Legislature. Policies are unlocked via new Age Politicians starting from the Fortress Age and up. Homesteads replace Houses and allow herdables to be trained and fed there, and also spawn Minutemen when built. Minutemen do not lose health over time. Livestock Pens can train Cows and Ranchers, the latter being shotgun-toting cavalry who deal spread damage. Finally, each Age also unlocks a different Settler who specializes in gathering a specific resource, at the cost of other non-specialized resource gather rates. 
+The Americans excel at gunpowder combat, while the bonuses provided by their Age-up politicians, and the specialization of their citenzry, allow them to boom through Ages when carefully managed. Representatives and (via a Homecity card) Senators gather a new resource called Favor, which can be used to enact bonus-providing Policies at the Legislature. Policies are unlocked via new Age Politicians starting from the Fortress Age and up. Homesteads replace Houses and allow herdables to be trained and fed there, and also spawn Minutemen when built. Minutemen do not lose health over time. Livestock Pens (available through Homecity cards or an Age Politician) can train Cows and Ranchers, the latter being shotgun-toting cavalry who deal spread damage, and who can build Livestock Pens. Finally, each Age also unlocks a different Settler who specializes in gathering a specific resource, at the cost of other non-specialized resource gather rates. 
 
 ![All New American Units](https://github.com/DJD777/mod-aoe3-enhanced-legacy/assets/85384255/a0abc9ff-d854-4c04-b4d9-d6327b9bec6f)
 
@@ -59,11 +59,10 @@ Best units:
 - Riflemen are expert marksmen who use early forms of sniping rifles to outrange all other non-artillery land units.
 
 ## Credits
-While the majority of ideas implemented in the mod came from me (even though some--like the idea of Maltese Fixed Guns, Riflemen, and more--wound up being almost identical to the AoE3: DE Malta civ, or to some other AoE3 mods, which I found out after checking how those implemented the features), I owe some inspirations, textures, models, and outright implementations to other sources. All credit that I can remember is listed below, but some attributions might be missing since I didn't keep track of them while I built the mod almost a year ago, since I originally meant to keep the mod private and unpublished. If I failed to include proper credit for something, please let me know.
+While the majority of ideas and actual work implemented in the mod came from me (even though some ideas--like the Maltese Fixed Guns, American Riflemen, and more--I found later wound up being almost identical to AoE3: DE's, or to some other AoE3 mods', implementations), I owe some inspirations, textures, models, and outright implementations to other sources. All credit that I can recall is listed below, but since I originally meant to keep the mod private and unpublished, I didn't keep track of sources and so may have missed some. If I failed to include proper credit for something, please let me know.
 
 - ESOC was the foundation for everything, from data files to AI files.
-- Most land textures, some tech icons, and some unit/building icons and portraits are based on, or from, the Improvement Mod.
-- Main menu UI graphics, unit tactic files, UI-related data files, and some other data files were based on, or from, the Improvement Mod.
-- Lots of models, textures, and sounds for the new Maltese and American units/buildings are from the Wars of Liberty mod.
-- Multiple music tracks come from the Age of Dynasties mod, which got them from different games I don't remember the names of.
-- Implementation of the Maltese Auberge langues is from a very old playable-Malta mod on aoe3.heavengames.com
+- Main menu UI graphics, most land textures, some tech icons, some unit/building icons and portraits, unit tactic files, UI-related data files, and some other data files are based on, or from, the Improvement Mod.
+- A number of models, textures, and sounds for the new Maltese and American units/buildings are from the Wars of Liberty mod.
+- Multiple music tracks come from the Age of Dynasties mod, which got them from different games I don't know the names of.
+- Implementation of the Auberge langues, and indeed the base foundation for the new civs, is from CC Mod V4A at aoe3.heavengames.com.
